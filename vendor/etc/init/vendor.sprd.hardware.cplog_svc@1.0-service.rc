@@ -1,0 +1,9 @@
+service vendor.sprd.hardware.cplog_svc@1.0-service /vendor/bin/hw/vendor.sprd.hardware.cplog_svc@1.0-service
+    class hal
+    user system
+    group system radio root audio
+    interface vendor.sprd.hardware.cplog_svc@1.0::ISysLogControl default
+    interface vendor.sprd.hardware.cplog_svc@1.0::ILogTransportInductor default
+
+on post-fs-data
+    mkdir /data/vendor/local/cplog_svc 0777 system system

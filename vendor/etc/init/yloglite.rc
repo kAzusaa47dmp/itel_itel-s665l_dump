@@ -1,0 +1,13 @@
+service yloglite /vendor/bin/yloglite
+    class main
+    user root
+    oneshot
+    disabled
+    writepid /dev/cpuset/system-background/tasks
+
+on post-fs-data
+    mkdir /data/vendor/ylog 0777
+    start yloglite
+
+on property:init.svc.logd=running
+    start yloglite

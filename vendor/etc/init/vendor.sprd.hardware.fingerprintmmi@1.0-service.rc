@@ -1,0 +1,5 @@
+service vendor.sprd.hardware.fingerprintmmi@1.0-service /vendor/bin/hw/vendor.sprd.hardware.fingerprintmmi@1.0-service
+    interface vendor.sprd.hardware.fingerprintmmi@1.0::IFingerprintmmi default
+    class hal
+    user system
+    group system

@@ -1,0 +1,69 @@
+{
+  "Profiles": [
+    {
+      "Name": "HighEnergySaving",
+      "Actions": [
+        {
+          "Name": "JoinCgroup",
+          "Params":
+          {
+            "Controller": "cpu",
+            "Path": "background"
+          }
+        }
+      ]
+    },
+    {
+      "Name": "NormalPerformance",
+      "Actions": [
+        {
+          "Name": "JoinCgroup",
+          "Params":
+          {
+            "Controller": "cpu",
+            "Path": ""
+          }
+        }
+      ]
+    },
+    {
+      "Name": "HighPerformance",
+      "Actions": [
+        {
+          "Name": "JoinCgroup",
+          "Params":
+          {
+            "Controller": "cpu",
+            "Path": "foreground"
+          }
+        }
+      ]
+    },
+    {
+      "Name": "MaxPerformance",
+      "Actions": [
+        {
+          "Name": "JoinCgroup",
+          "Params":
+          {
+            "Controller": "cpu",
+            "Path": "top-app"
+          }
+        }
+      ]
+    },
+    {
+      "Name": "RealtimePerformance",
+      "Actions": [
+        {
+          "Name": "JoinCgroup",
+          "Params":
+          {
+            "Controller": "cpu",
+            "Path": "rt"
+          }
+        }
+      ]
+    }
+  ]
+}

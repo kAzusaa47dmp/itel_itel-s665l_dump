@@ -1,0 +1,8 @@
+service vendor.face_hal /vendor/bin/hw/vendor.sprd.hardware.face@1.0-service
+    class hal
+    user system
+    group system media
+
+on post-fs-data
+    mkdir /data/vendor/faceid 0744 system system
+

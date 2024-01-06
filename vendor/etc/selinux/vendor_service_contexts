@@ -1,0 +1,23 @@
+#line 1 "device/sprd/mpool/sepolicy/vendor/service_contexts"
+#phasechecknative                          u:object_r:phasecheck_service:s0
+#addon                                     u:object_r:addon_service:s0
+#phone_ex                                  u:object_r:radio_service:s0
+#ismsEx                                    u:object_r:radio_service:s0
+#iphonesubinfoEx                           u:object_r:radio_service:s0
+#ims_ex                                    u:object_r:radio_service:s0
+#ims_ut_ex                                 u:object_r:radio_service:s0
+#atchannel                                 u:object_r:radio_service:s0
+# move fm to plat_sepolicy
+
+#simphonebookEx                            u:object_r:radio_service:s0
+#sprd_phone                                u:object_r:radio_service:s0
+#iglobalconfig                             u:object_r:radio_service:s0
+#irit                                      u:object_r:radio_service:s0
+#carrier_config_ex                         u:object_r:radio_service:s0
+#powerguru                                 u:object_r:powerguru_service:s0
+#power_ex                                  u:object_r:power_ex_service:s0
+#line 1 "device/sprd/mpool/module/media/msepolicy/vendor/service_contexts"
+#fm                                        u:object_r:mediaserver_service:s0
+#line 1 "vendor/transsion/partner/goodix/sepolicy/service_contexts"
+com.goodix.FingerprintService    u:object_r:goodix_fingerprint_service:s0;
+

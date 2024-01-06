@@ -1,0 +1,45 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+ * SHENZHEN TRANSSION COMMUNICATION LIMITED TOP SECRET.
+ * Copyright (c) 2016-2036  SHENZHEN TRANSSION COMMUNICATION LIMITED
+ *
+ * PROPRIETARY RIGHTS of Shenzhen Transsion Communication Limited are involved in the
+ * subject matter of this material.  All manufacturing, reproduction, use,
+ * and sales rights pertaining to this subject matter are governed by the
+ * license agreement.  The recipient of this software implicitly accepts
+ * the terms of the license.
+ *
+ * Description:
+ * Author:
+ * Version:v1.0
+ * Date:
+ * Modification:
+ *
+ */
+-->
+
+  <intelligentlight>
+    <item name="updatetime">0</item>
+    <item name="dayCycle">0</item>
+    <item name="notify">0</item>
+    <item name="DayNight">
+      <dawn>25200000</dawn><!--7:00-->
+      <dusk>66600000</dusk><!--18:30-->
+    </item>
+    <item name="SceneLight">
+      <!--Np:normal power  Lp:low power -->
+      <NpVideoDay>154</NpVideoDay>
+      <NpPicCameraDay>100</NpPicCameraDay>
+      <NpOtherDay>99</NpOtherDay>
+      <LpVideoDay>74</LpVideoDay>
+      <LpPicCameraDay>100</LpPicCameraDay>
+      <LpOtherDay>52</LpOtherDay>
+      <!--Np:normal power  Lp:low power -->
+      <NpVideoNight>41</NpVideoNight>
+      <NpPicCameraNight>100</NpPicCameraNight>
+      <NpOtherNight>28</NpOtherNight>
+      <LpVideoNight>20</LpVideoNight>
+      <LpPicCameraNight>100</LpPicCameraNight>
+      <LpOtherNight>14</LpOtherNight>
+    </item>
+  </intelligentlight>

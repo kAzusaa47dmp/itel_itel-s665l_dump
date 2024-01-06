@@ -1,0 +1,16 @@
+on boot
+    chown system system /dev/tranlog_reg
+    chmod 0666 /dev/tranlog_reg
+    chown system system /dev/tranlog_config
+    chmod 0666 /dev/tranlog_config
+    chown system system /dev/tranlog_cloudctl
+    chmod 0666 /dev/tranlog_cloudctl
+
+on property:sys.boot_completed=1
+    start vendor.tranlogconfig
+
+service vendor.tranlogconfig /vendor/bin/tranlogconfig
+    class core
+    user system
+    group system
+    disabled

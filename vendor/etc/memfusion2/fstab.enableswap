@@ -1,0 +1,2 @@
+#swap
+/data/swapfile.db      none         swap 	defaults 	swapfile_size=3072m

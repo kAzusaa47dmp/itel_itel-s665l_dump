@@ -1,0 +1,107 @@
+<?xml version="1.0" ?>
+<!--common
+    Package for thirdpart apk size & fpsrange
+    EvictedPackage for Evicted Camera, stillname > comingname
+-->
+
+<TranITDCamProfiles>
+<!--
+    Package
+        arg1: name:  app package name
+        arg2: supportedPreviewSizes: Supported preview sizes
+        arg3: supportedVideoSizes: Supported video sizes
+        arg4: supportedPictureSizes: Supported picture sizes
+        arg5: fpsRange: fps range
+-->
+        <!--Paytm -->
+        <Package name="net.one97.paytm"
+            supportedPreviewSizes="1280x720,960x720,960x540,720x480,480x480,640x480,352x288,320x240,176x144"
+            supportedVideoSizes=""
+            supportedPictureSizes=""
+            fpsRange=""
+            />
+
+        <Package name="com.whatsapp"
+            supportedPreviewSizes="1280x960,960x720,640x480,320x240"
+            supportedVideoSizes=""
+            supportedPictureSizes=""
+            fpsRange=""
+            />
+
+        <!--[ITD] modify for XLWYEHLYEL-159 by qiang.wang3 20220325 start-->
+        <!--com.pinterest-->
+        <Package name="com.pinterest"
+            supportedPreviewSizes=""
+            supportedVideoSizes=""
+            supportedPictureSizes="1600x720,1280x720,960x720,960x540,720x480,480x480,640x480,352x288,320x240,176x144"
+            fpsRange=""
+            />
+
+        <!--[ITD] modify for remove 960X720 PreviewSize by qiang.wang3 20220413 -->
+        <Package name="com.intsig.camscanner"
+            supportedPreviewSizes="1280x960,1280x720,960x540,720x480,480x480,640x480,352x288,320x240,176x144"
+            supportedVideoSizes=""
+            supportedPictureSizes=""
+            fpsRange=""
+            />
+
+        <!--[ITD] modify for remove 1280x720 960X720 PreviewSize by qiang.wang3 20220413 -->
+        <Package name="hd.camera"
+            supportedPreviewSizes="1280x960,960x540,720x480,640x480,480x480,352x288,320x240,176x144"
+            supportedVideoSizes=""
+            supportedPictureSizes=""
+            fpsRange=""
+            />
+
+        <!--[ITD] modify for KHQHTL-2160 picture size is 2400X1080,not for PreviewSize 1920x1080  by qiang.wang3 20220424 -->
+        <Package name="com.flatfish.cal.privacy"
+            supportedPreviewSizes=""
+            supportedVideoSizes=""
+            supportedPictureSizes="1920x1080,1600x720,1280x720,960x720,960x540,720x480,480x480,640x480,352x288,320x240,176x144"
+            fpsRange=""
+            />
+
+        <!--[ITD] modify for SLLEL-741 BeautyCam size  by qiang.wang3 20220630 -->
+        <Package name="com.meitu.meiyancamera"
+            supportedPreviewSizes="1280x960,1280x720,960x720,960x540,720x480,480x480,640x480,352x288,320x240,176x144"
+            supportedVideoSizes="1280x960,1280x720,960x720,960x540,720x480,480x480,640x480,352x288,320x240,176x144"
+            supportedPictureSizes=""
+            fpsRange=""
+            />
+
+        <!--[ITD] modify for SLLEL-741 BeautyCam size by qiang.wang3 20220630 -->
+        <Package name="com.beauty.camera.youcam.makeup.photo.editor.plus"
+            supportedPreviewSizes="1280x960,1280x720,960x720,960x540,720x480,480x480,640x480,352x288,320x240,176x144"
+            supportedVideoSizes="1280x960,1280x720,960x720,960x540,720x480,480x480,640x480,352x288,320x240,176x144"
+            supportedPictureSizes=""
+            fpsRange=""
+            />
+
+        <!--[ITD] modify for XLLJFL-555 by qiang.wang3 20221215 start-->
+        <!--com.camera12.iphone12-->
+        <Package name="com.camera12.iphone12"
+            supportedPreviewSizes="1280x720,960x720,960x540,720x480,704x704,640x480,352x288,320x240,176x144"
+            supportedVideoSizes="1280x720,960x720,960x540,720x480,704x704,640x480,352x288,320x240,176x144"
+            supportedPictureSizes="1280x720,960x720,960x540,720x480,704x704,640x480,352x288,320x240,176x144"
+            fpsRange=""
+            />
+        <!--[ITD] modify for XLLJFL-555 by qiang.wang3 20221215 end-->
+
+        <!--[ITD] modify for KIWKH-674 by qiang.wang3 20221230 start-->
+        <Package name="com.viber.voip"
+            supportedPreviewSizes=""
+            supportedVideoSizes=""
+            supportedPictureSizes="1280x720,960x720,960x540,720x480,704x704,640x480,352x288,320x240,176x144"
+            fpsRange=""
+            />
+        <!--[ITD] modify for KIWKH-674 by qiang.wang3 20221230 end-->
+<!--
+    EvictedPackage
+        arg1: comingname:  current app package name
+        arg2: stillname:  still alive app package name
+-->
+        <!--[ITD] modify for LCQHLYYLR-2079 by zhoumw 20200827 start-->
+        <!-- <EvictedPackage comingname="com.transsion.scanningrecharger" stillname="com.tencent.mm"/> -->
+        <!--[ITD] modify for LCQHLYYLR-2079 by zhoumw 20200827 end-->
+
+</TranITDCamProfiles>

@@ -1,0 +1,7 @@
+service turbocloudservice /vendor/bin/turbocloudservice
+    user root
+    group root system
+    disabled
+
+ on property:sys.boot_completed=1
+     start turbocloudservice

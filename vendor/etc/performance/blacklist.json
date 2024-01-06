@@ -1,0 +1,203 @@
+{
+  "version":1,
+  "product":"default",
+  "broadcast": [
+    {
+      "action": "android.intent.action.LOCKED_BOOT_COMPLETED",
+      "caller": "sys",
+      "target": ["3rd"]
+    },
+    {
+      "action": "android.intent.action.BOOT_COMPLETED",
+      "caller": "sys",
+      "target": ["3rd"]
+    },
+    {
+      "action": "android.intent.action.MEDIA_MOUNTED",
+      "caller": "sys",
+      "target": ["3rd"]
+    },
+    {
+      "action": "android.intent.action.USER_PRESENT",
+      "caller": "sys",
+      "target": ["3rd"]
+    },
+    {
+      "action": "android.intent.action.BATTERY_CHANGED",
+      "caller": "sys",
+      "target": ["3rd"]
+    },
+    {
+      "action": "android.intent.action.PACKAGE_ADDED",
+      "caller": "sys",
+      "target": ["3rd"]
+    },
+    {
+      "action": "android.intent.action.PACKAGE_REMOVED",
+      "caller": "sys",
+      "target": ["3rd"]
+    },
+    {
+      "action": "android.intent.action.PACKAGE_REPLACED",
+      "caller": "sys",
+      "target": ["3rd"]
+    },
+    {
+      "action": "android.net.conn.DATA_ACTIVITY_CHANGE",
+      "caller": "sys",
+      "target": ["3rd"]
+    },
+    {
+      "action": "android.net.conn.CONNECTIVITY_CHANGE",
+      "caller": "sys",
+      "target": ["3rd"]
+    },
+    {
+      "action": "android.content.SyncAdapter",
+      "caller": "sys",
+      "target": ["3rd"]
+    },
+    {
+      "action": "com.yy.pushsvc.WakeUpBroadcast",
+      "caller": "3rd",
+      "target": ["com.yy.pushsvc.WakeUpBroadcast"]
+    },
+    {
+      "action": "com.taobao.accs.intent.action.COMMAND",
+      "caller": "3rd",
+      "target": ["com.taobao.accs.ServiceReceiver"]
+    },
+    {
+      "action": "com.qihoo360.accounts.action.START_SERVICE",
+      "caller": "3rd",
+      "target": ["3rd"]
+    },
+    {
+      "action": "com.xiaomi.push.PING_TIMER",
+      "caller": "3rd",
+      "target": ["com.xiaomi.push.service.receivers.PingReceiver"]
+    }
+  ],
+  "service": [
+    {
+      "action": "org.rome.android.ipp.intent.action.PINGA",
+      "caller": "3rd",
+      "target": ["3rd"],
+      "type": 3
+    },
+    {
+      "action": "baidu.intent.action.account.SHARE_SERVICE",
+      "caller": "3rd",
+      "target": ["3rd"],
+      "type": 3
+    },
+    {
+      "action": "com.dianxinos.optimizer.action.STARTUP_OPTIMIZER",
+      "caller": "3rd",
+      "target": ["3rd"],
+      "type": 3
+    },
+    {
+      "action": "org.agoo.android.intent.action.PING_V4",
+      "caller": "3rd",
+      "target": ["3rd"],
+      "type": 3
+    },
+    {
+      "action": "com.tecnent.qqpim.CHANGENOTICE",
+      "caller": "3rd",
+      "target": ["3rd"],
+      "type": 3
+    },
+    {
+      "action": "com.qihoo360.accounts.action.START_SERVICE",
+      "caller": "3rd",
+      "target": ["3rd"],
+      "type": 3
+    },
+    {
+      "action": "com.taobao.accs.intent.action.START_SERVICE",
+      "caller": "3rd",
+      "target": ["com.taobao.accs.ChannelService"],
+      "type": 3
+    },
+    {
+      "action": "com.baidu.android.pushservice.action.METHOD",
+      "caller": "3rd",
+      "target": ["com.baidu.android.pushservice.PushService"],
+      "type": 3
+    },
+    {
+      "action": "org.rome.android.IPP_CALL",
+      "caller": "3rd",
+      "target": ["org.rome.android.ipp.binder.IppService"],
+      "type": 3
+    },
+    {
+      "action": "com.taobao.accs.intent.action.COMMAND",
+      "caller": "3rd",
+      "target": ["com.umeng.message.UmengIntentService"],
+      "type": 3
+    },
+    {
+      "action": "com.taobao.accs.intent.action.RECEIVE",
+      "caller": "3rd",
+      "target": ["com.taobao.accs.data.MsgDistributeService"],
+      "type": 3
+    },
+    {
+      "action": "com.taobao.accs.intent.action.START_SERVICE",
+      "caller": "3rd",
+      "target": ["com.taobao.accs.ChannelService"],
+      "type": 3
+    },
+    {
+    "action": "com.xiaomi.mipush.REGISTER_APP",
+    "caller": "3rd",
+    "target": ["com.xiaomi.push.service.XMPushService"],
+    "type": 3
+    },
+    {
+      "action": "com.google.firebase.INSTANCE_ID_EVENT",
+      "caller": "3rd",
+      "target": ["com.google.firebase.iid.FirebaseInstanceIdInternalReceiver"],
+      "type": 3
+    },
+    {
+      "action": "com.benqu.wuta.intent.INIT",
+      "caller": "3rd",
+      "target": ["cn.jpush.android.service.PushService"],
+      "type": 3
+    },
+    {
+      "action": "com.benqu.wuta.run.action",
+      "caller": "3rd",
+      "target": ["cn.jpush.android.service.PushService"],
+      "type": 3
+    },
+    {
+      "action": "com.benqu.wuta.intent.RTC",
+      "caller": "3rd",
+      "target": ["cn.jpush.android.service.PushService"],
+      "type": 3
+    },
+    {
+      "action": null,
+      "caller": "3rd",
+      "target": [
+        "com.taobao.accs.ChannelService$KernelService",
+        "com.cs.bd.daemon.JobSchedulerService",
+        "com.baidu.android.pushservice.PushService",
+        "com.alibaba.tcms.service.KeepAliveService",
+        "com.pp.assistant.worker.PPFakeService",
+        "com.pushwoosh.inapp.InAppRetrieverService",
+        "com.antutu.benchmark.service.JobSchedulerService",
+        "cn.jpush.android.service.AlarmReceiver",
+        "cn.jpush.android.service.PushService",
+        "cn.jpush.android.service.DaemonService",
+        "com.ss.android.push.jpush.alive.JiPushDaemonService"
+      ],
+      "type": 3
+    }
+  ]
+}

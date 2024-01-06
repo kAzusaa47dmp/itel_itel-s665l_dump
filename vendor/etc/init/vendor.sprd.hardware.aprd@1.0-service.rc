@@ -1,0 +1,21 @@
+service vendor.sprd.hardware.aprd@1.0-service /vendor/bin/hw/vendor.sprd.hardware.aprd@1.0-service
+    interface vendor.sprd.hardware.aprd@1.0::IAprdInfoSync default
+    class hal
+    user system
+    group system
+    disabled
+
+on property:persist.sys.apr.enabled=1
+    start vendor.sprd.hardware.aprd@1.0-service
+	
+on property:persist.sys.apr.enabled=0
+    stop vendor.sprd.hardware.aprd@1.0-service
+    
+on property:ro.bootmode=charger
+    stop vendor.sprd.hardware.aprd@1.0-service
+	
+on property:ro.bootmode=cali
+    stop vendor.sprd.hardware.aprd@1.0-service
+	
+on property:ro.bootmode=recovery
+    stop vendor.sprd.hardware.aprd@1.0-service

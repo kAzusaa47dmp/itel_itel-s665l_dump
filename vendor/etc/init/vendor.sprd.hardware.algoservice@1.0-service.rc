@@ -1,0 +1,6 @@
+service sprd-algo-service-1.0 /vendor/bin/hw/vendor.sprd.hardware.algoservice@1.0-service
+    class hal
+    user cameraserver
+    group audio camera input drmrpc inet system
+on post-fs-data
+    start sprd-algo-service-1.0

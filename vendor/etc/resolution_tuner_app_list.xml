@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+This XML file declares which signature|privileged permissions should be granted to privileged
+applications that come with the platform
+-->
+<resolution-tuner>
+    <app>
+        <packagename>com.tencent.ig</packagename>
+        <scale>1.0</scale>
+        <flow>surfaceview</flow>
+    </app>
+    <app>
+        <packagename>com.tencent.tmgp.pubgmhd</packagename>
+        <scale>1.0</scale>
+        <flow>surfaceview</flow>
+    </app>
+    <app>
+        <packagename>com.pubg.krmobile</packagename>
+        <scale>1.0</scale>
+        <flow>surfaceview</flow>
+    </app>
+    <app>
+        <packagename>vn.vng.pubgmobile</packagename>
+        <scale>1.0</scale>
+        <flow>surfaceview</flow>
+    </app>
+    <app>
+        <packagename>com.rekoo.pubgm</packagename>
+        <scale>1.0</scale>
+        <flow>surfaceview</flow>
+    </app>
+    <app>
+        <packagename>com.tencent.tmgp.sgame</packagename>
+        <scale>1.0</scale>
+        <flow>surfaceview</flow>
+    </app>
+    <app>
+        <packagename>com.dts.freefireth</packagename>
+        <scale>1.2</scale>
+        <flow>wms</flow>
+    </app>
+    <app>
+        <packagename>com.dts.freefiremax</packagename>
+        <scale>1.0</scale>
+        <flow>surfaceview</flow>
+    </app>
+    <app>
+        <packagename>com.mobile.legends</packagename>
+        <scale>1.0</scale>
+        <flow>surfaceview</flow>
+    </app>
+    <app>
+        <packagename>com.tencent.tmgp.cod</packagename>
+        <scale>1.0</scale>
+        <flow>surfaceview</flow>
+    </app>
+    <app>
+        <packagename>com.activision.callofduty.shooter</packagename>
+        <scale>1.0</scale>
+        <flow>surfaceview</flow>
+    </app>
+    <app>
+        <packagename>com.garena.game.codm</packagename>
+        <scale>1.0</scale>
+        <flow>surfaceview</flow>
+    </app>
+    <app>
+        <packagename>com.vng.codmvn</packagename>
+        <scale>1.0</scale>
+        <flow>surfaceview</flow>
+    </app>
+</resolution-tuner>

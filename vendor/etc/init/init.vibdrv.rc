@@ -1,0 +1,2 @@
+on post-fs
+    insmod /vendor/lib/modules/sc27xx-vibra.ko

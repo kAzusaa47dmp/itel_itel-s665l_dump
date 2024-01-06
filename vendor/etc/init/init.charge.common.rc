@@ -1,0 +1,9 @@
+on boot
+        chmod 0664 /sys/class/power_supply/battery/charger.0/stop_charge
+        chown system system /sys/class/power_supply/battery/charger.0/stop_charge
+	chmod 0664 /sys/class/power_supply/battery/charger.0/transsion_temp_support
+	chown system system /sys/class/power_supply/battery/charger.0/transsion_temp_support
+	chmod 0664 /sys/class/power_supply/battery/charger.0/transsion_temp_customize
+	chown system system /sys/class/power_supply/battery/charger.0/transsion_temp_customize
+	chmod 0664 /sys/class/power_supply/battery/charger.0/enable_power_path
+	chown system system /sys/class/power_supply/battery/charger.0/enable_power_path

@@ -1,0 +1,62 @@
+on post-fs
+    restorecon_recursive /tranfs/
+    chmod 777 /tranfs/
+    chown system system /tranfs/
+    chmod 660 /dev/tranlog
+    chown root system /dev/tranlog
+
+on post-fs-data
+    chmod 0666 /sys/devices/platform/tran_charger/OTG_CTL
+#MD: hongkuan.ji add ffu fw dir for FFU start
+    mkdir /tranfs/ffu 0700 system shell
+    chmod 0777 /tranfs/ffu
+#MD: hongkuan.ji add ffu fw dir for FFU end
+
+#ITD:add for Sprd platform support systemUI flash device node start.
+
+    chmod 0666 /sys/class/torch/torch/torch_level
+    chown system system /sys/class/torch/torch/torch_level
+    chmod 0666 /sys/class/sub_torch/sub_torch/sub_torch_level
+    chown system system sys/class/sub_torch/sub_torch/sub_torch_level
+    chmod 0666 /sys/devices/virtual/torch/torch/torch_level
+    chown system system /sys/devices/virtual/torch/torch/torch_level
+    chmod 0666 /sys/devices/virtual/sub_torch/sub_torch/sub_torch_level
+    chown system system /sys/devices/virtual/sub_torch/sub_torch/sub_torch_level
+
+#ITD:add for Sprd platform support systemUI flash device node end.
+
+on property:ro.boot.iteldebug=1 && property:ro.debuggable=0
+    start console
+
+on property:persist.vendor.modem.log_dest=0 && property:ro.boot.itelfactory=1
+    setprop persist.vendor.modem.log_dest 1
+    setprop persist.vendor.sys.modem.diag ,vser
+    stop vendor.engpcclientlte
+    start vendor.engpcclientlte
+
+on property:persist.vendor.modem.log_dest=2 && property:ro.boot.itelfactory=1
+    setprop persist.vendor.modem.log_dest 1
+    setprop persist.vendor.sys.modem.diag ,vser
+    stop vendor.engpcclientlte
+    start vendor.engpcclientlte
+
+on property:persist.sys.device_provisioned=1 && property:persist.sys.oobe_country=IN && property:persist.vendor.dualapp.support=yes
+    setprop ro.com.google.rlz_ap_whitelist YA
+    setprop ro.com.google.rlzbrandcode TSSN
+
+#SR_18602662 add multi device name 20210514 start
+on boot && property:persist.sys.tran.device.name=*
+    chmod a+x config/usb_gadget/g1
+    chmod a+x config/usb_gadget/g1/strings/0x409
+    chmod 0666 /config/usb_gadget/g1/strings/0x409/product
+    write /config/usb_gadget/g1/strings/0x409/product ${persist.sys.tran.device.name}
+#SR_18602662 add multi device name 20210514 end
+
+#STD:add XLLWCHLYEL-738 kfp by hao.lv5 20220907 start
+    restorecon_recursive /tranfs
+    mkdir /tranfs/tranf2fs 0700 root shell
+    chmod 0771 /tranfs/tranf2fs
+    mkdir /tranfs/tranf2fs/kfp 0700 root shell
+    chmod 0771 /tranfs/tranf2fs/kfp
+#STD:add XLLWCHLYEL-738 kfp by hao.lv5 20220907 end
+

@@ -1,0 +1,203 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+ * SHENZHEN TRANSSION COMMUNICATION LIMITED TOP SECRET.
+ * Copyright (c) 2016-2036  SHENZHEN TRANSSION COMMUNICATION LIMITED
+ *
+ * PROPRIETARY RIGHTS of Shenzhen Transsion Communication Limited are involved in the
+ * subject matter of this material.  All manufacturing, reproduction, use,
+ * and sales rights pertaining to this subject matter are governed by the
+ * license agreement.  The recipient of this software implicitly accepts
+ * the terms of the license.
+ *
+ * Description:
+ * Author:
+ * Version:v1.0
+ * Date:
+ * Modification:
+ *
+ */
+-->
+
+<powerSensorStats version="1">
+    <diff-config name="brightness" stdCurrent="228.6">
+        <item level="6" diff="-119.1"/>
+        <item level="52" diff="-79.6"/>
+        <item level="62" diff="-71.4"/>
+        <item level="72" diff="-61.9"/>
+        <item level="82" diff="-52.2"/>
+        <item level="92" diff="-43.2"/>
+        <item level="102" diff="-35"/>
+        <item level="112" diff="-27.1"/>
+        <item level="122" diff="-17.5"/>
+        <item level="132" diff="-7.7"/>
+        <item level="142" diff="0"/>
+        <item level="152" diff="8.5"/>
+        <item level="162" diff="19.5"/>
+        <item level="172" diff="29.6"/>
+        <item level="182" diff="38.9"/>
+        <item level="192" diff="48.1"/>
+        <item level="202" diff="58.1"/>
+        <item level="212" diff="67"/>
+        <item level="222" diff="77.9"/>
+        <item level="232" diff="87.5"/>
+        <item level="242" diff="95.9"/>
+        <item level="255" diff="109"/>
+    </diff-config>
+
+    <diff-config name="volume" stdCurrent="39.4" headsetCurrent="9.4">
+        <item level="0"  diff="-16.2"/>
+        <item level="1"  diff="-16.1"/>
+        <item level="2"  diff="-15.91"/>
+        <item level="3"  diff="-15.88"/>
+        <item level="4"  diff="-15.65"/>
+        <item level="5"  diff="-15.42"/>
+        <item level="6"  diff="-12.7"/>
+        <item level="7"  diff="-8.8"/>
+        <item level="8"  diff="0"/>
+        <item level="9"  diff="17.9"/>
+        <item level="10" diff="23.4"/>
+        <item level="11" diff="29.8"/>
+        <item level="12" diff="36.5"/>
+        <item level="13" diff="42.7"/>
+        <item level="14" diff="51.9"/>
+        <item level="15" diff="59.7"/>
+    </diff-config>
+
+    <scenario-config>
+        <string-array scenario="social">
+            <pkgName>com.facebook.mlite</pkgName>
+            <pkgName>com.opera.browser</pkgName>
+            <pkgName>com.facebook.lite</pkgName>
+            <pkgName>com.snapchat.android</pkgName>
+            <pkgName>com.ogan.status2017</pkgName>
+            <pkgName>com.whatsapp.w4b</pkgName>
+            <pkgName>com.yomobigroup.chat</pkgName>
+            <pkgName>im.twogo.godroid</pkgName>
+            <pkgName>com.google.android.talk</pkgName>
+            <pkgName>com.home.sms.messages.emoji</pkgName>
+            <pkgName>com.ticno.olymptrade</pkgName>
+            <pkgName>com.futurebits.instamessage.free</pkgName>
+            <pkgName>com.pinterest</pkgName>
+            <pkgName>com.gogii.textplus</pkgName>
+            <pkgName>com.caller.name.location.numbertracker</pkgName>
+            <pkgName>net.aleksandre.android.whereami</pkgName>
+            <pkgName>com.ss.android.ugc.trill</pkgName>
+            <pkgName>kik.android</pkgName>
+            <pkgName>org.mozilla.firefox</pkgName>
+            <pkgName>com.tencent.bang</pkgName>
+            <pkgName>com.badoo.mobile</pkgName>
+            <pkgName>ee.mtakso.client</pkgName>
+            <pkgName>me.nextplus.smsfreetext.phonecalls</pkgName>
+        </string-array>
+
+        <string-array scenario="web_browse">
+            <pkgName>com.mobisystems.msdict.embedded.wireless.oxford.dictionaryofenglish</pkgName>
+            <pkgName>bible.kingjamesbiblelite</pkgName>
+            <pkgName>com.qidian.Int.reader</pkgName>
+            <pkgName>com.jumia.one.android</pkgName>
+            <pkgName>ng.jiji.app</pkgName>
+            <pkgName>com.twitter.android</pkgName>
+            <pkgName>com.sports.live.football.tv</pkgName>
+            <pkgName>ma.safe.bnnigeria</pkgName>
+            <pkgName>com.firsttouchgames.dls3</pkgName>
+            <pkgName>com.nigeria.soko</pkgName>
+            <pkgName>com.UCMobile.intl</pkgName>
+            <pkgName>com.ubercab</pkgName>
+            <pkgName>com.livescore</pkgName>
+            <pkgName>com.supersport.android.phone</pkgName>
+            <pkgName>com.tinder</pkgName>
+        </string-array>
+        <string-array scenario="call">
+            <pkgName>com.truecaller</pkgName>
+            <pkgName>org.telegram.messenger</pkgName>
+            <pkgName>com.imo.android.imoim</pkgName>
+            <pkgName>com.callapp.contacts</pkgName>
+        </string-array>
+        <string-array scenario="screen_operation">
+            <pkgName>cn.xender</pkgName>
+            <pkgName>com.hyperspeed.rocket.applock.free</pkgName>
+            <pkgName>com.pfinance</pkgName>
+            <pkgName>iscon.dev.autocutpaste</pkgName>
+            <pkgName>phone.antivirus.virus.cleaner.junk.clean.speed.booster.master</pkgName>
+            <pkgName>com.callerscreen.color.phone.ringtone.flash</pkgName>
+            <pkgName>cn.wps.moffice_eng</pkgName>
+            <pkgName>com.mtn1app</pkgName>
+            <pkgName>com.google.android.gmsintegration</pkgName>
+            <pkgName>com.marsvard.stickermakerforwhatsapp</pkgName>
+            <pkgName>panda.keyboard.emoji.theme</pkgName>
+            <pkgName>com.google.android.apps.nbu.files</pkgName>
+            <pkgName>co.lavatools.carbon</pkgName>
+            <pkgName>com.uba.vericash</pkgName>
+            <pkgName>com.home.sms.messages.emoji</pkgName>
+            <pkgName>com.qbesoft.videodownloaderforinstagram</pkgName>
+            <pkgName>com.accessbank.accessbankapp</pkgName>
+            <pkgName>com.google.android.apps.speechservices</pkgName>
+            <pkgName>com.mobile.truecall.tracker.locator.teccreations</pkgName>
+            <pkgName>com.firstbank.firstmobile</pkgName>
+            <pkgName>com.ceva.ubmobile.stallion</pkgName>
+            <pkgName>com.downlood.sav.whmedia</pkgName>
+            <pkgName>com.zenithBank.eazymoney</pkgName>
+            <pkgName>com.nigeria.soko</pkgName>
+            <pkgName>com.clap.find.my.mobile.alarm.sound</pkgName>
+            <pkgName>co.bitx.android.wallet</pkgName>
+            <pkgName>com.appzonegroup.fcmb</pkgName>
+            <pkgName>com.expertoption</pkgName>
+            <pkgName>code.ussd.network.nigeria.nigerianetworkussdcode</pkgName>
+            <pkgName>com.adobe.reader</pkgName>
+            <pkgName>com.google.android.play.games</pkgName>
+
+            <!--<pkgName>com.android.launcher3</pkgName>
+            <pkgName>com.android.calendar</pkgName>
+            <pkgName>com.sprd.recents</pkgName>
+            <pkgName>com.android.settings</pkgName>-->
+        </string-array>
+        <string-array scenario="camera">
+            <pkgName>com.commsource.beautyplus</pkgName>
+            <pkgName>com.roidapp.photogrid</pkgName>
+            <pkgName>com.picsart.studio</pkgName>
+        </string-array>
+        <string-array scenario="games">
+            <pkgName>com.tonielro.naijawhotfree</pkgName>
+            <pkgName>com.carryfirst</pkgName>
+            <pkgName>com.king.candycrushsaga</pkgName>
+            <pkgName>com.slippy.linerusher</pkgName>
+            <pkgName>com.kiloo.subwaysurf</pkgName>
+            <pkgName>om.outfit7.mytalkingangelafree</pkgName>
+            <pkgName>com.KillerBeanStudios.KillerBeanUnleashed</pkgName>
+            <pkgName>com.imangi.templerun2</pkgName>
+            <pkgName>com.rioo.runnersubway</pkgName>
+            <pkgName>com.playrix.homescapes</pkgName>
+            <pkgName>com.sweetfuirt.candy</pkgName>
+            <pkgName>com.ea.gp.fifamobile</pkgName>
+            <pkgName>com.regexsoft.soccer.worldcup</pkgName>
+            <pkgName>com.ansangha.drjb</pkgName>
+            <pkgName>com.tonielrosoft.classicludofree</pkgName>
+            <pkgName>com.touchtao.soccerkinggoogle</pkgName>
+        </string-array>
+        <string-array scenario="online_video">
+            <pkgName>com.google.android.apps.youtube.mango</pkgName>
+            <pkgName>org.videolan.vlc</pkgName>
+            <pkgName>com.multichoice.dstvselfservice</pkgName>
+            <pkgName>com.mxtech.videoplayer.ad</pkgName>
+            <pkgName>com.uc.vmate</pkgName>
+            <pkgName>com.quvideo.xiaoying</pkgName>
+        </string-array>
+        <string-array scenario="online_music">
+            <pkgName>music.player.material.design.visualizer.equalizer.bass.boost</pkgName>
+            <pkgName>com.audiomack</pkgName>
+            <pkgName>com.shazam.android</pkgName>
+        </string-array>
+    </scenario-config>
+
+    <standard-config>
+        <params scenario="social" current="410" time ="95"/>
+        <params scenario="web_browse" current="395" time ="30"/>
+        <params scenario="call" current="156" time ="35"/>
+        <params scenario="screen_operation" current="361" time ="10"/>
+        <params scenario="camera" current="573" time ="20"/>
+        <params scenario="games" current="495" time ="15"/>
+        <params scenario="online_video" current="386" time ="35"/>
+        <params scenario="online_music" current="120" time ="85"/>
+        <params scenario="standby" current="27.8" time ="665"/>
+    </standard-config>
+</powerSensorStats>

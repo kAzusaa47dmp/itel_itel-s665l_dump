@@ -1,0 +1,168 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+/*
+ * Copyright (C) 2012 The Androscene Open Source Project
+ *
+ * Licensed under the Apache License, Version 2.0 (the "License");
+ * you may not use this file except in compliance with the License.
+ * You may obtain a copy of the License at
+ *
+ *      http://www.apache.org/licenses/LICENSE-2.0
+ *
+ * Unless required by applicable law or agreed to in writing, software
+ * distributed under the License is distributed on an "AS IS" BASIS,
+ * WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+ * See the License for the specific language governing permissions and
+ * limitations under the License.
+ */
+ -->
+
+<power>
+    <mode name="normal">
+        <scene name="fixed_performance">
+            <set path="/sys/class/devfreq/scene-frequency/sprd-governor" file="scene_boost_dfs" value="max" />
+        </scene>
+        <scene name="interaction_launch">
+            <set path="/sys/devices/system/cpu/cpufreq/policy0" file="scaling_min_freq" value="1820000" />
+            <set path="/sys/devices/system/cpu/cpufreq/policy0" file="scaling_max_freq" value="1820000" />
+            <set path="/sys/devices/system/cpu/cpufreq/policy6" file="scaling_min_freq" value="2028000" />
+            <set path="/sys/devices/system/cpu/cpufreq/policy6" file="scaling_max_freq" value="2028000" />
+            <set path="/sys/class/devfreq/scene-frequency/sprd-governor" file="scene_boost_dfs" value="max" />
+        </scene>
+        <scene name="interaction_fling">
+	    <set path="/sys/devices/system/cpu/sprd_isolation/core_crl_cluster0" file="min_cpus" value="3" />
+            <set path="/sys/devices/system/cpu/cpufreq/policy0" file="scaling_min_freq" value="1820000" />
+            <set path="/sys/devices/system/cpu/cpufreq/policy0" file="scaling_max_freq" value="1820000" />
+            <set path="/sys/devices/system/cpu/cpufreq/policy6" file="scaling_min_freq" value="2028000" />
+            <set path="/sys/devices/system/cpu/cpufreq/policy6" file="scaling_max_freq" value="2028000" />
+	    <set path="/sys/class/devfreq/scene-frequency/sprd-governor" file="scene_boost_dfs" value="max" />
+	    <!-- SPD: add for KHQHTL-3489 by ke.you at 20220507 start -->
+            <set path="subsys" file="uclamp" value="conf_1" />
+            <!-- SPD: add for KHQHTL-3489 by ke.you at 20220507 end -->
+        </scene>
+        <scene name="interaction_wakeup">
+            <set path="/sys/devices/system/cpu/cpufreq/policy0" file="scaling_min_freq" value="1820000" />
+            <set path="/sys/devices/system/cpu/cpufreq/policy0" file="scaling_max_freq" value="1820000" />
+        </scene>
+        <scene name="benchmark">
+            <!-- SPD: add cpu max by fan.feng1 at 20221223 start -->
+            <set path="/sys/devices/system/cpu/cpufreq/policy0" file="scaling_min_freq" value="1820000" />
+            <set path="/sys/devices/system/cpu/cpufreq/policy0" file="scaling_max_freq" value="1820000" />
+            <set path="/sys/devices/system/cpu/cpufreq/policy6" file="scaling_min_freq" value="2028000" />
+            <set path="/sys/devices/system/cpu/cpufreq/policy6" file="scaling_max_freq" value="2028000" />
+	    <set path="/sys/class/devfreq/scene-frequency/sprd-governor" file="backdoor" value="1" />
+	    <!-- SPD: add cpu max by fan.feng1 at 20221223 end -->
+        </scene>
+        <scene name="ddr">
+            <set path="/sys/class/devfreq/scene-frequency/sprd-governor" file="scene_boost_dfs" value="max" />
+        </scene>
+        <scene name="launch" >
+	    <set path="/sys/devices/system/cpu/sprd_isolation/core_crl_cluster0" file="min_cpus" value="3" />	
+            <set path="/sys/devices/system/cpu/cpufreq/policy0" file="scaling_min_freq" value="1820000" />
+            <set path="/sys/devices/system/cpu/cpufreq/policy0" file="scaling_max_freq" value="1820000" />
+            <set path="/sys/devices/system/cpu/cpufreq/policy6" file="scaling_min_freq" value="2028000" />
+            <set path="/sys/devices/system/cpu/cpufreq/policy6" file="scaling_max_freq" value="2028000" />
+            <set path="/sys/class/devfreq/scene-frequency/sprd-governor" file="scene_boost_dfs" value="max" />
+            <!-- SPD: disable cpu idle durning launch by haoran.chen at 20230419 start -->
+            <set path="/sys/devices/system/cpu/cpu0/cpuidle/state1" file="disable" value="1" />
+            <set path="/sys/devices/system/cpu/cpu1/cpuidle/state1" file="disable" value="1" />
+            <set path="/sys/devices/system/cpu/cpu2/cpuidle/state1" file="disable" value="1" />
+            <set path="/sys/devices/system/cpu/cpu3/cpuidle/state1" file="disable" value="1" />
+            <set path="/sys/devices/system/cpu/cpu4/cpuidle/state1" file="disable" value="1" />
+            <set path="/sys/devices/system/cpu/cpu5/cpuidle/state1" file="disable" value="1" />
+            <set path="/sys/devices/system/cpu/cpu6/cpuidle/state1" file="disable" value="1" />
+            <set path="/sys/devices/system/cpu/cpu7/cpuidle/state1" file="disable" value="1" />
+            <!-- SPD: disable cpu idle durning launch by haoran.chen at 20230419 end -->
+	    <!-- SPD: add for KHQHTL-3489 by ke.you at 20220507 start -->
+	    <set path="subsys" file="uclamp" value="conf_1" />
+	    <!-- SPD: add for KHQHTL-3489 by ke.you at 20220507 end -->
+        </scene>
+        <scene name="screen_rotation" >
+            <set path="/sys/class/devfreq/scene-frequency/sprd-governor" file="scene_boost_dfs" value="max" />
+        </scene>
+        <scene name="performance" >
+            <set path="/sys/devices/system/cpu/sprd_isolation/core_crl_cluster0" file="min_cpus" value="3" />
+            <set path="/sys/devices/system/cpu/cpufreq/policy0" file="scaling_min_freq" value="1820000" />
+            <set path="/sys/devices/system/cpu/cpufreq/policy0" file="scaling_max_freq" value="1820000" />
+            <set path="/sys/class/devfreq/scene-frequency/sprd-governor" file="scene_boost_dfs" value="max" />
+        </scene>
+        <scene name="performance_gts" >
+            <set path="/sys/devices/system/cpu/sprd_isolation/core_crl_cluster0" file="min_cpus" value="3" />
+            <set path="/sys/devices/system/cpu/cpufreq/policy0" file="scaling_min_freq" value="1820000" />
+            <set path="/sys/devices/system/cpu/cpufreq/policy0" file="scaling_max_freq" value="1820000" />
+            <set path="/sys/class/devfreq/scene-frequency/sprd-governor" file="scene_boost_dfs" value="max" />
+        </scene>
+        <scene name="performance_cts" >
+            <set path="/sys/devices/system/cpu/sprd_isolation/core_crl_cluster0" file="min_cpus" value="3" />
+            <set path="/sys/devices/system/cpu/cpufreq/policy0" file="scaling_min_freq" value="1820000" />
+            <set path="/sys/devices/system/cpu/cpufreq/policy0" file="scaling_max_freq" value="1820000" />
+            <set path="/sys/class/devfreq/scene-frequency/sprd-governor" file="scene_boost_dfs" value="max" />
+        </scene>
+        <scene name="camera_perf" >
+            <set path="/sys/devices/system/cpu/cpufreq/policy0" file="scaling_min_freq" value="1820000" />
+            <set path="/sys/devices/system/cpu/cpufreq/policy0" file="scaling_max_freq" value="1820000" />
+            <set path="/sys/devices/system/cpu/cpufreq/policy6" file="scaling_min_freq" value="2028000" />
+            <set path="/sys/devices/system/cpu/cpufreq/policy6" file="scaling_max_freq" value="2028000" />
+        </scene>
+        <scene name="camera_lowpower" >
+        </scene>
+        <scene name="camera_lowpower_1" >
+        </scene>
+        <scene name="video_60fps" >
+            <set path="/sys/devices/system/cpu/cpufreq/policy0" file="scaling_min_freq" value="1820000" />
+            <set path="/sys/devices/system/cpu/cpufreq/policy0" file="scaling_max_freq" value="1820000" />
+            <set path="/sys/devices/system/cpu/cpufreq/policy6" file="scaling_min_freq" value="2028000" />
+            <set path="/sys/devices/system/cpu/cpufreq/policy6" file="scaling_max_freq" value="2028000" />
+            <set path="/sys/class/devfreq/scene-frequency/sprd-governor" file="scene_boost_dfs" value="max" />
+        </scene>
+        <scene name="radio_nviot" >
+            <set path="/sys/devices/system/cpu/sprd_isolation/core_crl_cluster0" file="min_cpus" value="3" />
+            <set path="/sys/devices/system/cpu/cpufreq/policy0" file="scaling_min_freq" value="1820000" />
+            <set path="/sys/devices/system/cpu/cpufreq/policy0" file="scaling_max_freq" value="1820000" />
+        </scene>
+        <scene name="com.futuremark.pcmark.android.benchmark" >
+            <set path="/sys/devices/system/cpu/cpufreq/policy0" file="scaling_min_freq" value="1820000" />
+            <set path="/sys/devices/system/cpu/cpufreq/policy0" file="scaling_max_freq" value="1820000" />
+            <set path="/sys/devices/system/cpu/cpufreq/policy6" file="scaling_min_freq" value="2028000" />
+            <set path="/sys/devices/system/cpu/cpufreq/policy6" file="scaling_max_freq" value="2028000" />
+        </scene>
+        <scene name="com.andromeda.androbench2" >
+        </scene>
+        <scene name="screen_off" >
+            <set path="/sys/devices/system/cpu/cpufreq/policy6" file="scaling_max_freq" value="2028000" />
+            <set path="/sys/devices/system/cpu/cpufreq/policy6/schedutil/" file="freq_margin" value="0" />
+        </scene>
+        <scene name="mtp_usb" >
+            <set path="/sys/devices/system/cpu/cpu0/cpuidle/state1" file="disable" value="1" />
+            <set path="/sys/devices/system/cpu/cpu1/cpuidle/state1" file="disable" value="1" />
+            <set path="/sys/devices/system/cpu/cpu2/cpuidle/state1" file="disable" value="1" />
+            <set path="/sys/devices/system/cpu/cpu3/cpuidle/state1" file="disable" value="1" />
+            <set path="/sys/devices/system/cpu/cpu4/cpuidle/state1" file="disable" value="1" />
+            <set path="/sys/devices/system/cpu/cpu5/cpuidle/state1" file="disable" value="1" />
+            <set path="/sys/devices/system/cpu/cpu6/cpuidle/state1" file="disable" value="1" />
+            <set path="/sys/devices/system/cpu/cpu7/cpuidle/state1" file="disable" value="1" />
+        </scene>
+	<scene name="boost_ta" >
+        </scene>
+        <scene name="sched_rate_us" >
+            <set path="/sys/devices/system/cpu/cpufreq/policy0/schedutil" file="rate_limit_us" value="0" />
+            <set path="/sys/devices/system/cpu/cpufreq/policy6/schedutil" file="rate_limit_us" value="0" />
+        </scene>
+        <!-- SPD: add turbo ddr boost by fan.feng1 at 20221223 start -->
+        <scene name="dram_turbo" >
+            <set path="/sys/class/devfreq/scene-frequency/sprd-governor" file="backdoor" value="1" />
+        </scene>
+        <!-- SPD: add turbo ddr boost by fan.feng1 at 20221223 end -->
+        <scene name="fingerprint" >
+            <set path="/sys/devices/system/cpu/cpufreq/policy0" file="scaling_min_freq" value="1820000" />
+            <set path="/sys/devices/system/cpu/cpufreq/policy0" file="scaling_max_freq" value="1820000" />
+            <set path="/sys/devices/system/cpu/cpufreq/policy6" file="scaling_min_freq" value="2028000" />
+            <set path="/sys/devices/system/cpu/cpufreq/policy6" file="scaling_max_freq" value="2028000" />
+            <set path="/sys/class/devfreq/scene-frequency/sprd-governor" file="scene_boost_dfs" value="max" />
+        </scene>
+    </mode>
+    <mode name="low_power" />
+    <mode name="power_save" />
+    <mode name="ultra_power_save" />
+    <mode name="performance" />
+</power>

@@ -1,0 +1,21 @@
+on boot
+    chown system system /dev/tranlog_kernel
+    chmod 0666 /dev/tranlog_kernel
+    chown system system /dev/tranlog_user
+    chmod 0666 /dev/tranlog_user
+    chown system system /dev/tranlog_ctl
+    chmod 0666 /dev/tranlog_ctl
+    chown system system /sys/kernel/tranv/nvlist
+    chmod 0666 /sys/kernel/tranv/nvlist
+
+on post-fs-data
+    mkdir /data/vendor/tranlog/ 0755 system system
+
+on property:sys.boot_completed=1
+    start tranlog
+
+service tranlog /vendor/bin/tranlog
+    class core
+    user system
+    group system
+    disabled

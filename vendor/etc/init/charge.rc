@@ -1,0 +1,31 @@
+on property:ro.bootmode=charger
+    mkdir /mnt/vendor 0771 system system
+    mount ext4 /dev/block/by-name/prodnv /mnt/vendor
+    mount_all /vendor/etc/fstab.charge_mode --early
+    chown system system /mnt/vendor
+    chmod 0771 /mnt/vendor
+    chmod 664 /sys/power/wakeup_count
+    class_start thermal
+    class_start charged_server
+
+on property:ro.debuggable=1
+    start console
+
+on charger
+    wait_for_prop vendor.all.modules.ready 1
+    start vendor.charge
+
+service vendor.charge /vendor/bin/charge
+    group input system
+    user root
+    oneshot
+
+service vendor.thermald.chg /vendor/bin/thermald
+    class thermal
+    user root
+    group system
+
+service vendor.charged.server /vendor/bin/charged
+    class charged_server
+    user root
+    group system

@@ -1,0 +1,174 @@
+{
+    "NIGHT": {
+        "FRONT_MAIN_1": {
+            "HEAD_INFO": {
+                "TRIGGER_GAIN_1": 800,
+                "TRIGGER_GAIN_2": 1600,
+                "TRIGGER_GAIN_3": 2400,
+                "TRIGGER_GAIN_4": 3200,
+                "TRIGGER_GAIN_5": 4800,
+                "TRIGGER_GAIN_6": 6400
+            },
+            "PROFILE_1": {
+                "HFS_UNDER_EXPOSURE_AREA": 0.05,
+                "HFS_OVER_EXPOSURE_AREA": 0.0001,
+                "HFS_UNDER_EXPOSURE_THRES": 32,
+                "HFS_OVER_EXPOSURE_THRES": 235,
+                "HFS_FACE_UNDER_EXPOSURE_AREA": 0.05,
+                "HFS_FACE_OVER_EXPOSURE_AREA": 0.0001,
+                "HFS_FACE_UNDER_EXPOSURE_THRES": 32,
+                "HFS_FACE_OVER_EXPOSURE_THRES": 235,
+                "HGD_FIRST_THRESHOLD": 0.25,
+                "HGD_DILATE_SIZE": 3,
+                "HGD_GAUSSIAN_WINDOW_SIZE": 3,
+                "ALIGN_MOVE_THRES": 120,
+                "FHF_TWO_FUSION_GF_SIZE": 25,
+                "HDR_WALL_OVER_EXPO_THRES": 240,
+                "HDR_PYR_LIGHT_PROTECT_THRES": 220,
+                "HDR_PYR_DARK_PROTECT_THRES": 20,
+                "TM_SATURATION_ADJUST_RATIO": 0.0,
+                "TM_HL_SATURATION_ADJUST_RATIO": 0.0,
+                "TM_CONTRAST_DEGREE": 0.4,
+                "TM_BRIGHTAREA_DETAILS_ENHANCE_RATIO": 0.0,
+                "TM_DARKAREA_DETAILS_ENHANCE_RATIO": 1.0,
+                "FHF_FOREGROUND_BRIGHTEN_RATIO": 0.65,
+                "TM_FACE_CONTRAST_DEGREE": 0.4,
+                "TM_FACE_BRIGHTAREA_DETAILS_ENHANCE_RATIO": 0.0,
+                "TM_FACE_DARKAREA_DETAILS_ENHANCE_RATIO": 1.0,
+                "FHF_FACE_FOREGROUND_BRIGHTEN_RATIO": 0.65,
+                "FUSION_INTENSITY": 0.2,
+                "YDENOISE_HF": 0.32,
+                "YDENOISE_MF": 0.18,
+                "YDENOISE_LF": 0.18,
+                "UVDENOISE_INTENSITY": 0.4,
+                "SHARPEN_INTENSITY": 0.1,
+                "SHARPEN_DETAIL": 0.1,
+                "H_RATIO": 1.0,
+                "M_RATIO": 2.0,
+                "W_RATIO": 0.1,
+                "B_RATIO": 0.1,
+                "NOISE_STRENGTH": 0.0
+            },
+            "PROFILE_2": {
+                "TM_CONTRAST_DEGREE": 0.4,
+                "TM_FACE_CONTRAST_DEGREE": 0.4,
+                "SHARPEN_INTENSITY": 0.1
+            },
+            "PROFILE_3": {
+                "TM_CONTRAST_DEGREE": 0.4,
+                "TM_FACE_CONTRAST_DEGREE": 0.4,
+                "SHARPEN_INTENSITY": 0.1
+            },
+            "PROFILE_4": {
+                "TM_CONTRAST_DEGREE": 0.3,
+                "TM_FACE_CONTRAST_DEGREE": 0.3,
+                "SHARPEN_INTENSITY": 0.1
+            },
+            "PROFILE_5": {
+                "TM_CONTRAST_DEGREE": 0.2,
+                "TM_FACE_CONTRAST_DEGREE": 0.2,
+                "SHARPEN_INTENSITY": 0.1
+            },
+            "PROFILE_6": {
+                "TM_CONTRAST_DEGREE": 0.12,
+                "TM_FACE_CONTRAST_DEGREE": 0.12,
+                "SHARPEN_INTENSITY": 0.1
+            }
+        },
+        "REAR_MAIN_1": {
+            "HEAD_INFO": {
+                "TRIGGER_GAIN_1": 100,
+                "TRIGGER_GAIN_2": 400,
+                "TRIGGER_GAIN_3": 800,
+                "TRIGGER_GAIN_4": 1600,
+                "TRIGGER_GAIN_5": 3000,
+                "TRIGGER_GAIN_6": 4500
+            },
+            "PROFILE_1": {
+                "HDR_PYR_LIGHT_PROTECT_THRES": 220,
+                "HDR_PYR_DARK_PROTECT_THRES": 75,
+                "HDR_PYR_DARKEN_RATIO": 0.0,
+                "FHF_LOW_CORRECTION_STRENGTH": 0.0,
+                "HGD_FIRST_THRESHOLD": 0.15,
+                "TM_CONTRAST_DEGREE": 0.4,
+                "TM_FACE_CONTRAST_DEGREE": 0.6,
+                "TM_SATURATION_ADJUST_RATIO": 0.0,
+                "TM_HL_SATURATION_ADJUST_RATIO": 0.0,
+                "TM_BRIGHTAREA_DETAILS_ENHANCE_RATIO": 0.0,
+                "TM_FACE_BRIGHTAREA_DETAILS_ENHANCE_RATIO": 0.0,
+                "TM_FACE_DARKAREA_DETAILS_ENHANCE_RATIO": 1.0,
+                "TM_DARKAREA_DETAILS_ENHANCE_RATIO": 1.0,
+                "FHF_FOREGROUND_BRIGHTEN_RATIO": 0.6,
+                "FHF_FACE_FOREGROUND_BRIGHTEN_RATIO": 0.6,
+                "FUSION_INTENSITY": 0.13,
+                "YDENOISE_HF": 0.0,
+                "YDENOISE_MF": 0.1,
+                "YDENOISE_LF": 0.1,
+                "UVDENOISE_INTENSITY": 0.25,
+                "SHARPEN_INTENSITY": 0.3
+            },
+            "PROFILE_2": {
+                "HDR_PYR_LIGHT_PROTECT_THRES": 160,
+                "FUSION_INTENSITY": 0.15,
+                "YDENOISE_HF": 0.02,
+                "YDENOISE_MF": 0.1,
+                "YDENOISE_LF": 0.1,
+                "UVDENOISE_INTENSITY": 0.25,
+                "SHARPEN_INTENSITY": 0.3
+            },
+            "PROFILE_3": {
+                "HDR_PYR_LIGHT_PROTECT_THRES": 140,
+                "HGD_FIRST_THRESHOLD": 0.25,
+                "TM_BRIGHTAREA_DETAILS_ENHANCE_RATIO": 0.2,
+                "TM_DARKAREA_DETAILS_ENHANCE_RATIO": 1.0,
+                "FHF_FOREGROUND_BRIGHTEN_RATIO": 0.0,
+                "FUSION_INTENSITY": 0.18,
+                "YDENOISE_HF": 0.06,
+                "YDENOISE_MF": 0.1,
+                "YDENOISE_LF": 0.1,
+                "UVDENOISE_INTENSITY": 0.24,
+                "SHARPEN_INTENSITY": 0.25
+            },
+            "PROFILE_4": {
+                "HDR_PYR_LIGHT_PROTECT_THRES": 140,
+                "HGD_FIRST_THRESHOLD": 0.25,
+                "TM_BRIGHTAREA_DETAILS_ENHANCE_RATIO": 0.2,
+                "TM_DARKAREA_DETAILS_ENHANCE_RATIO": 1.0,
+                "FHF_FOREGROUND_BRIGHTEN_RATIO": 0.72,
+                "HF_BODY_MASK_BLEND_RATIO": 0.42,
+                "FUSION_INTENSITY": 0.21,
+                "YDENOISE_HF": 0.1,
+                "YDENOISE_MF": 0.12,
+                "YDENOISE_LF": 0.12,
+                "SHARPEN_INTENSITY": 0.25,
+                "UVDENOISE_INTENSITY": 0.4
+            },
+            "PROFILE_5": {
+                "HDR_PYR_LIGHT_PROTECT_THRES": 120,
+                "HGD_FIRST_THRESHOLD": 0.25,
+                "TM_BRIGHTAREA_DETAILS_ENHANCE_RATIO": 0.2,
+                "TM_DARKAREA_DETAILS_ENHANCE_RATIO": 1.0,
+                "FHF_FOREGROUND_BRIGHTEN_RATIO": 0.72,
+                "FUSION_INTENSITY": 0.29,
+                "YDENOISE_HF": 0.1,
+                "YDENOISE_MF": 0.12,
+                "YDENOISE_LF": 0.12,
+                "UVDENOISE_INTENSITY": 0.4,
+                "SHARPEN_INTENSITY": 0.25
+            },
+            "PROFILE_6": {
+                "HDR_PYR_LIGHT_PROTECT_THRES": 120,
+                "HGD_FIRST_THRESHOLD": 0.25,
+                "TM_BRIGHTAREA_DETAILS_ENHANCE_RATIO": 0.4,
+                "TM_DARKAREA_DETAILS_ENHANCE_RATIO": 0.9,
+                "FHF_FOREGROUND_BRIGHTEN_RATIO": 0.72,
+                "FUSION_INTENSITY": 0.29,
+                "YDENOISE_HF": 0.14,
+                "YDENOISE_MF": 0.18,
+                "YDENOISE_LF": 0.18,
+                "UVDENOISE_INTENSITY": 0.3,
+                "SHARPEN_INTENSITY": 0.25
+            }
+        }
+    }
+}

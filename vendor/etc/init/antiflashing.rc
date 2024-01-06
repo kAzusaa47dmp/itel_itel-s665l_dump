@@ -1,0 +1,5 @@
+service antiflashing /vendor/bin/antiflashing
+    class main
+    user system
+    group system root
+    oneshot

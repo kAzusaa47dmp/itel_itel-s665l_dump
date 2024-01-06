@@ -1,0 +1,11 @@
+on fs
+    write /proc/bootprof "INIT:storage_feature_cloudctl--start"
+    start storage_feature_cloudctl
+
+service storage_feature_cloudctl /vendor/bin/storage_feature_cloudctl
+    user root
+    group system
+    oneshot
+    disabled
+
+

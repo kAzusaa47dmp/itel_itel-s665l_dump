@@ -1,0 +1,27 @@
+#STD:add XLLWCHLYEL-738 kfp by hao.lv5 20220907 start
+on init
+
+    # dir
+    write /dev/kfp "_dir/data/data/"
+    write /dev/kfp "_dir/data/misc/vold/user_keys/de/0/"
+    write /dev/kfp "_dir/data/system/users/"
+    write /dev/kfp "_dir/data/unencrypted/key/"
+    write /dev/kfp "_dir/data/user/0/com.android.managedprovisioning/files/"
+    write /dev/kfp "_dir/data/user/0/com.android.providers.contacts/databases/"
+    write /dev/kfp "_dir/data/user/0/com.android.keychain/"
+    write /dev/kfp "_dir/data/app/"
+
+    # file
+    write /dev/kfp "_file/calllog.db"
+    write /dev/kfp "_file/calllog.db-journal"
+    write /dev/kfp "_file/0.xml"
+    write /dev/kfp "_file/packages.xml"
+    write /dev/kfp "_file/packages-backup.xml"
+    write /dev/kfp "_file/roles.xml"
+    write /dev/kfp "_file/runtime-permissions.xml"
+    write /dev/kfp "_file/userlist.xml"
+    write /dev/kfp "_file/appops.xml"
+
+#STD:add XLLWCHLYEL-738 kfp by hao.lv5 20220907 end
+
+

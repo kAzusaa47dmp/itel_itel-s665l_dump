@@ -1,0 +1,51 @@
+on init
+    chown root system /sys/power/pnpmgr/ams/activity
+    chmod 0664 /sys/power/pnpmgr/ams/activity
+    chown root system /sys/power/pnpmgr/ams/process
+    chmod 0664 /sys/power/pnpmgr/ams/process
+    chown root system /sys/power/pnpmgr/ams/process_list
+    chmod 0664 /sys/power/pnpmgr/ams/process_list
+    chown root system /sys/power/pnpmgr/ams/adj
+    chmod 0664 /sys/power/pnpmgr/ams/adj
+    chown root system /sys/power/pnpmgr/ams/foreground
+    chmod 0664 /sys/power/pnpmgr/ams/foreground
+    chown root system /sys/power/pnpmgr/ams/foreground_list
+    chmod 0664 /sys/power/pnpmgr/ams/foreground_list
+    chown root system /sys/power/pnpmgr/ams/ime
+    chmod 0664 /sys/power/pnpmgr/ams/ime
+    chown root system /sys/power/pnpmgr/ams/mode_ctl
+    chmod 0664 /sys/power/pnpmgr/ams/mode_ctl
+    chown root system /sys/power/pnpmgr/ams/usage
+    chmod 0664 /sys/power/pnpmgr/ams/usage
+    chown root system /sys/power/pnpmgr/install
+    chmod 0664 /sys/power/pnpmgr/install
+    chown root system /sys/power/pnpmgr/mwn
+    chmod 0664 /sys/power/pnpmgr/mwn
+    chown root system /sys/module/lowmemorykiller/parameters/enable_adaptive_lmk
+    chmod 0664 /sys/module/lowmemorykiller/parameters/enable_adaptive_lmk
+    chown root system /sys/module/lowmemorykiller/parameters/vmpressure_file_min
+    chmod 0664 /sys/module/lowmemorykiller/parameters/vmpressure_file_min
+    chown root system /sys/module/lowmemorykiller/parameters/minfree
+    chmod 0664 /sys/module/lowmemorykiller/parameters/minfree
+    chown root system /sys/module/lowmemorykiller/parameters/adj
+    chmod 0664 /sys/module/lowmemorykiller/parameters/adj
+
+    mkdir /dev/blkio
+    mount cgroup none /dev/blkio blkio
+    mkdir /dev/blkio/pnpmgr_topapp
+    mkdir /dev/blkio/pnpmgr_bg
+    mkdir /dev/cpuctl/pnpmgr_bg
+    mkdir /dev/cpuctl/pnpmgr_fg
+
+    chmod 0550 /dev/cg2_bpf
+    mkdir /dev/cg2_bpf/pnpmgr_fg
+    mkdir /dev/cg2_bpf/pnpmgr_bg
+
+on property:sys.boot_completed=1
+    start pnpmgr
+
+service pnpmgr /vendor/bin/pnpmgr
+    class core
+    user root
+    group root system
+    disabled

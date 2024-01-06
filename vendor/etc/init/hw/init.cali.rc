@@ -1,0 +1,59 @@
+on cali
+    mount_all /vendor/etc/fstab.cali
+    mount tmpfs tmpfs /data mode=0777
+
+    trigger load_persist_props_action
+
+    setprop sys.usb.configfs 1
+
+    wait_for_prop vendor.all.modules.ready 1
+    trigger cali-fs
+    trigger cali-start
+#STD: Add cmd to anti corss by ying.liu8 20221209 start
+    mkdir /mnt/vendor/productinfo/finstatus 0700 root root
+    chmod 0777 /mnt/vendor/productinfo/finstatus
+#STD: Add cmd to anti corss by ying.liu8 20221209 end
+#STD: Add cmd to sar flag by chunyan.tang 20230321 start
+    mkdir /mnt/vendor/productinfo/sarflag 0700 root root
+    chmod 0777 /mnt/vendor/productinfo/sarflag
+#STD: Add cmd to sar flag by chunyan.tang 20230321 end
+
+on cali-fs
+    chmod 0775 /mnt/vendor
+    chown system system /mnt/vendor
+    chmod 0771 /data
+
+    mkdir /data/vendor 0751 root root
+    mkdir /data/vendor/local 0751 root root
+    mkdir /data/vendor/local/media 0770 audioserver system
+
+    mkdir /data/vendor/local/mlogservice 0770 shell system
+
+    chmod 0660 /sys/power/wakeup_count
+#add XLLSHLSSP-17 by wenxin.xiong for mmc ffu start
+    restorecon_recursive /tranfs
+    mkdir /tranfs/ffu 0700 system shell
+    chmod 0777 /tranfs/ffu
+#add XLLSHLSSP-17 by wenxin.xiong for mmc ffu end
+#STD add MemTestConfig dir for transfer dynamic sorting config file by hongkuan.ji at 20221215 start
+    mkdir /tranfs/MemTestConfig 0700 system shell
+    chmod 0777 /tranfs/MemTestConfig
+#STD add MemTestConfig dir for transfer dynamic sorting config file by hongkuan.ji at 20221215 end
+#STD:add XLLWCHLYEL-738 kfp by hao.lv5 20220907 start
+    restorecon_recursive /tranfs
+    mkdir /tranfs/tranf2fs 0700 root shell
+    chmod 0771 /tranfs/tranf2fs
+    mkdir /tranfs/tranf2fs/kfp 0700 root shell
+    chmod 0771 /tranfs/tranf2fs/kfp
+#STD:add XLLWCHLYEL-738 kfp by hao.lv5 20220907 end
+on cali-start
+    class_start cali
+    
+    start vendor.audio-hal-2-0
+    start vendor.engpcclientlte
+    start vendor.modem_control
+    start vendor.refnotify
+    start console
+    start system_suspend
+
+    insmod ${ro.vendor.ko.mount.point}/odmko/adaptive-ts.ko

@@ -1,0 +1,23 @@
+on boot
+    chown root system /sys/kernel/fpsmgr/activity
+    chmod 0664 /sys/kernel/fpsmgr/activity
+    chown root system /sys/kernel/fpsmgr/boost_mode
+    chmod 0664 /sys/kernel/fpsmgr/boost_mode
+    chown root system /sys/kernel/fpsmgr/fpsmgr_enable
+    chmod 0664 /sys/kernel/fpsmgr/fpsmgr_enable
+    chown root system /sys/kernel/fpsmgr/fpsmgr_cloud_switch
+    chmod 0664 /sys/kernel/fpsmgr/fpsmgr_cloud_switch
+
+on post-fs-data
+   mkdir /data/vendor/fpsmgr/ 0755 root system
+
+on property:vendor.prop.turbo.cloud=1
+    stop fpsmgr
+
+on property:vendor.prop.turbo.cloud=2
+    start fpsmgr
+
+service fpsmgr /vendor/bin/fpsmgr
+    class core
+    user root
+    group root system

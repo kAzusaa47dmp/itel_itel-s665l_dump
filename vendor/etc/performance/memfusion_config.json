@@ -1,0 +1,100 @@
+{
+    "version": 2,
+    "product": "default",
+    "up_time": 20220530,
+    "ram_2": {
+        "memfusion_total_mem": {
+            "mem_adj_previous": 200,
+            "mem_adj_service_b": 300,
+            "mem_adj_cached": 500,
+            "mem_free_cached": 600,
+            "free_ram_threshold": 750,
+            "free_rom_threshold": 10000
+        },
+        "recent_task": 6,
+        "fusion_threshold": 3,
+        "forecast_list_threshold": 3,
+        "recent_list_threshold": 24,
+        "max_cached_process_threshold": 24,
+        "zram_drv_para_threshold": 10,
+        "vma_para_threshold": ["2", "4"],
+        "mnt_threthold": ["150", "48"],
+        "workingset_refault_para_threshold": 2000
+    },
+    "ram_3": {
+        "memfusion_total_mem": {
+            "mem_adj_previous": 300,
+            "mem_adj_service_b": 300,
+            "mem_adj_cached": 1200,
+            "mem_free_cached": 800,
+            "free_ram_threshold": 900,
+            "free_rom_threshold": 10000
+        },
+        "recent_task": 10,
+        "fusion_threshold": 6,
+        "forecast_list_threshold": 8,
+        "recent_list_threshold": 32,
+        "max_cached_process_threshold": 24,
+        "zram_drv_para_threshold": 10,
+        "vma_para_threshold": ["1", "2"],
+        "mnt_threthold": ["104", "24"],
+        "workingset_refault_para_threshold": 1000
+    },
+    "ram_4": {
+        "memfusion_total_mem": {
+            "mem_adj_previous": 200,
+            "mem_adj_service_b": 300,
+            "mem_adj_cached": 1536,
+            "mem_free_cached": 1024,
+            "free_ram_threshold": 1200,
+            "free_rom_threshold": 10000
+        },
+        "recent_task": 13,
+        "fusion_threshold": 6,
+        "forecast_list_threshold": 9,
+        "recent_list_threshold": 40,
+        "max_cached_process_threshold": 40,
+        "zram_drv_para_threshold": 10,
+        "vma_para_threshold": ["2", "3"],
+        "mnt_threthold": ["80", "24"],
+        "workingset_refault_para_threshold": 2000
+    },
+    "ram_6": {
+        "memfusion_total_mem": {
+            "mem_adj_previous": 300,
+            "mem_adj_service_b": 500,
+            "mem_adj_cached": 2000,
+            "mem_free_cached": 1024,
+            "free_ram_threshold": 2200,
+            "free_rom_threshold": 10000
+        },
+        "recent_task": 16,
+        "fusion_threshold": 14,
+        "forecast_list_threshold": 10,
+        "recent_list_threshold": 48,
+        "max_cached_process_threshold": 40,
+        "zram_drv_para_threshold": 10,
+        "vma_para_threshold": ["1", "3"],
+        "mnt_threthold": ["180", "64"],
+        "workingset_refault_para_threshold": 2500
+    },
+    "ram_8": {
+        "memfusion_total_mem": {
+            "mem_adj_previous": 1024,
+            "mem_adj_service_b": 1024,
+            "mem_adj_cached": 2048,
+            "mem_free_cached": 1024,
+            "free_ram_threshold": 3000,
+            "free_rom_threshold": 10000
+        },
+        "recent_task": 20,
+        "fusion_threshold": 9,
+        "forecast_list_threshold": 9,
+        "recent_list_threshold": 48,
+        "max_cached_process_threshold": 48,
+        "zram_drv_para_threshold": 10,
+        "vma_para_threshold": ["-1", "1"],
+        "mnt_threthold": ["72", "24"],
+        "workingset_refault_para_threshold": 0
+    }
+}

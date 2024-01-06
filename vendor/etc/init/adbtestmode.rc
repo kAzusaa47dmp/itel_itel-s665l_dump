@@ -1,0 +1,22 @@
+# IB-18640212-shengkun, 2018-11-07, add for enable adb
+on boot
+    exec - root system -- /vendor/bin/adbtestmode
+
+on property:debug.adbtestmode.enabled=true
+    exec - root system -- /vendor/bin/adbtestmode 1
+
+on property:debug.adbtestmode.enabled=false
+    exec - root system -- /vendor/bin/adbtestmode 0
+
+on property:debug.sysdump.enabled=true
+   setprop vendor.debug.sysdump.enabled true
+
+on property:debug.sysdump.enabled=false
+   setprop vendor.debug.sysdump.enabled false
+
+on property:persist.vendor.itel.adbmode=true
+   setprop persist.sys.usb.config "adb"
+
+on property:persist.vendor.itel.adbmode=false
+   setprop persist.sys.usb.config "none"
+

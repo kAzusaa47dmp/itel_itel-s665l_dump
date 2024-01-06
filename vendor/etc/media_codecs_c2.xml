@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!-- Copyright 2018 The Android Open Source Project
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+<MediaCodecs>
+    <Decoders>
+        <MediaCodec name="c2.android.avc.decoder" type="video/avc" variant="slow-cpu,!slow-cpu" update="true">
+                <Limit name="size" min="2x2" max="1280x1280" />
+        </MediaCodec>
+
+        <MediaCodec name="c2.android.hevc.decoder" type="video/hevc" variant="slow-cpu,!slow-cpu"  update="true">
+                <Limit name="size" min="2x2" max="1280x1280" />
+        </MediaCodec>
+
+    </Decoders>
+    <Decoders>
+        <MediaCodec name="c2.unisoc.hevc.decoder" type="video/hevc">
+<!-- add SLLWFA-779 by wenxian.huang at 20230215 start -->
+            <Alias name="OMX.sprd.h265.decoder" />
+<!-- add SLLWFA-779 by wenxian.huang at 20230215 end -->
+            <Limit name="size" min="64x64" max="1920x3840" />
+            <Limit name="alignment" value="2x2" />
+            <Limit name="block-size" value="16x16" />
+            <Limit name="block-count" range="1-32640" />
+            <Limit name="blocks-per-second" range="1-1728000" />
+            <Limit name="bitrate" range="1-50000000" />
+            <Limit name="concurrent-instances" max="20" />
+            <Feature name="adaptive-playback" />
+        </MediaCodec>
+        <MediaCodec name="c2.unisoc.mpeg4.decoder" type="video/mp4v-es">
+<!-- add SLLWFA-779 by wenxian.huang at 20230215 start -->
+            <Alias name="OMX.sprd.mpeg4.decoder" />
+<!-- add SLLWFA-779 by wenxian.huang at 20230215 end -->
+            <Limit name="size" min="64x64" max="1920x2032" />
+            <Limit name="alignment" value="2x2" />
+            <Limit name="block-size" value="16x16" />
+            <Limit name="blocks-per-second" range="1-457200" />
+            <Limit name="bitrate" range="1-40000000" />
+            <Limit name="concurrent-instances" max="18" />
+            <Feature name="adaptive-playback" />
+        </MediaCodec>
+        <MediaCodec name="c2.unisoc.h263.decoder" type="video/3gpp">
+<!-- add SLLWFA-779 by wenxian.huang at 20230215 start -->
+            <Alias name="OMX.sprd.h263.decoder" />
+<!-- add SLLWFA-779 by wenxian.huang at 20230215 end -->
+            <Limit name="size" min="64x64" max="1920x2032" />
+            <Limit name="alignment" value="2x2" />
+            <Limit name="block-size" value="16x16" />
+            <Limit name="blocks-per-second" range="1-457200" />
+            <Limit name="bitrate" range="1-40000000" />
+            <Limit name="concurrent-instances" max="18" />
+            <Feature name="adaptive-playback" />
+        </MediaCodec>
+        <MediaCodec name="c2.unisoc.avc.decoder" type="video/avc">
+<!-- add SLLWFA-779 by wenxian.huang at 20230215 start -->
+            <Alias name="OMX.sprd.h264.decoder" />
+<!-- add SLLWFA-779 by wenxian.huang at 20230215 end -->
+            <Limit name="size" min="64x64" max="2048x3840" />
+            <Limit name="alignment" value="2x2" />
+            <Limit name="block-size" value="16x16" />
+            <Limit name="blocks-per-second" range="1-864000" />
+            <Limit name="bitrate" range="1-50000000" />
+            <Limit name="concurrent-instances" max="10" />
+            <Feature name="adaptive-playback" />
+        </MediaCodec>
+        <MediaCodec name="c2.unisoc.av1.decoder" type="video/av01">
+<!-- add SLLWFA-779 by wenxian.huang at 20230215 start -->
+            <Alias name="OMX.sprd.av1.decoder" />
+<!-- add SLLWFA-779 by wenxian.huang at 20230215 end -->
+            <Limit name="size" min="64x64" max="1280x720" />
+            <Limit name="alignment" value="2x2" />
+            <Limit name="block-size" value="16x16" />
+            <Limit name="blocks-per-second" range="1-2073600" />
+            <Limit name="bitrate" range="1-120000000" />
+            <Limit name="frame-rate" range="1-60" />
+            <Limit name="concurrent-instances" max="10" />
+            <Feature name="adaptive-playback" />
+        </MediaCodec>
+        <MediaCodec name="c2.unisoc.vp8.decoder" type="video/x-vnd.on2.vp8">
+<!-- add SLLWFA-779 by wenxian.huang at 20230215 start -->
+            <Alias name="OMX.sprd.vp8.decoder" />
+<!-- add SLLWFA-779 by wenxian.huang at 20230215 end -->
+            <Limit name="size" min="64x64" max="1920x1088" />
+            <Limit name="alignment" value="2x2" />
+            <Limit name="block-size" value="16x16" />
+            <Limit name="blocks-per-second" range="1-245760" />
+            <Limit name="bitrate" range="1-40000000" />
+            <Feature name="adaptive-playback" />
+        </MediaCodec>
+        <MediaCodec name="c2.unisoc.vp9.decoder" type="video/x-vnd.on2.vp9">
+<!-- add SLLWFA-779 by wenxian.huang at 20230215 start -->
+            <Alias name="OMX.sprd.vp9.decoder" />
+<!-- add SLLWFA-779 by wenxian.huang at 20230215 end -->
+            <Limit name="size" min="64x64" max="1920x3840" />
+            <Limit name="alignment" value="2x2" />
+            <Limit name="block-size" value="16x16" />
+            <Limit name="blocks-per-second" range="1-864000" />
+            <Limit name="bitrate" range="1-40000000" />
+            <Limit name="concurrent-instances" max="20" />
+            <Feature name="adaptive-playback" />
+        </MediaCodec>
+    </Decoders>
+
+    <Encoders>
+        <MediaCodec name="c2.unisoc.avc.encoder" type="video/avc">
+<!-- add SLLWFA-779 by wenxian.huang at 20230215 start -->
+            <Alias name="OMX.sprd.h264.encoder" />
+<!-- add SLLWFA-779 by wenxian.huang at 20230215 end -->
+            <Limit name="size" min="176x144" max="1920x3840" />
+            <Limit name="alignment" value="2x2" />
+            <Limit name="block-size" value="16x16" />
+            <Limit name="blocks-per-second" range="1-245760" />
+            <Limit name="bitrate" range="1-40000000" />
+        </MediaCodec>
+        <MediaCodec name="c2.unisoc.hevc.encoder" type="video/hevc">
+<!-- add SLLWFA-779 by wenxian.huang at 20230215 start -->
+            <Alias name="OMX.sprd.h265.encoder" />
+<!-- add SLLWFA-779 by wenxian.huang at 20230215 end -->
+            <Limit name="size" min="176x144" max="1920x3840" />
+            <Limit name="alignment" value="2x2" />
+            <Limit name="block-size" value="32x32" />
+            <Limit name="block-count" range="1-8160" />
+            <Limit name="blocks-per-second" range="1-244800" />
+            <Limit name="bitrate" range="1-25000000" />
+        </MediaCodec>
+    </Encoders>
+
+</MediaCodecs>

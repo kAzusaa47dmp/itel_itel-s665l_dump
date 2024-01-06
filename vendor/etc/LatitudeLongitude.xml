@@ -1,0 +1,420 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+ * SHENZHEN TRANSSION COMMUNICATION LIMITED TOP SECRET.
+ * Copyright (c) 2016-2036  SHENZHEN TRANSSION COMMUNICATION LIMITED
+ *
+ * PROPRIETARY RIGHTS of Shenzhen Transsion Communication Limited are involved in the
+ * subject matter of this material.  All manufacturing, reproduction, use,
+ * and sales rights pertaining to this subject matter are governed by the
+ * license agreement.  The recipient of this software implicitly accepts
+ * the terms of the license.
+ *
+ * Description:
+ * Author:
+ * Version:v1.0
+ * Date:
+ * Modification:
+ *
+ */
+-->
+
+<LatitudeLongitude>
+  <North_Africa>
+    <region name="EGYPT">
+	  <capital>Cairo</capital>
+	  <Latitude>31.283333</Latitude>
+	  <Longitude>30</Longitude>
+	</region>
+	<region name="SUDAN">
+	  <capital>Khartoum</capital>
+	  <Latitude>32.600000</Latitude>
+	  <Longitude>15.566667</Longitude>
+	</region>
+	<region name="SOUTH SUDAN">
+	  <capital>Juba</capital>
+	  <Latitude>24.450000</Latitude> 
+	  <Longitude>4.000000</Longitude>
+	</region>
+	<region name="LIBYA">
+	  <capital>Tripoli</capital>
+	  <Latitude>13.200000</Latitude> 
+	  <Longitude>32.966667</Longitude>
+	</region>  
+	<region name="TUNISIA">
+	  <capital>Tunis</capital>
+	  <Latitude>10.016667</Latitude> 
+	  <Longitude>36.783333</Longitude>
+	</region>
+	<region name="ALGERIA">
+	  <capital>Algiers</capital>
+	  <Latitude>3.216667</Latitude> 
+	  <Longitude>36.700000</Longitude>
+	</region>
+	<region name="MOROCCO">
+	  <capital>Casablanca</capital>
+	  <Latitude>-7.616667</Latitude> 
+	  <Longitude>33.600000</Longitude>
+	</region>
+  </North_Africa>
+  <East_Africa>
+	<region name="ETHIOPIA">
+	  <capital>Addis Ababa</capital>
+	  <Latitude>38.7</Latitude> 
+	  <Longitude>9.05</Longitude>
+	</region>
+	<region name="Eritrea">
+	  <capital>Asmara</capital>
+	  <Latitude>-38.9666666666667</Latitude> 
+	  <Longitude>15.0333333333333</Longitude>
+	</region>
+	<region name="Somalia">
+	  <capital>Mogadishu</capital>
+	  <Latitude>45.35</Latitude> 
+	  <Longitude>2.03333333333333</Longitude>
+	</region>
+	<region name="Djibouti">
+	  <capital>Djibouti</capital>
+	  <Latitude>42.0833333333333</Latitude> 
+	  <Longitude>12</Longitude>
+	</region>
+	<region name="Kenya">
+	  <capital>Nairobi</capital>
+	  <Latitude>36.816667</Latitude> 
+	  <Longitude>-1.283333</Longitude>
+	</region>
+	<region name="TANZANIA, UNITED REPUBLIC OF">
+	  <capital>Dar es Salaam</capital>
+	  <Latitude>39.300000</Latitude> 
+	  <Longitude>-6.850000</Longitude>
+	</region>
+	<region name="Uganda">
+	  <capital>Kampala</capital>
+	  <Latitude>32.583333</Latitude> 
+	  <Longitude>0.316667</Longitude>
+	</region>
+	<region name="Seychelles">
+	  <capital>Victoria</capital>
+	  <Latitude>55.466667</Latitude> 
+	  <Longitude>-4.066667</Longitude>
+	</region>
+	<region name="Rwanda">
+	  <capital>Kigali</capital>
+	  <Latitude>30.083333</Latitude> 
+	  <Longitude>-1.983333</Longitude>
+	</region>
+	<region name="burundi">
+	  <capital>Bujumbura</capital>
+	  <Latitude>29.350000</Latitude> 
+	  <Longitude>-3.366667</Longitude>
+	</region>
+  </East_Africa>
+  <West_Africa>
+	<region name="Mauritania">
+	  <capital>Nouakchott</capital>
+	  <Latitude>-15.966667</Latitude> 
+	  <Longitude>18.150000</Longitude>
+	</region>
+	<region name="Senegal">
+	  <capital>Dakar</capital>
+	  <Latitude>-17.450000</Latitude> 
+	  <Longitude>14.633333</Longitude>
+	</region>
+	<region name="Gambia">
+	  <capital>Banjul</capital>
+	  <Latitude>-16.650000</Latitude> 
+	  <Longitude>13.466667</Longitude>
+	</region>
+	<region name="Mali">
+	  <capital>Bamako</capital>
+	  <Latitude>-7.983333</Latitude> 
+	  <Longitude>12.066667</Longitude>
+	</region>
+	<region name="burkina faso">
+	  <capital>Ouagadougou</capital>
+	  <Latitude>-1.066667</Latitude> 
+	  <Longitude>12.033333</Longitude>
+	</region>
+	<region name="Guinea">
+	  <capital>Conakry</capital>
+	  <Latitude>-13.716667</Latitude> 
+	  <Longitude>9.050000</Longitude>
+	</region>
+	<region name="Guinea-Bissau">
+	  <capital>Bissau</capital>
+	  <Latitude>-15.650000</Latitude> 
+	  <Longitude>11.866667</Longitude>
+	</region>
+	<region name="Cape Verde">
+	  <capital>Praia</capital>
+	  <Latitude>-23.516667</Latitude> 
+	  <Longitude>14.916667</Longitude>
+	</region>
+	<region name="sierra leone">
+	  <capital>Freetown</capital>
+	  <Latitude>-13.283333</Latitude> 
+	  <Longitude>8.050000</Longitude>
+	</region>
+	<region name="Liberia">
+	  <capital>Monrovia</capital>
+	  <Latitude>-10.766667</Latitude> 
+	  <Longitude>6.033333</Longitude>
+	</region>
+	<region name="Cote d'Ivoire">
+	  <capital>Abidjan</capital>
+	  <Latitude>4.016667</Latitude> 
+	  <Longitude>5.316667</Longitude>
+	</region>
+	<region name="Ghana">
+	  <capital>Accra</capital>
+	  <Latitude>0.250000</Latitude> 
+	  <Longitude>5.550000</Longitude>
+	</region>
+	<region name="Togo">
+	  <capital>Lome</capital>
+	  <Latitude>1.350000</Latitude> 
+	  <Longitude>6.016667</Longitude>
+	</region>
+	<region name="Benin">
+	  <capital>Porto Novo</capital>
+	  <Latitude>2.783333</Latitude> 
+	  <Longitude>6.050000</Longitude>
+	</region>
+	<region name="Niger">
+	  <capital>Niamey</capital>
+	  <Latitude>2.083333</Latitude> 
+	  <Longitude>13.533333</Longitude>
+	</region>
+	<region name="Western Sahara">
+	  <capital>El Aaiun</capital>
+	  <Latitude>-13.200000</Latitude> 
+	  <Longitude>27.150000</Longitude>
+	</region>
+	<region name="Nigeria">
+	  <capital>Kano Nigeria</capital>
+	  <Latitude>8.516667</Latitude> 
+	  <Longitude>12.000000</Longitude>
+	</region>
+  </West_Africa>
+  <Central_African>
+	<region name="Chad">
+	  <capital>Ndjamena</capital>
+	  <Latitude>14.983333</Latitude> 
+	  <Longitude>12.016667</Longitude>
+	</region>
+	<region name="Central African Republic">
+	  <capital>Bangui</capital>
+	  <Latitude>18.616667</Latitude> 
+	  <Longitude>4.383333</Longitude>
+	</region>
+	<region name="Cameroon">
+	  <capital>Yaounde</capital>
+	  <Latitude>11.516667</Latitude> 
+	  <Longitude>3.850000</Longitude>
+	</region>
+	<region name="Equatorial Guinea">
+	  <capital>Malabo</capital>
+	  <Latitude>8.800000</Latitude> 
+	  <Longitude>3.750000</Longitude>
+	</region>
+	<region name="Gabon">
+	  <capital>Libreville</capital>
+	  <Latitude>9.416667</Latitude> 
+	  <Longitude>0.050000</Longitude>
+	</region>
+	<region name="Congo">
+	  <capital>Brazzaville</capital>
+	  <Latitude>15.233333</Latitude> 
+	  <Longitude>-4.233333</Longitude>
+	</region>
+	<region name="CONGO, THE DEMOCRATIC REPUBLIC OF THE">
+	  <capital>Kinshasa</capital>
+	  <Latitude>15.30000</Latitude> 
+	  <Longitude>-4.300000</Longitude>
+	</region>
+	
+	<region name="São Tomé &amp; Príncipe">
+	  <capital>Sao Tome</capital>
+	  <Latitude>6.733333</Latitude> 
+	  <Longitude>0.033333</Longitude>
+	</region>
+	
+  </Central_African>
+  <South_Africa>
+	<region name="botswana">
+	  <capital>Gaborone</capital>
+	  <Latitude>25.916667</Latitude> 
+	  <Longitude>-24.750000</Longitude>
+	</region>
+	<region name="Namibia">
+	  <capital>Windhoek</capital>
+	  <Latitude>17.100000</Latitude> 
+	  <Longitude>-22.566667</Longitude>
+	</region>
+	<region name="Angola">
+	  <capital>Luanda</capital>
+	  <Latitude>13.033333</Latitude> 
+	  <Longitude>-8.083333</Longitude>
+	</region>
+	<region name="South Africa">
+	  <capital>Cape Town</capital>
+	  <Latitude>18.450000</Latitude> 
+	  <Longitude>-33.916667</Longitude>
+	</region>
+	<region name="Swaziland">
+	  <capital>Mbabane</capital>
+	  <Latitude>31.133333</Latitude> 
+	  <Longitude>-26.316667</Longitude>
+	</region>
+	<region name="Lesotho">
+	  <capital>Maseru</capital>
+	  <Latitude>27.466667</Latitude> 
+	  <Longitude>-29.300000</Longitude>
+	</region>
+	<region name="Madagascar">
+	  <capital>Antananarivo</capital>
+	  <Latitude>47.516667</Latitude> 
+	  <Longitude>-18.916667</Longitude>
+	</region>
+	<region name="Malawi">
+	  <capital>Lilongwe</capital>
+	  <Latitude>33.816667</Latitude> 
+	  <Longitude>-13.966667</Longitude>
+	</region>
+	<region name="Comoros">
+	  <capital>Moroni</capital>
+	  <Latitude>43.316667</Latitude> 
+	  <Longitude>-11.066667</Longitude>
+	</region>
+	<region name="Mauritius">
+	  <capital>Port Louis</capital>
+	  <Latitude>57.483333</Latitude> 
+	  <Longitude>-20.150000</Longitude>
+	</region>
+	<region name="Mozambique">
+	  <capital>Maputo</capital>
+	  <Latitude>32.583333</Latitude> 
+	  <Longitude>-25.966667</Longitude>
+	</region>
+	<region name="Zambia">
+	  <capital>Lusaka</capital>
+	  <Latitude>28.233333</Latitude> 
+	  <Longitude>-15.033333</Longitude>
+	</region>
+	<region name="zimbabwe">
+	  <capital>Harare</capital>
+	  <Latitude>31.066667</Latitude> 
+	  <Longitude>-17.816667</Longitude>
+	</region>
+	<region name="Mayotte">
+	  <capital>Mamoudzou</capital>
+	  <Latitude>45.233333</Latitude> 
+	  <Longitude>-12.800000</Longitude>
+	</region>
+	<region name="Reunion">
+	  <capital>Saint-Denis</capital>
+	  <Latitude>55.475063</Latitude> 
+	  <Longitude>-20.918800</Longitude>
+	</region>
+	<region name="SAINT HELENA, ASCENSION AND TRISTAN DA CUNHA">
+	  <capital>SAINT HELENA</capital>
+	  <Latitude>-5.700000</Latitude> 
+	  <Longitude>-15.933333</Longitude>
+	</region>
+  </South_Africa>
+  <Southeast_Asia>
+	<region name="Vietnam">
+	  <capital>Hanoi</capital>
+	  <Latitude>105.883333</Latitude> 
+	  <Longitude>21.016667</Longitude>
+	</region>
+	<region name="Laos">
+	  <capital>Vientiane</capital>
+	  <Latitude>102.800000</Latitude> 
+	  <Longitude>18.016667</Longitude>
+	</region>
+	<region name="Cambodia">
+	  <capital>Phnom Penh</capital>
+	  <Latitude>104.916667</Latitude> 
+	  <Longitude>11.583333</Longitude>
+	</region>
+	<region name="Thailand">
+	  <capital>Bangkok</capital>
+	  <Latitude>100.483333</Latitude> 
+	  <Longitude>13.083333</Longitude>
+	</region>
+	<region name="Myanmar">
+	  <capital>Yangon</capital>
+	  <Latitude>96.150000</Latitude> 
+	  <Longitude>16.766667</Longitude>
+	</region>
+	<region name="Malaysia">
+	  <capital>Kuala Lumpur</capital>
+	  <Latitude>101.700000</Latitude> 
+	  <Longitude>3.133333</Longitude>
+	</region>
+	<region name="Singapore">
+	  <capital>Singapore</capital>
+	  <Latitude>103.750000</Latitude> 
+	  <Longitude>1.366667</Longitude>
+	</region>
+	<region name="Indonesia">
+	  <capital>Jakarta</capital>
+	  <Latitude>106.750000</Latitude> 
+	  <Longitude>-6.133333</Longitude>
+	</region>
+	<region name="BRUNEI DARUSSALAM">
+	  <capital>Bandar Seri Begawan</capital>
+	  <Latitude>114.966667</Latitude> 
+	  <Longitude>4.933333</Longitude>
+	</region>
+	<region name="Philippines">
+	  <capital>Manila</capital>
+	  <Latitude>121.000000</Latitude> 
+	  <Longitude>14.616667</Longitude>
+	</region>
+	<region name="Timor-Leste">
+	  <capital>Dili</capital>
+	  <Latitude>125.583333</Latitude> 
+	  <Longitude>-8.583333</Longitude>
+	</region>
+  </Southeast_Asia>
+  <South_Asia>
+	<region name="India">
+	  <capital>New Delhi</capital>
+	  <Latitude>77.216667</Latitude> 
+	  <Longitude>28.616667</Longitude>
+	</region>
+	<region name="BANGLADESH">
+	  <capital>Dhaka</capital>
+	  <Latitude>90.400000</Latitude> 
+	  <Longitude>23.850000</Longitude>
+	</region>
+	<region name="Nepal">
+	  <capital>Kathmandu</capital>
+	  <Latitude>85.316667</Latitude> 
+	  <Longitude>27.700000</Longitude>
+	</region>
+	<region name="Pakistan">
+	  <capital>Islamabad</capital>
+	  <Latitude>73.133333</Latitude> 
+	  <Longitude>33.066667</Longitude>
+	</region>
+	<region name="Sri Lanka">
+	  <capital>Colombo</capital>
+	  <Latitude>79.866667</Latitude> 
+	  <Longitude>6.916667</Longitude>
+	</region>
+	<region name="Maldives">
+	  <capital>Male</capital>
+	  <Latitude>73.466667</Latitude> 
+	  <Longitude>4.016667</Longitude>
+	</region>
+  </South_Asia>
+  <East_Asia>
+	<region name="China">
+	  <capital>Beijing</capital>
+	  <Latitude>116.33333</Latitude> 
+	  <Longitude>39.933333</Longitude>
+	</region>
+  </East_Asia>
+</LatitudeLongitude>

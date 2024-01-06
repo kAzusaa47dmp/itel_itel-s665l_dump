@@ -1,0 +1,23 @@
+on post-fs
+    insmod /vendor/lib/modules/leds-sc27xx-bltc.ko
+
+on boot
+    wait /sys/class/leds/sc27xx:red/brightness
+    wait /sys/class/leds/sc27xx:green/brightness
+    wait /sys/class/leds/sc27xx:blue/brightness
+
+    chmod 664 /sys/class/leds/sc27xx:red/brightness
+    chmod 664 /sys/class/leds/sc27xx:green/brightness
+    chmod 664 /sys/class/leds/sc27xx:blue/brightness
+
+    chmod 664 /sys/class/leds/sc27xx:red/trigger
+    chmod 664 /sys/class/leds/sc27xx:green/trigger
+    chmod 664 /sys/class/leds/sc27xx:blue/trigger
+
+    chown root system /sys/class/leds/sc27xx:red/brightness
+    chown root system /sys/class/leds/sc27xx:green/brightness
+    chown root system /sys/class/leds/sc27xx:blue/brightness
+
+    chown root system /sys/class/leds/sc27xx:red/trigger
+    chown root system /sys/class/leds/sc27xx:green/trigger
+    chown root system /sys/class/leds/sc27xx:blue/trigger
