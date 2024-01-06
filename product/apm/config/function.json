@@ -1,0 +1,14 @@
+{
+  "ProcessManager": {
+    "classPath": "product/apm/libs/process_manager.jar",
+    "className": "com.transsion.apm.module.policy.ProcessManager"
+  },
+  "SystemMonitor": {
+    "classPath": "product/apm/libs/system_monitor.jar",
+    "className": "com.transsion.apm.module.monitor.SystemMonitorImpl"
+  },
+  "SystemState": {
+    "classPath": "product/apm/libs/system_monitor.jar",
+    "className": "com.transsion.apm.module.monitor.SystemStateImpl"
+  }
+}

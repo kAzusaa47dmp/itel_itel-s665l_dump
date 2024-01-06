@@ -1,0 +1,8 @@
+<?xml version='1.0' encoding='utf-8' standalone='yes' ?>
+<powercontroller>
+<applist_in_ultrasave>
+<appname>com.android.dialer/.app.DialtactsActivity#0</appname>
+<appname>com.android.messaging/.ui.conversationlist.ConversationListActivity#1</appname>
+<appname>com.android.contacts/.activities.PeopleActivity#2</appname>
+</applist_in_ultrasave>
+</powercontroller>

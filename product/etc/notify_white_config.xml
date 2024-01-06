@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!-- Copyright (C) 2012 The Android Open Source Project
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+
+<notify_screen>
+    <config pkg="com.whatsapp" />
+    <config pkg="com.facebook.katana" />
+    <config pkg="com.gbwhatsapp" />
+    <config pkg="com.WhatsApp2Plus" />
+    <config pkg="com.facebook.lite" />
+    <config pkg="com.yowhatsapp" />
+    <config pkg="com.whatsapp.w4b" />
+    <config pkg="com.callapp.contacts" />
+    <config pkg="jp.naver.line.android" />
+    <config pkg="com.imo.android.imoimbeta" />
+    <config pkg="com.imo.android.imoim" />
+    <config pkg="app.buzz.share" />
+    <config pkg="com.instagram.android" />
+    <config pkg="com.twitter.android" />
+    <config pkg="com.facebook.orca" />
+    <config pkg="com.google.android.talk" />
+    <config pkg="com.facebook.mlite" />
+    <config pkg="org.telegram.messenger" />
+    <config pkg="com.snapchat.android" />
+    <config pkg="com.viber.voip" />
+</notify_screen>

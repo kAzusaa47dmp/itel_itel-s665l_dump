@@ -1,0 +1,92 @@
+{
+  "version":3,
+  "mode":"on",
+  "whitelist": [
+    {
+        "app_name":"com.ss.android.ugc.trill",
+        "activity_name":"SplashActivity DetailActivity",
+        "video_view":"KeepSurfaceTextureView",
+        "skip_size":0.018
+    },
+    {
+        "app_name":"com.zhiliaoapp.musically",
+        "activity_name":"SplashActivity",
+        "video_view":"KeepSurfaceTextureView",
+        "skip_size":0.018
+    },
+    {
+        "app_name":"com.ss.android.ugc.aweme",
+        "activity_name":"SplashActivity DetailActivity",
+        "video_view":"KeepSurfaceTextureView",
+        "skip_size":0.018
+    },
+    {
+        "app_name":"com.uc.vmate",
+        "activity_name":"VideoDetailActivity",
+        "video_view":"VideoTextureView",
+        "skip_size":0.018
+    },
+    {
+        "app_name":"video.like.lite",
+        "activity_name":"VideoDetailActivity",
+        "video_view":"TextureView",
+        "skip_size":0.018
+    },
+    {
+        "app_name":"video.like",
+        "activity_name":"VideoDetailActivityV2 MainActivity",
+        "video_view":"TextureView",
+        "skip_size":0.08
+    },
+    {
+        "app_name":"co.triller.droid",
+        "activity_name":"MainActivity",
+        "video_view":"TextureView",
+        "skip_size":0.15
+    },
+    {
+        "app_name":"io.chingari.app",
+        "activity_name":"ViewPagerActivity",
+        "video_view":"TextureRenderView",
+        "skip_size":0.09
+    },
+    {
+        "app_name":"in.mohalla.video",
+        "activity_name":"MojVideoPlayerActivity FragmentLauncherActivity",
+        "video_view":"TextureView",
+        "skip_size":0.03
+    },
+    {
+        "app_name":"com.mitron.tv",
+        "activity_name":"HomeActivity VideoPlayerActivity",
+        "video_view":"TextureView",
+        "skip_size":0.01
+    },
+    {
+        "app_name":"com.asiainno.uplive",
+        "activity_name":"LiveWatchActivity",
+        "video_view":"TextureRenderView",
+        "skip_size":0.41
+    },
+    {
+        "app_name":"com.mobilemotion.dubsmash",
+        "activity_name":"MainNavigationActivity",
+        "video_view":"TextureView",
+        "skip_size":0.88
+    },
+    {
+        "app_name":"com.mlive.mliveapp",
+        "activity_name":"RoomActivity",
+        "video_view":"TextureView",
+        "skip_size":0.35
+    },
+    {
+        "app_name":"com.mico",
+        "activity_name":"LiveRoomAudienceActivity",
+        "video_view":"TextureView",
+        "skip_size":0.17
+    }
+
+  ]
+
+}

@@ -1,0 +1,75 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+ ~ WebpPath: 充电动画资源和配置存放路径
+ ~ Gravity：webp资源布局方式（1-横向居中,2-竖向居中,3-横向充满,4-竖向充满,5-横向充满竖向居中）
+ ~ Scale：webp资源播放时的缩放比例
+ ~ IntegerTextSize：电量百分比整数部分字体大小(sp)
+ ~ DecimalTextSize：电量百分比小数部分字体大小(sp)
+ ~ PercentTextSize：电量百分比百分比符号%字体大小(sp)
+ ~ BatteryLevelOffset：电量百分比距离webp动画顶部的距离
+ ~ LightningLogoHeight：闪电符号或快充符号的高度
+ ~ LightningOffset：闪电符号距离webp动画顶部的距离
+ ~ ChargingTextSize：charging字符或W数字符的字体大小(sp)
+ ~ ChargingTextOffset：charging字符距离webp动画顶部的距离
+ ~ SpecialText：特殊内容显示（目前项目无该显示要求，暂未启用）
+ ~ EnterAnimDelayTime：动画圆圈内电量和闪电图标等相对背景动画(webp动画)延迟出现的时间(毫秒)
+ ~ EnterAnimDuration：动画圆圈内电量和闪电图标等出现动画播放时间长度(毫秒)
+ ~ AnimationType：快充充电W数，该配置决定了快充动画W数显示的数值和快充符号显示
+ ~ WireConfig：有线充电动画的配置
+ ~ WirelessConfig：无线充电动画的配置
+ ~ AirConfig：隔空充电动画的配置
+ -->
+<Charging>
+    <CommonConfig>
+        <WebpPath>/product/theme/charge/</WebpPath>
+        <XmlVersion>1.0</XmlVersion>
+    </CommonConfig>
+    <WireConfig>
+        <Scale>1.5</Scale>
+        <Gravity>3</Gravity>
+        <IntegerTextSize>30</IntegerTextSize>
+        <DecimalTextSize>30</DecimalTextSize>
+        <PercentTextSize>16</PercentTextSize>
+        <BatteryLevelOffset>118</BatteryLevelOffset>
+        <LightningLogoHeight>24</LightningLogoHeight>
+        <LightningOffset>112</LightningOffset>
+        <ChargingTextSize>10</ChargingTextSize>
+        <ChargingTextOffset>160</ChargingTextOffset>
+        <SpecialText>180</SpecialText>
+        <EnterAnimDelayTime>1000</EnterAnimDelayTime>
+        <EnterAnimDuration>100</EnterAnimDuration>
+        <AnimationType>10</AnimationType>
+    </WireConfig>
+    <WirelessConfig>
+        <Scale>1.5</Scale>
+        <Gravity>5</Gravity>
+        <IntegerTextSize>30</IntegerTextSize>
+        <DecimalTextSize>30</DecimalTextSize>
+        <PercentTextSize>16</PercentTextSize>
+        <BatteryLevelOffset>200</BatteryLevelOffset>
+        <LightningLogoHeight>24</LightningLogoHeight>
+        <LightningOffset>196</LightningOffset>
+        <ChargingTextSize>10</ChargingTextSize>
+        <ChargingTextOffset>246</ChargingTextOffset>
+        <SpecialText>180</SpecialText>
+        <EnterAnimDelayTime>100</EnterAnimDelayTime>
+        <EnterAnimDuration>100</EnterAnimDuration>
+        <AnimationType>10</AnimationType>
+    </WirelessConfig>
+    <AirConfig>
+        <Scale>1</Scale>
+        <Gravity>5</Gravity>
+        <IntegerTextSize>30</IntegerTextSize>
+        <DecimalTextSize>30</DecimalTextSize>
+        <PercentTextSize>16</PercentTextSize>
+        <BatteryLevelOffset>100</BatteryLevelOffset>
+        <LightningLogoHeight>24</LightningLogoHeight>
+        <LightningOffset>138</LightningOffset>
+        <ChargingTextSize>10</ChargingTextSize>
+        <ChargingTextOffset>120</ChargingTextOffset>
+        <SpecialText>180</SpecialText>
+        <EnterAnimDelayTime>50</EnterAnimDelayTime>
+        <EnterAnimDuration>100</EnterAnimDuration>
+        <AnimationType>10</AnimationType>
+    </AirConfig>
+</Charging>

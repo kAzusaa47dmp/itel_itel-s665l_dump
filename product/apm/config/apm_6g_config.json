@@ -1,0 +1,53 @@
+{
+  "version": 3,
+  "product": "default",
+  "ram": 8,
+  "up_time": 20200711,
+  "platform_list": [
+    "android",
+    "com.mediatek.mtklogger",
+    "com.debug.loggerui",
+    "com.android.quickstep",
+    "com.transsion.phonemanager",
+    "com.transsion.testcaserepository",
+    "com.transsion.alarmmanager",
+    "com.transsion.agingfunction",
+    "com.transsion.emmctest",
+    "com.transsion.trancare",
+    "com.transsion.keyguardgesture",
+    "com.transsion.videocallenhancer",
+    "com.google.android.permissioncontroller",
+    "com.transsion.faceid",
+    "com.transsion.plat.appupdate",
+    "com.transsion.aibox",
+    "com.transsion.magazineservice",
+    "com.transsion.applock",
+    "com.google.android.gsf",
+    "com.android.showae",
+    "com.android.mtp",
+    "com.transsion.tsdsmartcomm",
+    "jp.co.cyberagent.stf",
+    "com.afwsamples.testdpc",
+    "com.transsion.demomode",
+    "com.hoffnung",
+    "com.android.facelock",
+    "com.transsion.ipmessage"
+  ],
+  time: {
+    light_time: 120000,
+    normal_time: 60000,
+    appstart_freeze_duration: 3000
+  },
+  numbers: {
+    light_power_health_recent: 5,
+    normal_power_health_recent: 3
+  },
+  functions: {
+    fast_app_start: false,
+    power_health: false
+  },
+  threshold: {
+    light_power_health_battery_threshold: 40,
+    normal_power_health_battery_threshold: 10
+  }
+}

@@ -1,0 +1,13 @@
+{
+  "config": [
+    {
+      "key": "comm_sync_revive",
+      "version": 1,
+      "enable": 1,
+      "duration": 0,
+      "block_list": [
+        "com.clean.oneboost.cleaner.onebooster.security"
+      ]
+    }
+  ]
+}

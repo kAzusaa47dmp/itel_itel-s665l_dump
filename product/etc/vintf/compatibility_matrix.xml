@@ -1,0 +1,260 @@
+<!--
+    Input:
+        device_framework_matrix_product.xml
+-->
+<compatibility-matrix version="4.0" type="framework">
+    <hal format="hidl" optional="true">
+        <name>android.hardware.radio</name>
+        <version>1.2</version>
+        <interface>
+            <name>ISap</name>
+            <instance>slot2</instance>
+        </interface>
+    </hal>
+    <hal format="hidl" optional="true">
+        <name>vendor.cdfinger.hardware.fingerprint</name>
+        <version>2.0</version>
+        <interface>
+            <name>IFingerprintFactoryTest</name>
+            <instance>default</instance>
+        </interface>
+    </hal>
+    <hal format="hidl" optional="true">
+        <name>vendor.silead.hardware.fingerprintext</name>
+        <version>1.0</version>
+        <interface>
+            <name>ISileadFingerprint</name>
+            <instance>default</instance>
+        </interface>
+    </hal>
+    <hal format="hidl" optional="true">
+        <name>vendor.sprd.hardware.ai_engine</name>
+        <version>1.0</version>
+        <interface>
+            <name>IAIEngineControl</name>
+            <instance>default</instance>
+        </interface>
+    </hal>
+    <hal format="hidl" optional="true">
+        <name>vendor.sprd.hardware.algoservice</name>
+        <version>1.0</version>
+        <interface>
+            <name>IAlgoService</name>
+            <instance>default</instance>
+        </interface>
+    </hal>
+    <hal format="hidl" optional="true">
+        <name>vendor.sprd.hardware.aprd</name>
+        <version>1.0</version>
+        <interface>
+            <name>IAprdInfoSync</name>
+            <instance>default</instance>
+        </interface>
+    </hal>
+    <hal format="hidl" optional="true">
+        <name>vendor.sprd.hardware.boot</name>
+        <version>1.2</version>
+        <interface>
+            <name>IBootControl</name>
+            <instance>default</instance>
+        </interface>
+    </hal>
+    <hal format="hidl" optional="true">
+        <name>vendor.sprd.hardware.connmgr</name>
+        <version>1.0</version>
+        <interface>
+            <name>IConnmgr</name>
+            <instance>default</instance>
+        </interface>
+    </hal>
+    <hal format="hidl" optional="true">
+        <name>vendor.sprd.hardware.cplog_svc</name>
+        <version>1.0</version>
+        <interface>
+            <name>ILogTransportInductor</name>
+            <instance>default</instance>
+        </interface>
+        <interface>
+            <name>ISysLogControl</name>
+            <instance>default</instance>
+        </interface>
+    </hal>
+    <hal format="hidl" optional="true">
+        <name>vendor.sprd.hardware.enhance</name>
+        <version>1.0</version>
+        <interface>
+            <name>IEnhance</name>
+            <instance>default</instance>
+        </interface>
+    </hal>
+    <hal format="hidl" optional="true">
+        <name>vendor.sprd.hardware.face</name>
+        <version>1.0</version>
+        <interface>
+            <name>IExtBiometricsFace</name>
+            <instance>default</instance>
+        </interface>
+    </hal>
+    <hal format="hidl" optional="true">
+        <name>vendor.sprd.hardware.fingerprintmmi</name>
+        <version>1.0</version>
+        <interface>
+            <name>IFingerprintmmi</name>
+            <instance>default</instance>
+        </interface>
+    </hal>
+    <hal format="hidl" optional="true">
+        <name>vendor.sprd.hardware.gnss</name>
+        <version>2.2</version>
+        <interface>
+            <name>IGnss</name>
+            <instance>default</instance>
+        </interface>
+    </hal>
+    <hal format="hidl" optional="true">
+        <name>vendor.sprd.hardware.ifaa</name>
+        <version>1.0</version>
+        <interface>
+            <name>IIfaa</name>
+            <instance>default</instance>
+        </interface>
+    </hal>
+    <hal format="hidl" optional="true">
+        <name>vendor.sprd.hardware.log</name>
+        <version>1.0</version>
+        <interface>
+            <name>ILogControl</name>
+            <instance>default</instance>
+        </interface>
+    </hal>
+    <hal format="hidl" optional="true">
+        <name>vendor.sprd.hardware.network</name>
+        <version>1.0</version>
+        <interface>
+            <name>INetworkControl</name>
+            <instance>default</instance>
+        </interface>
+    </hal>
+    <hal format="hidl" optional="true">
+        <name>vendor.sprd.hardware.power</name>
+        <version>4.0</version>
+        <interface>
+            <name>IPower</name>
+            <instance>default</instance>
+        </interface>
+    </hal>
+    <hal format="hidl" optional="true">
+        <name>vendor.sprd.hardware.radio</name>
+        <version>1.1</version>
+        <interface>
+            <name>IExtRadio</name>
+            <instance>slot1</instance>
+            <instance>slot2</instance>
+        </interface>
+    </hal>
+    <hal format="hidl" optional="true">
+        <name>vendor.sprd.hardware.radio.ims</name>
+        <version>1.1</version>
+        <interface>
+            <name>IImsRadio</name>
+            <instance>slot1</instance>
+            <instance>slot2</instance>
+        </interface>
+    </hal>
+    <hal format="hidl" optional="true">
+        <name>vendor.sprd.hardware.radio.lite</name>
+        <version>1.0</version>
+        <interface>
+            <name>ILiteRadio</name>
+            <instance>liteservice2</instance>
+        </interface>
+    </hal>
+    <hal format="hidl" optional="true">
+        <name>vendor.sprd.hardware.soter</name>
+        <version>1.0</version>
+        <interface>
+            <name>ISoter</name>
+            <instance>default</instance>
+        </interface>
+    </hal>
+    <hal format="hidl" optional="true">
+        <name>vendor.sprd.hardware.thermal</name>
+        <version>1.0</version>
+        <version>2.0</version>
+        <interface>
+            <name>IExtThermal</name>
+            <instance>default</instance>
+        </interface>
+    </hal>
+    <hal format="hidl" optional="true">
+        <name>vendor.sprd.hardware.trusty</name>
+        <version>1.0</version>
+        <interface>
+            <name>ITrustyClientProvider</name>
+            <instance>default</instance>
+        </interface>
+    </hal>
+    <hal format="hidl" optional="true">
+        <name>vendor.sprd.hardware.tui</name>
+        <version>1.0</version>
+        <interface>
+            <name>ITui</name>
+            <instance>default</instance>
+        </interface>
+    </hal>
+    <hal format="hidl" optional="true">
+        <name>vendor.sprd.hardware.vdsp</name>
+        <version>1.0</version>
+        <interface>
+            <name>IVdspService</name>
+            <instance>default</instance>
+        </interface>
+    </hal>
+    <hal format="hidl" optional="true">
+        <name>vendor.sprd.hardware.wcn</name>
+        <version>1.0</version>
+        <interface>
+            <name>IWcnVendorInterface</name>
+            <instance>default</instance>
+        </interface>
+    </hal>
+    <hal format="hidl" optional="true">
+        <name>vendor.sprd.hardware.wcn</name>
+        <version>1.0</version>
+        <interface>
+            <name>IWcnVendorInterface</name>
+            <instance>default</instance>
+        </interface>
+    </hal>
+    <hal format="hidl" optional="true">
+        <name>vendor.sprd.hardware.wifi.hostapd</name>
+        <version>1.1</version>
+        <interface>
+            <name>IHostapd</name>
+            <instance>default</instance>
+        </interface>
+    </hal>
+    <hal format="hidl" optional="true">
+        <name>vendor.sw.swfingerprint</name>
+        <version>1.0</version>
+        <interface>
+            <name>ISwfingerprint</name>
+            <instance>default</instance>
+        </interface>
+    </hal>
+    <hal format="hidl" optional="true">
+        <name>vendor.transsion.hardware.camera.imgalgoservice</name>
+        <version>1.0</version>
+        <interface>
+            <name>IImgAlgoService</name>
+            <instance>internal/0</instance>
+        </interface>
+    </hal>
+    <hal format="aidl" optional="true">
+        <name>vendor.unisoc.hardware.power</name>
+        <interface>
+            <name>IVendorPower</name>
+            <instance>default</instance>
+        </interface>
+    </hal>
+</compatibility-matrix>
