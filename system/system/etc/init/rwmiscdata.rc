@@ -1,0 +1,5 @@
+service rwmiscdata /system/bin/rwmiscdata
+    class core
+    user system
+    group system
+    socket rwmiscdata_srv stream 666 system system

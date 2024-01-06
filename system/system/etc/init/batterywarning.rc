@@ -1,0 +1,10 @@
+#monitor battery status add by liuwenrong
+service batterywarning /system/bin/batterywarning
+    class main
+    user system
+    group system
+    disabled
+
+on property:sys.boot_completed=1
+    start batterywarning
+

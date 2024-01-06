@@ -1,0 +1,51 @@
+on property:persist.vendor.nhmonitor=off
+    write /proc/monitor_enable "off"
+
+on property:persist.vendor.nhmonitor=on && property:ro.bootmode=wdgreboot
+    write /proc/monitor_enable "on"
+
+on property:persist.vendor.nhmonitor=on && property:ro.bootmode=apwdgreboot
+    write /proc/monitor_enable "on"
+
+on property:persist.vendor.nhmonitor=on && property:ro.bootmode=unknowreboot
+    write /proc/monitor_enable "on"
+
+on property:persist.vendor.nhmonitor=on && property:ro.bootmode=panic
+    write /proc/monitor_enable "on"
+
+on property:persist.vendor.nhmonitor=on && property:ro.bootmode=unknown
+    write /proc/monitor_enable "on"
+
+on property:persist.vendor.nhmonitor=on && property:ro.bootmode=alarm
+    write /proc/monitor_enable "on"
+
+on property:persist.vendor.nhmonitor=on && property:ro.bootmode=kernel_crash
+    write /proc/monitor_enable "on"
+
+service nhmonitor /system/bin/nhMonitorService
+    class late_start 
+    user root
+    group everybody
+    oneshot
+
+on early-fs
+    chown system system /dev/native_hang_monitor
+    chown system system /proc/monitor_enable
+
+on property:debug.wdt.sysdump=on
+    setprop vendor.debug.sysdump.enabled true
+    setprop persist.vendor.eng.reset  0
+
+
+# only dump logs for watchdog-30-delay when sysdump on
+on property:persist.vendor.sysdump=on
+    setprop debug.vendor.nhmonitor.delay30dump  true
+
+on property:persist.vendor.sysdump=off
+    setprop debug.vendor.nhmonitor.delay30dump  false
+
+
+
+
+
+

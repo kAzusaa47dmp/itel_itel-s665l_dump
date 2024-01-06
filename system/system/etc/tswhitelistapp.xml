@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<WhiteListTable>
+
+    <WhiteListAppEntry name="com.itel.filemanager"/>
+    <WhiteListAppEntry name="com.android.soundrecorder"/>
+    <WhiteListAppEntry name="com.google.android.gm"/>
+    <WhiteListAppEntry name="com.facebook.services"/>
+    <WhiteListAppEntry name="com.facebook.appmanager"/>
+    <WhiteListAppEntry name="com.tencent.mm"/>
+</WhiteListTable>

@@ -1,0 +1,47 @@
+#!/system/bin/sh
+
+# `svc wifi` has been migrated to WifiShellCommand,
+# simply perform translation to `cmd wifi set-wifi-enabled` here.
+if [ "x$1" == "xwifi" ]; then
+    # `cmd wifi` by convention uses enabled/disabled
+    # instead of enable/disable
+    if [ "x$2" == "xenable" ]; then
+        exec cmd wifi set-wifi-enabled enabled
+    elif [ "x$2" == "xdisable" ]; then
+        exec cmd wifi set-wifi-enabled disabled
+    else
+        echo "Control the Wi-Fi manager"
+        echo ""
+        echo "usage: svc wifi [enable|disable]"
+        echo "         Turn Wi-Fi on or off."
+        echo ""
+    fi
+    exit 1
+fi
+
+if [ "x$1" == "xdata" ]; then
+    if [ "x$2" == "xenable" ]; then
+        exec cmd phone data enable
+    elif [ "x$2" == "xdisable" ]; then
+        exec cmd phone data disable
+    else
+        echo "Enable/Disable Mobile Data Connectivity"
+        echo ""
+        echo "usage: svc data [enable|disable]"
+        echo ""
+    fi
+    exit 1
+fi
+
+export CLASSPATH=/system/framework/svc.jar
+
+# Temporary solution to solve the problem that
+# SVC command cannot be executed due to the lack of
+# serial port environment variables.
+if test -z $BOOTCLASSPATH; then
+    echo "export BOOTCLASSPATH"
+    export BOOTCLASSPATH=/apex/com.android.art/javalib/core-oj.jar:/apex/com.android.art/javalib/core-libart.jar:/apex/com.android.art/javalib/okhttp.jar:/apex/com.android.art/javalib/bouncycastle.jar:/apex/com.android.art/javalib/apache-xml.jar:/system/framework/framework.jar:/system/framework/framework-graphics.jar:/system/framework/ext.jar:/system/framework/telephony-common.jar:/system/framework/voip-common.jar:/system/framework/ims-common.jar:/apex/com.android.i18n/javalib/core-icu4j.jar:/system/framework/radio_interactor_common.jar:/system/framework/unisoc_ims_common.jar:/system/framework/unisoc-framework.jar:/apex/com.android.appsearch/javalib/framework-appsearch.jar:/apex/com.android.conscrypt/javalib/conscrypt.jar:/apex/com.android.ipsec/javalib/android.net.ipsec.ike.jar:/apex/com.android.media/javalib/updatable-media.jar:/apex/com.android.mediaprovider/javalib/framework-mediaprovider.jar:/apex/com.android.os.statsd/javalib/framework-statsd.jar:/apex/com.android.permission/javalib/framework-permission.jar:/apex/com.android.permission/javalib/framework-permission-s.jar:/apex/com.android.scheduling/javalib/framework-scheduling.jar:/apex/com.android.sdkext/javalib/framework-sdkextensions.jar:/apex/com.android.tethering/javalib/framework-connectivity.jar:/apex/com.android.tethering/javalib/framework-tethering.jar:/apex/com.android.wifi/javalib/framework-wifi.jar
+fi
+
+exec app_process /system/bin com.android.commands.svc.Svc "$@"
+

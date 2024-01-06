@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  * SHENZHEN TRANSSION COMMUNICATION LIMITED TOP SECRET.
+  * Copyright (c) 2016-2036  SHENZHEN TRANSSION COMMUNICATION LIMITED
+  *
+  * PROPRIETARY RIGHTS of Shenzhen Transsion Communication Limited are involved in the
+  * subject matter of this material.  All manufacturing, reproduction, use,
+  * and sales rights pertaining to this subject matter are governed by the
+  * license agreement.  The recipient of this software implicitly accepts
+  * the terms of the license.
+  *
+  * Description: This XML file declares which signature|privileged permissions should be 
+  * 		 granted to privileged applications that come with the itel
+  * Author:
+  * Version:
+  * Date:
+  * Modification:
+  -->
+
+<permissions>
+    <privapp-permissions package="com.google.android.dialer">
+        <permission name="android.permission.ALLOW_ANY_CODEC_FOR_PLAYBACK"/>
+        <permission name="android.permission.CAPTURE_AUDIO_OUTPUT"/>
+        <permission name="android.permission.CAPTURE_VOICE_COMMUNICATION_OUTPUT"/>
+        <permission name="android.permission.CONNECTIVITY_USE_RESTRICTED_NETWORKS"/>
+        <permission name="android.permission.CONTROL_INCALL_EXPERIENCE"/>
+        <permission name="android.permission.GET_ACCOUNTS_PRIVILEGED"/>
+        <permission name="android.permission.INTERACT_ACROSS_USERS"/>
+        <permission name="android.permission.MODIFY_AUDIO_ROUTING"/>
+        <permission name="android.permission.MODIFY_PHONE_STATE"/>
+        <permission name="android.permission.READ_PRIVILEGED_PHONE_STATE"/>
+        <permission name="android.permission.STATUS_BAR"/>
+        <permission name="android.permission.STOP_APP_SWITCHES"/>
+        <permission name="android.permission.WRITE_SECURE_SETTINGS"/>
+        <permission name="com.android.voicemail.permission.READ_VOICEMAIL"/>
+        <permission name="com.android.voicemail.permission.WRITE_VOICEMAIL"/>
+    </privapp-permissions>
+</permissions>

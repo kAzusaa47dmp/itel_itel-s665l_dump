@@ -1,0 +1,76 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+    1 version must 2.0
+    2 collect time unit second
+    3 collect time must be a multiple of 10
+-->
+<resmonitor version="3.0">
+    <collect>
+        <item key="cpu" value="60"/>
+        <item key="io" value="30"/>
+        <item key="memory" value="60"/>
+        <item key="memory_fragment" value="60"/>
+        <item key="oom_adj" value="60"/>
+        <item key="rom" value="3600"/>
+        <item key="thermal" value="60"/>
+        <item key="vmstat" value="60"/>
+    </collect>
+
+    <threshold>
+
+<!--
+        <ram value="ram value">
+            The memory threshold after the foreground is stable for 30 seconds
+            <item key="fgm" value="200MB"/>
+            5 minutes of memory value in the background with the screen on
+            <item key="onbgm" value="100MB"/>
+            1 minutes of memory value in the background with the screen off
+            <item key="offbgm" value="100MB"/>
+            5 minutes of cpu average value in the background with the screen on
+            <item key="onbgc" value="1.5%"/>
+            1 minutes of cpu average value in the background with the screen off
+            <item key="offbgc" value="1.5%"/>
+        </ram>
+-->
+
+        <ram value="2">
+            <item key="fgm" value="200"/>
+            <item key="onbgm" value="100"/>
+            <item key="offbgm" value="100"/>
+            <item key="onbgc" value="1.5"/>
+            <item key="offbgc" value="1.5"/>
+        </ram>
+
+        <ram value="3">
+            <item key="fgm" value="300"/>
+            <item key="onbgm" value="100"/>
+            <item key="offbgm" value="100"/>
+            <item key="onbgc" value="2.5"/>
+            <item key="offbgc" value="2.5"/>
+        </ram>
+
+        <ram value="4">
+            <item key="fgm" value="300"/>
+            <item key="onbgm" value="150"/>
+            <item key="offbgm" value="150"/>
+            <item key="onbgc" value="2.5"/>
+            <item key="offbgc" value="2.5"/>
+        </ram>
+
+        <ram value="6">
+            <item key="fgm" value="400"/>
+            <item key="onbgm" value="200"/>
+            <item key="offbgm" value="200"/>
+            <item key="onbgc" value="3"/>
+            <item key="offbgc" value="3"/>
+        </ram>
+
+        <ram value="8">
+            <item key="fgm" value="500"/>
+            <item key="onbgm" value="400"/>
+            <item key="offbgm" value="400"/>
+            <item key="onbgc" value="3"/>
+            <item key="offbgc" value="3"/>
+        </ram>
+    </threshold>
+</resmonitor>

@@ -1,0 +1,100 @@
+0x003e0000|应用使用（异常、无响应）
+0x003e0001|系统使用（卡顿、黑屏）
+0x003e0002|蜂窝网络（SIM卡，上网、通话、信号等）
+0x003e0003|其它网络（WIFI、蓝牙等）
+0x003e0004|电池（充电、发热、电量异常）
+0x003e0005|声音（音乐、视频、通话音等）
+0x003e0006|相机（拍照与图库）
+0x003e0007|建议（用户体验与建议）
+0x003e0008|其他
+0x007a0000|watchdog wait half超时
+0x007a0001|watchdog 超时，产生SWT
+0x007a0002|移动activity到PinnedStack时候出现异常
+0x007a0003|创建Notification Channel时候出现IllegalArgumentException
+0x007a0004|启动activity时候，对应的reusedActivity的TaskRecord为空
+0x007a0005|anr,处理广播消息超时
+0x007a0006|systemserver binder线程耗尽
+0x007a0007|由于启动contentprovider导致的应用anr
+0x007a0008|anr,contentprovider anr
+0x007a0009|anr,输入事件超时
+0x007a000a|anr,处理service超时
+0x007a000b|systemserver解析packages.xml时候出现异常
+0x007a000c|发送给systemserver的binder请求数据太大，超过总大小的3/4
+0x007a000d|systemserver的binder buffer内存耗尽
+0x007a000e|systemserver的异步binder buffer耗尽
+0x007a000f|hang detect时候抓取systemserver backtrace
+0x007a0010|hang detect时候抓取systemserver coredump
+0x007a0011|检测到有进程发送kill信号给systemserver
+0x007a0012|触发了oom killer流程优化方案，方案会跳过kill systemserver
+0x007a0013|检测到多次非法指令异常，删除非法指令页
+0x007a0014|检测到有应用进程的ion内存超标，需要杀死对应进程
+0x007a0015|收集售后埋点数据
+0x007a0016|收集权限导致的JE
+0x007a0017|ActivityClientRecord 为空
+0x007a0018|statusbar的window被remove掉了
+0x007a0019|TNE 抓取 GmsCore报错的dex文件
+0x007a001a|检测到有进程发送kill信号给mtklog
+0x007a001b|native heap size > 300M
+0x007a0020|hang detect debug信息输出
+0x007a0021|binder 退出卡住信息输出
+0x007a0022|fuse wait_event 超时10m 埋点输出1
+0x007a0023|fuse wait_event 超时10m 埋点输出2
+0x007a0024|windowhandleinfo数据过大，造成溢出，触发hprof埋点
+0x007a0025|buffer丢失异常埋点
+0x007a0026|llkd anomaly detected (process on state R Z D)
+0x000a0007|ConnectivityManager中获取callingPackageName异常
+0xffff0000|用户按键触发
+0xffff1001|性能
+0xffff1002|功耗
+0xffff1003|稳定性
+0xffff1004|通话
+0xffff1005|WIFI+BT
+0xffff1006|Camera
+0x00a10000|mmap debug
+0x00a10003|java 清理软引用之后的GC, 大概率泄漏
+0x00a10002|malloc 泄漏检测机制
+0x00a10004|malloc 泄漏检测机制
+0x00a10006|jni global ref 泄漏
+0x00a10007|java 对象监控, 过多则 dump hprof
+0x00a10008|fdleak 抓取 hprof
+0x00160001|GMS类和Facebook家族APK Crash触发抓取Bugreport
+0x00160002|收集由于可能的系统原因导致的三方App发生异常（JE,NE,ANR）
+0x00160003|Usage
+0xffff1004|pdp建立过程
+0x005f0001|亮屏电流或睡眠电流大于一定阈值时，触发tne dump log
+0x00500001|每10s将memory/cpu info抓到buffer，卡顿时dump
+0xffff1001|每10s将memory/cpu info抓到buffer
+0x00990001|NE dump while wifi main thread wait long time
+0x00990002|Firmware Assert
+0xffffff00|fatal je
+0xffffff01|watchdog timeout
+0xffffff02|fatal ne
+0xffffff03|hang detect
+0xffffff04|ke
+0xffffff06|strucklogo
+0xffffff07|收集由于可能的系统原因导致的三方App发生异常JE
+0xffffff08|收集由于可能的系统原因导致的三方App发生异常NE
+0xffffff09|fans sys je
+0xffffff0a|fans sys ne
+0xffffff0b|modem ee
+0xffffff0c|HANG
+0xffffff0d|HWT
+0xffffff0e|NONE
+0xffffff0f|NONE
+0xffffffff|特定功能配置
+0x000a0001|Network oos
+0x000a0002|Disconnect call
+0x000a0003|Do recovery
+0x000a0004|Sim remove
+0x000a0005|Airplane mode
+0x000a0006|Data call
+0x000a0007|No Rtp
+0x000a0008|Detach or Deactivate
+0x00010000|抓取audioserver和audio hal进程的堆栈
+0x000a0008|抓取RT线程的堆栈
+0x000a0009|Special call cause from modem
+0x000a000a|eps attach
+0x000a000b|sms send or receive abnormal event
+0x000a000c|mms send or receive abnormal event
+0x000a000d|low rat nw for a long time
+0x000a000e|cell reselect

@@ -1,0 +1,409 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+  * SHENZHEN TRANSSION COMMUNICATION LIMITED TOP SECRET.
+  * Copyright (c) 2016-2036  SHENZHEN TRANSSION COMMUNICATION LIMITED
+  *
+  * PROPRIETARY RIGHTS of Shenzhen Transsion Communication Limited are involved in the
+  * subject matter of this material.  All manufacturing, reproduction, use,
+  * and sales rights pertaining to this subject matter are governed by the
+  * license agreement.  The recipient of this software implicitly accepts
+  * the terms of the license.
+  *
+  * Description: This XML file declares which signature|privileged permissions should be 
+  * 		 granted to privileged applications that come with the itel
+  * Author:
+  * Version:
+  * Date:
+  * Modification:
+  -->
+
+<permissions>
+
+    <!-- ITEL_SYSTEM_IB-18640317-dsq add for cts test -->
+    <privapp-permissions package="com.itel.autobootmanager">
+        <permission name="android.permission.CHANGE_COMPONENT_ENABLED_STATE" />
+    </privapp-permissions>
+
+    <privapp-permissions package="com.itel.smartassistant">
+        <permission name="android.permission.WRITE_SECURE_SETTINGS" />
+        <permission name="android.permission.INTERACT_ACROSS_USERS" />
+    </privapp-permissions>
+
+    <privapp-permissions package="com.transsion.filemanager">
+        <permission name="android.permission.ACCESS_CACHE_FILESYSTEM" />
+        <permission name="android.permission.CHANGE_CONFIGURATION" />
+        <permission name="android.permission.DELETE_CACHE_FILES" />
+        <permission name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+        <permission name="android.permission.REBOOT" />
+        <permission name="android.permission.RECOVERY" />
+        <permission name="android.permission.WRITE_MEDIA_STORAGE" />
+        <permission name="android.permission.WRITE_SECURE_SETTINGS" />
+    </privapp-permissions>
+    
+    <privapp-permissions package="com.transsion.phonemanager">
+        <permission name="android.permission.BATTERY_STATS" />
+        <permission name="android.permission.BLUETOOTH_PRIVILEGED" />
+        <permission name="android.permission.CHANGE_CONFIGURATION" />
+        <permission name="android.permission.CONNECTIVITY_INTERNAL" />
+        <permission name="android.permission.DELETE_CACHE_FILES" />
+        <permission name="android.permission.DELETE_PACKAGES" />
+        <permission name="android.permission.INTERACT_ACROSS_USERS" />
+        <permission name="android.permission.MANAGE_USERS" />
+        <permission name="android.permission.MODIFY_PHONE_STATE" />
+        <permission name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+        <permission name="android.permission.PACKAGE_USAGE_STATS" />
+        <permission name="android.permission.READ_NETWORK_USAGE_HISTORY" />
+        <permission name="android.permission.SET_TIME" />
+        <permission name="android.permission.STATUS_BAR" />
+        <permission name="android.permission.WRITE_APN_SETTINGS" />
+        <permission name="android.permission.WRITE_SECURE_SETTINGS" />
+        <!-- TRANSSION add by sivanHe 20180511 -->
+        <permission name="android.permission.CLEAR_APP_CACHE"/>
+        <permission name="android.permission.DUMP"/>
+        <permission name="android.permission.TETHER_PRIVILEGED"/>
+        <permission name="android.permission.UPDATE_APP_OPS_STATS"/>
+        <!-- TRANSSION add end -->
+    <!-- TRANSSION add by yongwen.huang 20180620 -->
+        <permission name="android.permission.REAL_GET_TASKS"/>
+        <permission name="android.permission.DUMP"/>
+        <!-- TRANSSION add end -->
+        <!-- ITEL_SYSTEM_IB-18602662-sy add for cts test -->
+        <permission name="android.permission.WRITE_MEDIA_STORAGE"/>
+        <permission name="android.permission.DISABLE_STATUS_BAR"/>
+        <permission name="android.permission.CHANGE_COMPONENT_ENABLED_STATE"/>
+        <!-- ITEL_SYSTEM_IB-18602662-sy add end -->
+        <!-- TRANSSION add by youzhong.huang 20190329 :TFS-133011-->
+        <permission name="android.permission.MANAGE_USB" />
+        <!-- TRANSSION add by xiaoli.liu 20191125-->
+        <permission name="android.permission.READ_PRIVILEGED_PHONE_STATE" />
+    </privapp-permissions>
+    <!-- ITEL_SYSTEM_IB-18640317-dsq add end -->
+
+    <!-- ITEL_SYSTEM_IB-18602662-sy add for cts test -->
+    <privapp-permissions package="com.itel.floatball">
+        <permission name="android.permission.MODIFY_PHONE_STATE" />
+        <permission name="android.permission.MANAGE_USERS" />
+        <permission name="android.permission.WRITE_SECURE_SETTINGS" />
+        <permission name="android.permission.SYSTEM_OVERLAY_WINDOW" />
+        <permission name="android.permission.BROADCAST_PACKAGE_CHANGED" />
+        <!-- itel_begin,service start activity_juanning.zhao_2019-6-14 -->
+        <permission name="android.permission.STOP_APP_SWITCHES" />
+        <!-- itel_end -->
+    </privapp-permissions>
+
+    <privapp-permissions package="com.android.calendar">
+        <permission name="android.permission.WRITE_SECURE_SETTINGS" />
+        <permission name="android.permission.INTERACT_ACROSS_USERS" />
+    </privapp-permissions>
+
+    <privapp-permissions package="com.transsion.cleanmanager">
+        <permission name="android.permission.WRITE_SECURE_SETTINGS" />
+        <permission name="android.permission.STATUS_BAR" />
+    <!-- TRANSSION add by yongwen.huang 20180620 -->
+        <permission name="android.permission.REAL_GET_TASKS"/>
+        <!-- TRANSSION add end -->
+    </privapp-permissions>
+    <!-- ITEL_SYSTEM_IB-18602662-sy add end -->
+
+    <privapp-permissions package="com.transsion.customscreen">
+        <permission name="android.permission.STOP_APP_SWITCHES"/>
+        <permission name="android.permission.ACCESS_COARSE_LOCATION"/>
+        <permission name="android.permission.ACCESS_FINE_LOCATION"/>
+    </privapp-permissions>
+
+    <!--ITEL_SYSTEM_IB_18602749 vincent add for orange begin -->
+    <privapp-permissions package="com.orange.update">
+        <permission name="android.permission.INSTALL_PACKAGES"/>
+        <permission name="android.permission.WRITE_SECURE_SETTINGS"/>
+    </privapp-permissions>
+     <!--ITEL_SYSTEM_IB_18602749 vincent add for orange end -->
+    <!-- ITEL_SYSTEM_IB-18642306-Yun.Zhao for cts issue,begin -->
+    <privapp-permissions package="com.android.talpa.adpush">
+        <permission name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+        <permission name="android.permission.PACKAGE_USAGE_STATS" />
+        <permission name="android.permission.SUBSTITUTE_NOTIFICATION_APP_NAME" />
+        <permission name="android.permission.GET_ACCOUNTS_PRIVILEGED" />
+        <permission name="android.permission.READ_PRIVILEGED_PHONE_STATE" />
+    </privapp-permissions>
+    <privapp-permissions package="com.spiceshare.service">
+        <permission name="android.permission.WRITE_MEDIA_STORAGE" />
+    </privapp-permissions>
+    <privapp-permissions package="com.transsion.spiceshare">
+        <permission name="android.permission.WRITE_MEDIA_STORAGE" />
+    </privapp-permissions>
+    <privapp-permissions package="com.itel.filemanager">
+        <permission name="android.permission.WRITE_MEDIA_STORAGE" />
+        <permission name="android.permission.CHANGE_CONFIGURATION" />
+    </privapp-permissions>
+    <privapp-permissions package="com.android.soundrecorder">
+        <permission name="android.permission.WRITE_MEDIA_STORAGE" />
+        <permission name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+        <permission name="android.permission.WRITE_SECURE_SETTINGS" />
+        <permission name="android.permission.BLUETOOTH_PRIVILEGED" />
+    </privapp-permissions>
+    <privapp-permissions package="com.android.cellbroadcastreceiver">
+        <permission name="android.permission.MANAGE_ACTIVITY_STACKS" />
+        <permission name="android.permission.STATUS_BAR" />
+    </privapp-permissions>
+    <privapp-permissions package="com.trassion.infinix.xclub">
+        <permission name="android.permission.OBSERVE_GRANT_REVOKE_PERMISSIONS" />
+    </privapp-permissions>
+    <!-- ITEL_SYSTEM_IB-18642306-Yun.Zhao add end -->
+
+    <!-- transsion begin, IB-18640107, songwei, add, 2018.09.05 -->
+    <privapp-permissions package="com.itel.statistics">
+        <permission name="android.permission.BATTERY_STATS" />
+        <permission name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+        <permission name="android.permission.PACKAGE_USAGE_STATS" />
+        <permission name="android.permission.READ_PRIVILEGED_PHONE_STATE" />
+        <permission name="android.permission.WRITE_MEDIA_STORAGE" />
+        <permission name="android.permission.READ_PHONE_STATE" />
+        <permission name="android.permission.INTERACT_ACROSS_USERS"/>
+    </privapp-permissions>
+    <!-- transsion end -->
+
+    <!-- ITEL_APK_IB-18641061-xuehong.zeng for cts issue,begin -->
+    <privapp-permissions package="com.android.fmradio">
+        <permission name="android.permission.ACCESS_FM_RADIO" />
+        <permission name="android.permission.SET_MEDIA_KEY_LISTENER" />
+        <permission name="android.permission.WRITE_MEDIA_STORAGE" />
+        <permission name="android.permission.ACCESS_BROADCAST_RADIO" />
+        <permission name="android.permission.MODIFY_AUDIO_ROUTING" />
+        <permission name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    </privapp-permissions>
+    <!-- ITEL_APK_IB-18641061-xuehong.zeng add end -->
+
+    <!-- ITEL_SYSTEM_IB_18640462_khx add for cts issue,begin -->
+    <privapp-permissions package="com.transsion.privacylock">
+        <permission name="android.permission.PACKAGE_USAGE_STATS" />
+    </privapp-permissions>
+    <!-- ITEL_SYSTEM_IB_18640462_khx add end -->
+    <!-- ITEL_APK_IB-leping.deng add 2019.1.28 begin -->
+    <privapp-permissions package="com.unisoc.antitheft">
+        <permission name="android.permission.WRITE_SECURE_SETTINGS"/>
+    </privapp-permissions>
+    <!-- ITEL_APK_IB-leping.deng add 2019.1.28 end -->
+    <!--ITEL_SYSTEM_IB_18640462_khx add for AppUpdate add to battery optimizing whitelist,2018-12-27 -->
+    <allow-in-power-save package="com.transsion.plat.appupdate"/>
+
+    <!--start add permission for luancher3 by lych -->
+    <privapp-permissions package="com.android.launcher3">
+        <permission name="android.permission.BIND_APPWIDGET"/>
+        <permission name="android.permission.CONTROL_REMOTE_APP_TRANSITION_ANIMATIONS"/>
+        <permission name="android.permission.GET_ACCOUNTS_PRIVILEGED"/>
+        <permission name="android.permission.PACKAGE_USAGE_STATS"/>
+        <permission name="android.permission.READ_NETWORK_USAGE_HISTORY"/>
+        <permission name="android.permission.STATUS_BAR"/>
+        <permission name="android.permission.WRITE_SECURE_SETTINGS"/>
+        <permission name="android.permission.CHANGE_COMPONENT_ENABLED_STATE" />
+    </privapp-permissions>
+    <!--end add permission for luancher3 by lych-->
+
+    <!-- SR-18642623-zwz add for cts test -->
+    <privapp-permissions package="com.transsion.smart.assistant">
+        <permission name="android.permission.DELETE_PACKAGES" />
+        <permission name="android.permission.DUMP" />
+        <permission name="android.permission.FORCE_STOP_PACKAGES" />
+        <permission name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+        <permission name="android.permission.PACKAGE_USAGE_STATS" />
+        <permission name="android.permission.WRITE_SECURE_SETTINGS" />
+    </privapp-permissions>
+    <!-- SR-18642623-zwz add end -->
+<!-- Transsion, IB_comm,  add for cts test,20190227,start -->
+    <privapp-permissions package="com.android.camera">
+        <permission name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS"/>
+        <permission name="android.permission.WRITE_MEDIA_STORAGE"/>
+    </privapp-permissions>
+
+    <privapp-permissions package="com.itel.ar">
+        <permission name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS"/>
+        <permission name="android.permission.WRITE_MEDIA_STORAGE"/>
+    </privapp-permissions>
+
+    <privapp-permissions package="com.transsion.aicenter">
+        <permission name="android.permission.INSTALL_PACKAGES"/>
+        <permission name="android.permission.READ_PHONE_STATE" />
+        <!-- TRANSSION add by zhengzhou.xu 20191220-->
+        <permission name="android.permission.READ_PRIVILEGED_PHONE_STATE" />
+    </privapp-permissions>
+
+    <privapp-permissions package="com.transsion.mango.adhost">
+        <permission name="android.permission.INSTALL_PACKAGES"/>
+        <permission name="android.permission.DELETE_PACKAGES"/>
+    </privapp-permissions>
+
+    <privapp-permissions package="com.transsion.appupgrade">
+        <permission name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS"/>
+        <permission name="android.permission.WRITE_MEDIA_STORAGE"/>
+        <permission name="android.permission.CHANGE_CONFIGURATION"/>
+        <permission name="android.permission.WRITE_SECURE_SETTINGS"/>
+    </privapp-permissions>
+
+<!-- Transsion, IB_comm,  add for cts test,20190227,end -->
+
+    <!-- SR-18602662 add for cts test -->
+    <privapp-permissions package="net.bat.store">
+        <permission name="android.permission.INSTALL_PACKAGES"/>
+        <permission name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS"/>
+        <permission name="android.permission.CHANGE_CONFIGURATION"/>
+    </privapp-permissions>
+	
+    <privapp-permissions package="com.transsion.plat.appupdate">
+        <permission name="android.permission.INSTALL_PACKAGES"/>
+        <permission name="android.permission.DELETE_PACKAGES"/>
+        <permission name="android.permission.START_TASKS_FROM_RECENTS"/>
+        <permission name="android.permission.BATTERY_STATS"/>
+    </privapp-permissions>
+
+    <privapp-permissions package="com.zaz.translate">
+        <permission name="android.permission.WRITE_SECURE_SETTINGS"/>
+    </privapp-permissions>
+
+    <privapp-permissions package="com.opera.mini.native">
+        <permission name="android.permission.PACKAGE_USAGE_STATS"/>
+    </privapp-permissions>
+
+    <privapp-permissions package="com.transsnet.store">
+        <permission name="android.permission.INSTALL_PACKAGES"/>
+    </privapp-permissions>
+
+    <privapp-permissions package="com.transsion.autotest.factory">
+        <permission name="android.permission.MASTER_CLEAR"/>
+        <permission name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS"/>
+        <permission name="android.permission.REBOOT"/>
+    </privapp-permissions>
+
+    <!-- start:chaoyu.mao_sys_add:for autotest from zhehao.huang -->
+    <privapp-permissions package="com.transsion.agingfunction">
+        <permission name="android.permission.MASTER_CLEAR"/>
+        <permission name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS"/>
+        <permission name="android.permission.REBOOT"/>
+    </privapp-permissions>
+    <!-- end:chaoyu.mao_sys_add:for autotest from zhehao.huang -->
+
+    <privapp-permissions package="com.opera.branding">
+        <permission name="android.permission.PACKAGE_USAGE_STATS"/>
+    </privapp-permissions>
+
+    <privapp-permissions package="com.transsion.carlcare">
+        <permission name="android.permission.READ_PRIVILEGED_PHONE_STATE"/>
+        <permission name="android.permission.GET_ACCOUNTS_PRIVILEGED"/>
+        <permission name="android.permission.STATUS_BAR"/>
+        <permission name="android.permission.READ_NETWORK_USAGE_HISTORY"/>
+        <permission name="android.permission.INSTALL_LOCATION_PROVIDER"/>
+        <permission name="android.permission.WRITE_SECURE_SETTINGS"/>
+        <permission name="android.permission.READ_LOGS"/>
+    </privapp-permissions>
+    <!-- SR-18602662 add end -->
+
+    <!-- transsion begin, IB-18602531, xinxin.wu, add, 2019.04.04 -->
+    <privapp-permissions package="com.android.ringtone">
+        <permission name="android.permission.WRITE_MEDIA_STORAGE"/>
+        <permission name="android.permission.MANAGE_USERS"/>
+        <permission name="android.permission.ACCESS_MTP"/>
+        <permission name="android.permission.INTERACT_ACROSS_USERS"/>
+    </privapp-permissions>
+    <!-- transsion end -->
+    <!-- transsion begin, quyonggang, add, 2019.11.25 -->
+    <privapp-permissions package="com.android.providers.contacts">
+        <permission name="android.permission.WRITE_SECURE_SETTINGS"/>
+    </privapp-permissions>
+    <privapp-permissions package="com.android.dialer">
+        <permission name="android.permission.WRITE_SECURE_SETTINGS"/>
+        <permission name="android.permission.USE_RESERVED_DISK"/>
+        <permission name="com.android.voicemail.permission.READ_VOICEMAIL"/>
+        <permission name="android.permission.STOP_APP_SWITCHES"/>
+        <deny-permission name="android.permission.PACKAGE_USAGE_STATS"/>
+        <permission name="android.permission.GET_ACCOUNTS_PRIVILEGED"/>
+        <permission name="android.permission.READ_PRIVILEGED_PHONE_STATE"/>
+        <permission name="com.android.voicemail.permission.WRITE_VOICEMAIL"/>
+        <permission name="android.permission.ALLOW_ANY_CODEC_FOR_PLAYBACK"/>
+        <permission name="android.permission.CONTROL_INCALL_EXPERIENCE"/>
+        <permission name="android.permission.MODIFY_PHONE_STATE"/>
+        <permission name="android.permission.STATUS_BAR"/>
+    </privapp-permissions>
+    <!-- transsion end, quyonggang, add, 2019.11.25 -->
+
+    <!-- transsion begin, IB-18641139, juanning.zhao, add, 2019.11.22 -->
+    <privapp-permissions package="com.transsion.statisticalsales">
+        <permission name="android.permission.WRITE_SECURE_SETTINGS" />
+        <permission name="android.permission.FORCE_STOP_PACKAGES" />
+        <permission name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+        <permission name="android.permission.READ_PRIVILEGED_PHONE_STATE" />
+    </privapp-permissions>
+    <!-- transsion end -->
+    <!-- OS: add for quickstep by os 20200409 start -->
+    <privapp-permissions package="com.android.quickstep">
+        <permission name="android.permission.CONTROL_REMOTE_APP_TRANSITION_ANIMATIONS"/>
+    </privapp-permissions>
+     <!-- OS: add for quickstep by os 20200409 end -->
+
+    <!-- transsion begin, IB-02516, add, 2020.06.30 -->
+    <privapp-permissions package="com.ecloud.eshare">
+        <permission name="android.permission.CAPTURE_AUDIO_OUTPUT" />
+    </privapp-permissions>
+    <!-- transsion end -->
+    <!-- transsion begin, min.yi, add for TWS apk,2020.06.22 -->
+    <privapp-permissions package="com.itel.TWSService">
+        <permission name="android.permission.BLUETOOTH_ADMIN"/>
+        <permission name="android.permission.BLUETOOTH"/>
+        <permission name="android.permission.ACCESS_FINE_LOCATION"/>
+        <permission name="android.permission.ACCESS_COARSE_LOCATION"/>
+        <permission name="android.permission.BLUETOOTH_PRIVILEGED"/>
+        <permission name="android.permission.PEERS_MAC_ADDRESS"/>
+        <permission name="android.permission.INTERNAL_SYSTEM_WINDOW"/>
+        <permission name="android.permission.STATUS_BAR"/>
+        <permission name="android.permission.STATUS_BAR_SERVICE"/>
+    </privapp-permissions>
+    <!-- transsion end -->
+
+    <!-- transsion begin, yongjie.wu, add, 2021.03.08 -->
+    <privapp-permissions package="com.transsion.camera">
+        <permission name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS"/>
+        <permission name="android.permission.WRITE_MEDIA_STORAGE"/>
+    </privapp-permissions>
+    <!-- transsion end -->
+
+    <!--    SW_SYSTEM_IB_18646807 zhihao.fan, add begin for SCEQP651W-57,xshare permission-->
+    <privapp-permissions package="com.talpa.share">
+        <permission name="android.permission.DELETE_PACKAGES"/>
+        <permission name="android.permission.INSTALL_PACKAGES"/>
+    </privapp-permissions>
+    <!--    SW_SYSTEM_IB_18646807 zhihao.fan,add end-->
+    
+    <!--  transsion qiang.deng  add for GMS permission request begin -->
+    <privapp-permissions package="com.transsion.systemupdate">
+        <permission name="android.permission.RECOVERY"/>
+        <permission name="android.permission.SHUTDOWN"/>
+    </privapp-permissions>
+    <!--  transsion qiang.deng  add for GMS permission request end -->
+
+    <!-- sys yongjie.wu add for PLWYLF-249 start -->
+    <privapp-permissions package="com.android.contacts">
+        <permission name="android.permission.USE_RESERVED_DISK"/>
+        <permission name="android.permission.CALL_PRIVILEGED"/>
+        <permission name="android.permission.GET_ACCOUNTS_PRIVILEGED"/>
+        <permission name="android.permission.MODIFY_PHONE_STATE"/>
+    </privapp-permissions>
+
+    <privapp-permissions package="com.sh.smart.caller">
+        <permission name="android.permission.USE_RESERVED_DISK"/>
+        <permission name="com.android.voicemail.permission.READ_VOICEMAIL"/>
+        <permission name="android.permission.STOP_APP_SWITCHES"/>
+        <deny-permission name="android.permission.PACKAGE_USAGE_STATS"/>
+        <permission name="android.permission.GET_ACCOUNTS_PRIVILEGED"/>
+        <permission name="android.permission.READ_PRIVILEGED_PHONE_STATE"/>
+        <permission name="com.android.voicemail.permission.WRITE_VOICEMAIL"/>
+        <permission name="android.permission.ALLOW_ANY_CODEC_FOR_PLAYBACK"/>
+        <permission name="android.permission.CONTROL_INCALL_EXPERIENCE"/>
+        <permission name="android.permission.MODIFY_PHONE_STATE"/>
+        <permission name="android.permission.STATUS_BAR"/>
+    </privapp-permissions>
+    <!-- sys yongjie.wu add for PLWYLF-249 end -->
+    
+    <!-- drv zihan.xu add start -->
+    <privapp-permissions package="com.cdfinger.factorytest">
+        <permission name="android.permission.MANAGE_FINGERPRINT"/>
+    </privapp-permissions>
+    <!-- drv zihan.xu add end -->
+</permissions>

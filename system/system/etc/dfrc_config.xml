@@ -1,0 +1,70 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<!-- Copyright (C) 2012 The Android Open Source Project
+
+     Licensed under the Apache License, Version 2.0 (the "License");
+     you may not use this file except in compliance with the License.
+     You may obtain a copy of the License at
+
+          http://www.apache.org/licenses/LICENSE-2.0
+
+     Unless required by applicable law or agreed to in writing, software
+     distributed under the License is distributed on an "AS IS" BASIS,
+     WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+     See the License for the specific language governing permissions and
+     limitations under the License.
+-->
+
+<!--
+dfrc_mode:
+	DFRC_MODE_LOWPOWER = 0;
+	DFRC_MODE_BALANCE = 1;
+	DFRC_MODE_PERFORMANCE = 2;
+
+component:
+	Package: com.foo
+	Activity: com.foo/.Blah
+-->
+<dfrc>
+<!-- DFRC_MODE_LOWPOWER -->
+	<config dfrc_mode="0" component="com.android.launcher3" fps="50"/>
+	<config dfrc_mode="0" component="com.rovio.angrybirds" fps="50"/>
+	<config dfrc_mode="0" component="com.vectorunit.yellow" fps="50"/>
+	<config dfrc_mode="0" component="nl.dotsightsoftware.pacificfighter.release" fps="50"/>
+	<config dfrc_mode="0" component="com.tencent.mm" fps="50"/>
+	<config dfrc_mode="0" component="com.tencent.mm/.plugin.voip.ui.VideoActivity" fps="50"/>
+	<config dfrc_mode="1" component="com.rovio.angrybirdsseasons" fps="40"/>
+	<config dfrc_mode="1" component="com.tencent.mm" fps="40"/>
+	<config dfrc_mode="1" component="com.tencent.mm/.plugin.voip.ui.VideoActivity" fps="40"/>
+	<config dfrc_mode="1" component="com.sina.weibo" fps="40"/>
+	<config dfrc_mode="1" component="com.transsion.magicshow" fps="50"/>
+
+<!-- DFRC_MODE_BALANCE -->
+	<config dfrc_mode="1" component="com.android.camera" fps="40"/>
+	<config dfrc_mode="1" component="com.rovio.angrybirds" fps="50"/>
+	<config dfrc_mode="1" component="com.google.android.adfrc.photos" fps="50"/>
+	<config dfrc_mode="1" component="com.google.android.apps.photosgo" fps="60"/>
+	<config dfrc_mode="1" component="com.transsion.deskclock/.alarms.AlarmActivity" fps="40"/>
+	<config dfrc_mode="1" component="com.google.android.apps.youtube.mango" fps="60"/>
+	<config dfrc_mode="1" component="com.kiloo.subwaysurf" fps="60"/>
+	<config dfrc_mode="1" component="com.sh.smart.caller" fps="50"/>
+	<config dfrc_mode="1" component="com.UCMobile.intl" fps="50"/>
+	<config dfrc_mode="1" component="com.rovio.angrybirdsseasons" fps="40"/>
+	<config dfrc_mode="1" component="com.tencent.mm" fps="40"/>
+	<config dfrc_mode="1" component="com.tencent.mm/.plugin.voip.ui.VideoActivity" fps="40"/>
+	<config dfrc_mode="1" component="com.sina.weibo" fps="40"/>
+	<config dfrc_mode="1" component="com.transsion.magicshow" fps="50"/>
+
+<!-- DFRC_MODE_PERFORMANCE -->
+	<config dfrc_mode="2" component="com.android.launcher3" fps="50"/>
+	<config dfrc_mode="2" component="com.rovio.angrybirds" fps="50"/>
+	<config dfrc_mode="2" component="com.vectorunit.yellow" fps="50"/>
+	<config dfrc_mode="2" component="nl.dotsightsoftware.pacificfighter.release" fps="50"/>
+	<config dfrc_mode="2" component="com.tencent.mm" fps="50"/>
+	<config dfrc_mode="2" component="com.tencent.mm/.plugin.voip.ui.VideoActivity" fps="50"/>
+	<config dfrc_mode="1" component="com.rovio.angrybirdsseasons" fps="40"/>
+	<config dfrc_mode="1" component="com.tencent.mm" fps="40"/>
+	<config dfrc_mode="1" component="com.tencent.mm/.plugin.voip.ui.VideoActivity" fps="40"/>
+	<config dfrc_mode="1" component="com.sina.weibo" fps="40"/>
+	<config dfrc_mode="1" component="com.transsion.magicshow" fps="50"/>
+
+</dfrc>

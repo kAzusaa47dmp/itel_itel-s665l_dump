@@ -1,0 +1,7 @@
+[exceptions]
+anr=no
+nativeCrash=no
+javaCrash=no
+modemAssert=yes
+ramUsed=no
+lifeTime=no

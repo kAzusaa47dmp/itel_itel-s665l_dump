@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<PowerXtend_common>
+  <user_table_path>/data/misc/user/0</user_table_path>
+  <MeasurementConfiguration>
+    <BatteryLevel>
+      <file>/sys/class/power_supply/battery/capacity</file>
+      <ratio>1</ratio>
+      <average>1</average>
+      <hysteresis>0</hysteresis>
+      <samplingFrequency>10</samplingFrequency>
+    </BatteryLevel>
+  </MeasurementConfiguration>
+  <ambient_light_thresholds>
+    <outdoor_low_threshold>50000</outdoor_low_threshold>
+    <outdoor_high_threshold>150000</outdoor_high_threshold>
+    <average>1</average>
+    <hysteresis>0</hysteresis>
+    <samplingFrequency>10</samplingFrequency>
+  </ambient_light_thresholds>
+  <GuiPackageName>com.lucid.power</GuiPackageName>
+  <dpi>400</dpi>
+  <default_log_level>0</default_log_level>
+  <ICE_Slider_Stops>5 10 15 20 25 30 35 40 45 50 55 60 65 70 75 80 85 90 95</ICE_Slider_Stops>
+  <regex_bl>
+    <app_regex name="system\.bin">1</app_regex>
+    <app_regex name="vendor\.bin">1</app_regex>
+    <app_regex name="data\.bin">1</app_regex>
+    <app_regex name="system\/bin">1</app_regex>
+    <app_regex name="vendor\/bin">1</app_regex>
+    <app_regex name="data\/bin">1</app_regex>
+    <app_regex name="UiAutomator">1</app_regex>
+    <app_regex name="uiautomator">1</app_regex>
+  </regex_bl>
+  <priority_black_list>com.android.gallery3d com.mediatek.camera com.android.camera.CameraLauncher com.itel.retaildemo com.reallytek.wg</priority_black_list>
+  <prefix_bl>placeHolder placeHolder2</prefix_bl>
+  <max_brightness>4095</max_brightness>
+  <multi_window_layer>FocusedStackFrame</multi_window_layer>
+  <gamma_coef_a>10000</gamma_coef_a>
+  <gamma_coef_b>10000</gamma_coef_b>
+  <gamma_coef_c>0</gamma_coef_c>
+  <soc>MTK</soc>
+  <splash_screen_layers>Starting,ScreenshotSurface</splash_screen_layers>
+  <lut_frames_between_update>2</lut_frames_between_update>
+  <lut_rgb_change_in_update>1</lut_rgb_change_in_update>
+  <backlightAnimationOn>1</backlightAnimationOn>
+  <backlightAnimationStepSize>10</backlightAnimationStepSize>
+  <brightness_floor>1</brightness_floor>
+  <max_brightness_reduction>255</max_brightness_reduction>
+  <ps_version>4.0</ps_version>
+</PowerXtend_common>

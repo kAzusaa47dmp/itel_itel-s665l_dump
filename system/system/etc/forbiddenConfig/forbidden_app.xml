@@ -1,0 +1,179 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+ * SHENZHEN TRANSSION COMMUNICATION LIMITED TOP SECRET.
+ * Copyright (c) 2016-2036  SHENZHEN TRANSSION COMMUNICATION LIMITED
+ *
+ * PROPRIETARY RIGHTS of Shenzhen Transsion Communication Limited are involved in the
+ * subject matter of this material.  All manufacturing, reproduction, use,
+ * and sales rights pertaining to this subject matter are governed by the
+ * license agreement.  The recipient of this software implicitly accepts
+ * the terms of the license.
+ *
+ * Description: SetupWizard 
+ * Author: 
+ * Version: v01
+ * Date: 2019-7-18
+ * Modification: original
+ -->
+<forbiddenApp>
+
+    <forbidden>
+        <needForbiddenProductDevice>All</needForbiddenProductDevice>
+        <country>Nepal</country>
+        <appPackageName>com.afmobigroup.gphone; com.transsnet.chat; com.yomobigroup.chat; com.vskit.lite; com.hatsune.eagleee; in.mohalla.sharechat; com.qidian.Int.reader.transread; com.transread.novel.story.lite; com.transsnet.palmpay; com.transsnetfinancial.palmcredit; com.transsion.phoenix; com.banggame.lite; com.infinix.xpark; com.infinix.xparkgo; com.nati.cal; com.infomedia.angkasapura2v2; com.cnn.indonesia; id.mjs.etalaseapp; com.kikaoem.qisiemoji.inputmethod.cy.se</appPackageName>
+    </forbidden>
+
+    <forbidden>
+        <needForbiddenProductDevice>All</needForbiddenProductDevice>
+        <country>Ethiopia</country>
+        <appPackageName>com.android.calendar; com.google.android.calendar; in.mohalla.sharechat; com.kikaoem.qisiemoji.inputmethod.itel.se; com.kikaoem.qisiemoji.inputmethod.cy.se; com.itel.weather; com.transsnet.palmpay; com.transsnetfinancial.palmcredit; com.banggame.lite; com.infinix.xpark; com.infinix.xparkgo; com.talpa.hibrowser; com.infomedia.angkasapura2v2; com.cnn.indonesia; id.mjs.etalaseapp; com.transsion.repaircard</appPackageName>
+    </forbidden>
+
+    <forbidden>
+        <needForbiddenProductDevice>All</needForbiddenProductDevice>
+        <country>India</country>
+        <appPackageName>com.afmobigroup.gphone; com.transsnet.chat; com.yomobigroup.chat; com.vskit.lite; com.hatsune.eagleee; com.qidian.Int.reader.transread; com.transread.novel.story.lite; com.transsnet.palmpay; com.transsnetfinancial.palmcredit; com.transsion.phoenix; com.banggame.lite; com.infinix.xpark; com.infinix.xparkgo; com.nati.cal; com.infomedia.angkasapura2v2; com.cnn.indonesia; id.mjs.etalaseapp; com.kikaoem.qisiemoji.inputmethod.cy.se</appPackageName>
+    </forbidden>
+
+    <forbidden>
+        <needForbiddenProductDevice>All</needForbiddenProductDevice>
+        <country>Russia</country>
+        <appPackageName>com.afmobigroup.gphone; com.transsnet.chat; com.yomobigroup.chat; com.vskit.lite; com.hatsune.eagleee; in.mohalla.sharechat; com.qidian.Int.reader.transread; com.transread.novel.story.lite; com.transsnet.palmpay; com.transsnetfinancial.palmcredit; com.transsion.phoenix; com.banggame.lite; com.infinix.xpark; com.infinix.xparkgo; com.talpa.hibrowser; com.nati.cal; com.infomedia.angkasapura2v2; com.cnn.indonesia; id.mjs.etalaseapp; com.kikaoem.qisiemoji.inputmethod.cy.se</appPackageName>
+    </forbidden>
+
+    <forbidden>
+        <needForbiddenProductDevice>All</needForbiddenProductDevice>
+        <country>Saudi Arabia</country>
+        <appPackageName>com.afmobigroup.gphone; com.transsnet.chat; com.yomobigroup.chat; com.vskit.lite; com.hatsune.eagleee; in.mohalla.sharechat; com.qidian.Int.reader.transread; com.transread.novel.story.lite; com.transsnet.palmpay; com.transsnetfinancial.palmcredit; com.transsion.phoenix; com.banggame.lite; com.infinix.xpark; com.infinix.xparkgo; com.nati.cal; com.infomedia.angkasapura2v2; com.cnn.indonesia; id.mjs.etalaseapp; com.kikaoem.qisiemoji.inputmethod.cy.se</appPackageName>
+    </forbidden>
+
+    <forbidden>
+        <needForbiddenProductDevice>All</needForbiddenProductDevice>
+        <country>Lebanon</country>
+        <appPackageName>com.afmobigroup.gphone; com.transsnet.chat; com.yomobigroup.chat; com.vskit.lite; com.hatsune.eagleee; in.mohalla.sharechat; com.qidian.Int.reader.transread; com.transread.novel.story.lite; com.transsnet.palmpay; com.transsnetfinancial.palmcredit; com.transsion.phoenix; com.banggame.lite; com.infinix.xpark; com.infinix.xparkgo; com.nati.cal; com.infomedia.angkasapura2v2; com.cnn.indonesia; id.mjs.etalaseapp; com.kikaoem.qisiemoji.inputmethod.cy.se</appPackageName>
+    </forbidden>
+
+    <forbidden>
+        <needForbiddenProductDevice>All</needForbiddenProductDevice>
+        <country>Pakistan</country>
+        <appPackageName>com.afmobigroup.gphone; com.transsnet.chat; com.yomobigroup.chat; com.vskit.lite; com.hatsune.eagleee; in.mohalla.sharechat; com.qidian.Int.reader.transread; com.transread.novel.story.lite; com.transsnet.palmpay; com.transsnetfinancial.palmcredit; com.transsion.phoenix; com.banggame.lite; com.nati.cal; com.infomedia.angkasapura2v2; com.cnn.indonesia; id.mjs.etalaseapp; com.kikaoem.qisiemoji.inputmethod.cy.se; com.transsion.repaircard</appPackageName>
+    </forbidden>
+
+    <forbidden>
+        <needForbiddenProductDevice>All</needForbiddenProductDevice>
+        <country>Myanmar</country>
+        <appPackageName>com.afmobigroup.gphone; com.transsnet.chat; com.yomobigroup.chat; com.vskit.lite; com.hatsune.eagleee; in.mohalla.sharechat; com.qidian.Int.reader.transread; com.transread.novel.story.lite; com.transsnet.palmpay; com.transsnetfinancial.palmcredit; com.transsion.phoenix; com.banggame.lite; com.infinix.xpark; com.infinix.xparkgo; com.nati.cal; com.infomedia.angkasapura2v2; com.cnn.indonesia; id.mjs.etalaseapp</appPackageName>
+    </forbidden>
+
+    <forbidden>
+        <needForbiddenProductDevice>All</needForbiddenProductDevice>
+        <country>Cambodia; Iran; Vietnam; Thailand; Ukraine; Sri Lanka; Turkey; Jordan; Solomon Islands</country>
+        <appPackageName>com.afmobigroup.gphone; com.transsnet.chat; com.yomobigroup.chat; com.vskit.lite; com.hatsune.eagleee; in.mohalla.sharechat; com.qidian.Int.reader.transread; com.transread.novel.story.lite; com.transsnet.palmpay; com.transsnetfinancial.palmcredit; com.transsion.phoenix; com.banggame.lite; com.infinix.xpark; com.infinix.xparkgo; com.nati.cal; com.infomedia.angkasapura2v2; com.cnn.indonesia; id.mjs.etalaseapp; com.kikaoem.qisiemoji.inputmethod.cy.se</appPackageName>
+    </forbidden>
+
+    <forbidden>
+        <needForbiddenProductDevice>All</needForbiddenProductDevice>
+        <country>United Arab Emirates; Philippines</country>
+        <appPackageName>com.afmobigroup.gphone; com.transsnet.chat; com.yomobigroup.chat; com.vskit.lite; com.hatsune.eagleee; in.mohalla.sharechat; com.qidian.Int.reader.transread; com.transread.novel.story.lite; com.transsnet.palmpay; com.transsnetfinancial.palmcredit; com.transsion.phoenix; com.banggame.lite; com.infinix.xpark; com.infinix.xparkgo; com.nati.cal; com.infomedia.angkasapura2v2; com.cnn.indonesia; id.mjs.etalaseapp; com.kikaoem.qisiemoji.inputmethod.cy.se; com.transsion.repaircard</appPackageName>
+    </forbidden>
+
+    <forbidden>
+        <needForbiddenProductDevice>All</needForbiddenProductDevice>
+        <country>Bangladesh</country>
+        <appPackageName>com.afmobigroup.gphone; com.transsnet.chat; com.yomobigroup.chat; com.vskit.lite; com.hatsune.eagleee; in.mohalla.sharechat; com.qidian.Int.reader.transread; com.transread.novel.story.lite; com.transsnet.palmpay; com.transsnetfinancial.palmcredit; com.transsion.phoenix; com.banggame.lite; com.infinix.xpark; com.infinix.xparkgo; com.nati.cal; com.infomedia.angkasapura2v2; com.cnn.indonesia; id.mjs.etalaseapp; com.kikaoem.qisiemoji.inputmethod.cy.se; com.transsion.repaircard</appPackageName>
+    </forbidden>
+
+    <forbidden>
+        <needForbiddenProductDevice>All</needForbiddenProductDevice>
+        <country>Indonesia</country>
+        <appPackageName>com.afmobigroup.gphone; com.transsnet.chat; com.yomobigroup.chat; com.vskit.lite; com.hatsune.eagleee; in.mohalla.sharechat; com.qidian.Int.reader.transread; com.transread.novel.story.lite; com.transsnet.palmpay; com.transsnetfinancial.palmcredit; com.transsion.phoenix; com.banggame.lite; com.infinix.xpark; com.infinix.xparkgo; com.nati.cal; com.kikaoem.qisiemoji.inputmethod.cy.se</appPackageName>
+    </forbidden>
+
+    <forbidden>
+        <needForbiddenProductDevice>All</needForbiddenProductDevice>
+        <country>Nigeria</country>
+        <appPackageName>in.mohalla.sharechat; com.kikaoem.qisiemoji.inputmethod.itel.se; com.kikaoem.qisiemoji.inputmethod.cy.se; com.itel.weather; com.talpa.hibrowser; com.nati.cal; com.infomedia.angkasapura2v2; com.cnn.indonesia; id.mjs.etalaseapp</appPackageName>
+    </forbidden>
+
+    <forbidden>
+        <needForbiddenProductDevice>All</needForbiddenProductDevice>
+        <country>Kenya; Ghana</country>
+        <appPackageName>in.mohalla.sharechat; com.kikaoem.qisiemoji.inputmethod.itel.se; com.kikaoem.qisiemoji.inputmethod.cy.se; com.itel.weather; com.transsnet.palmpay; com.transsnetfinancial.palmcredit; com.talpa.hibrowser; com.nati.cal; com.infomedia.angkasapura2v2; com.cnn.indonesia; id.mjs.etalaseapp</appPackageName>
+    </forbidden>
+
+    <forbidden>
+        <needForbiddenProductDevice>All</needForbiddenProductDevice>
+        <country>Uganda</country>
+        <appPackageName>in.mohalla.sharechat; com.kikaoem.qisiemoji.inputmethod.itel.se; com.kikaoem.qisiemoji.inputmethod.cy.se; com.itel.weather; com.transsnet.palmpay; com.transsnetfinancial.palmcredit; com.infinix.xpark; com.infinix.xparkgo; com.talpa.hibrowser; com.nati.cal; com.infomedia.angkasapura2v2; com.cnn.indonesia; id.mjs.etalaseapp</appPackageName>
+    </forbidden>
+
+    <forbidden>
+        <needForbiddenProductDevice>All</needForbiddenProductDevice>
+        <country>Botswana; Tanzania; Cameroon; Rwanda; Benin; Sierra Leone; Liberia; Zambia; Senegal; Niger; Somalia; Malawi; Zimbabwe; Mozambique; South Africa; Gambia; Namibia</country>
+        <appPackageName>in.mohalla.sharechat; com.kikaoem.qisiemoji.inputmethod.itel.se; com.kikaoem.qisiemoji.inputmethod.cy.se; com.itel.weather; com.transsnet.palmpay; com.transsnetfinancial.palmcredit; com.banggame.lite; com.infinix.xpark; com.infinix.xparkgo; com.talpa.hibrowser; com.nati.cal; com.infomedia.angkasapura2v2; com.cnn.indonesia; id.mjs.etalaseapp</appPackageName>
+    </forbidden>
+
+    <forbidden>
+        <needForbiddenProductDevice>All</needForbiddenProductDevice>
+        <country>Egypt</country>
+        <appPackageName>in.mohalla.sharechat; com.kikaoem.qisiemoji.inputmethod.itel.se; com.kikaoem.qisiemoji.inputmethod.cy.se; com.itel.weather; com.qidian.Int.reader.transread; com.transread.novel.story.lite; com.transsnet.palmpay; com.transsnetfinancial.palmcredit; com.banggame.lite; com.talpa.hibrowser; com.nati.cal; com.infomedia.angkasapura2v2; com.cnn.indonesia; id.mjs.etalaseapp; com.transsion.itel.manual</appPackageName>
+    </forbidden>
+
+    <forbidden>
+        <needForbiddenProductDevice>All</needForbiddenProductDevice>
+        <country>Morocco</country>
+        <appPackageName>in.mohalla.sharechat; com.kikaoem.qisiemoji.inputmethod.itel.se; com.kikaoem.qisiemoji.inputmethod.cy.se; com.itel.weather; com.qidian.Int.reader.transread; com.transread.novel.story.lite; com.transsnet.palmpay; com.transsnetfinancial.palmcredit; com.banggame.lite; com.talpa.hibrowser; com.nati.cal; com.infomedia.angkasapura2v2; com.cnn.indonesia; id.mjs.etalaseapp</appPackageName>
+    </forbidden>
+
+    <forbidden>
+        <needForbiddenProductDevice>All</needForbiddenProductDevice>
+        <country>Libya; Guinea; Mali; Cote DIvoire; Democratic Republic of the Congo; Republic of Congo; Burundi; Gabonese Republic; Republic of Togo; Burkina Faso; Angola; Madagascar; Mauritius; Tunisia; Equatorial Guinea; Central African Republic; Chad; Algeria; Mauritania; The Republic of Guinea-Bissau</country>
+        <appPackageName>in.mohalla.sharechat; com.kikaoem.qisiemoji.inputmethod.itel.se; com.kikaoem.qisiemoji.inputmethod.cy.se; com.itel.weather; com.qidian.Int.reader.transread; com.transread.novel.story.lite; com.transsnet.palmpay; com.transsnetfinancial.palmcredit; com.banggame.lite; com.infinix.xpark; com.infinix.xparkgo; com.talpa.hibrowser; com.nati.cal; com.infomedia.angkasapura2v2; com.cnn.indonesia; id.mjs.etalaseapp</appPackageName>
+    </forbidden>
+
+    <forbidden>
+        <needForbiddenProductDevice>All</needForbiddenProductDevice>
+        <country>Iraq</country>
+        <appPackageName>com.vskit.lite; com.yomobigroup.chat; com.hatsune.eagleee; com.transread.novel.story.lite; com.qidian.Int.reader.transread; in.mohalla.sharechat; com.transsnet.palmpay; com.transsnetfinancial.palmcredit; com.transsion.phoenix; com.infinix.xpark; com.infinix.xparkgo; com.nati.cal; com.infomedia.angkasapura2v2; com.cnn.indonesia; id.mjs.etalaseapp; com.kikaoem.qisiemoji.inputmethod.cy.se</appPackageName>
+    </forbidden>
+
+    <forbidden>
+        <needForbiddenProductDevice>All</needForbiddenProductDevice>
+        <country>Mexico; Guatemala; Colombia</country>
+        <appPackageName>com.vskit.lite; com.yomobigroup.chat; com.hatsune.eagleee; com.transsnet.palmpay; com.transsnetfinancial.palmcredit; com.transsion.phoenix; com.infinix.xpark; com.infinix.xparkgo; com.android.music; com.nati.cal; com.infomedia.angkasapura2v2; com.cnn.indonesia; id.mjs.etalaseapp; com.kikaoem.qisiemoji.inputmethod.cy.se</appPackageName>
+    </forbidden>
+
+    <forbidden>
+        <needForbiddenProductDevice>All</needForbiddenProductDevice>
+        <country>Kuwait</country>
+        <appPackageName>com.vskit.lite; com.yomobigroup.chat; com.hatsune.eagleee; com.transsnet.palmpay; com.transsnetfinancial.palmcredit; com.transsion.phoenix; com.infinix.xpark; com.infinix.xparkgo; com.nati.cal; com.infomedia.angkasapura2v2; com.cnn.indonesia; id.mjs.etalaseapp; com.kikaoem.qisiemoji.inputmethod.cy.se</appPackageName>
+    </forbidden>
+
+    <forbidden>
+        <needForbiddenProductDevice>All</needForbiddenProductDevice>
+        <country>Kyrgyzstan; Uzbekistan</country>
+        <appPackageName>com.vskit.lite; com.yomobigroup.chat; com.hatsune.eagleee; com.transread.novel.story.lite; com.qidian.Int.reader.transread; in.mohalla.sharechat; com.transsnet.palmpay; com.transsnetfinancial.palmcredit; com.transsion.phoenix; com.infinix.xpark; com.infinix.xparkgo; com.nati.cal; com.infomedia.angkasapura2v2; com.cnn.indonesia; id.mjs.etalaseapp; com.kikaoem.qisiemoji.inputmethod.cy.se</appPackageName>
+    </forbidden>
+
+    <forbidden>
+        <needForbiddenProductDevice>All</needForbiddenProductDevice>
+        <country>Others</country>
+        <appPackageName>in.mohalla.sharechat; com.transsnet.palmpay; com.transsnetfinancial.palmcredit; com.banggame.lite; com.infinix.xpark; com.infinix.xparkgo; com.nati.cal; com.infomedia.angkasapura2v2; com.cnn.indonesia; id.mjs.etalaseapp; com.kikaoem.qisiemoji.inputmethod.cy.se</appPackageName>
+    </forbidden>
+
+    <forbidden>
+        <needForbiddenProductDevice>itel-L6003P</needForbiddenProductDevice>
+        <country>Thailand; Lebanon; Russia; Ukraine; Sri Lanka; Nepal; Philippines; Vietnam; Cambodia; Indonesia; Pakistan; Bangladesh; India; Turkey; Iran;United Arab Emirates; Saudi Arabia; Myanmar</country>
+        <appPackageName>com.afmobi.boomplayer</appPackageName>
+    </forbidden>
+
+    <forbidden>
+        <needForbiddenProductDevice>itel-L6003P</needForbiddenProductDevice>
+        <country>Libya; Jordan; Botswana; Nigeria; Kenya; Tanzania; Ghana; Egypt; Guinea; Mali; Cameroon; Uganda; Rwanda; Cote DIvoire; Ethiopia; Benin; Sierra Leone; Solomon Islands; Democratic Republic of the Congo; Republic of Congo; Liberia; Zambia; Burundi; Senegal; Niger; Somalia; Gabonese Republic; Republic of Togo; Malawi; Burkina Faso; Angola; Zimbabwe; Mozambique; Madagascar; Mauritius; Tunisia; Equatorial Guinea; Central African Republic; Chad; South Africa; Algeria; Morocco; Gambia; Mauritania; Namibia; The Republic of Guinea-Bissau; Others</country>
+        <appPackageName>com.zaz.musicplayer</appPackageName>
+    </forbidden>
+
+</forbiddenApp>
+
+
+

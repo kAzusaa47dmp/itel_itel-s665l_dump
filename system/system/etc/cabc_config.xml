@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<cabc>
+	<config cabc_mode="0" component="com.android.launcher3"/>
+	<config cabc_mode="0" component="com.google.android.apps.photosgo"/>
+	<config cabc_mode="0" component="com.reallytek.wg"/>
+</cabc>

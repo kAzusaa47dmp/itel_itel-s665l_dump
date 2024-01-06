@@ -1,0 +1,3 @@
+#SPD: add by feng.an 20210813 start
+on property:sys.boot_completed=1
+    mkdir /data/tran_appm 0775 system system encryption=Require

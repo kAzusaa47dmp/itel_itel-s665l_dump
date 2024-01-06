@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!--
+ * SHENZHEN TRANSSION COMMUNICATION LIMITED TOP SECRET.
+ * Copyright (c) 2016-2036  SHENZHEN TRANSSION COMMUNICATION LIMITED
+ *
+ * PROPRIETARY RIGHTS of Shenzhen Transsion Communication Limited are involved in the
+ * subject matter of this material.  All manufacturing, reproduction, use,
+ * and sales rights pertaining to this subject matter are governed by the
+ * license agreement.  The recipient of this software implicitly accepts
+ * the terms of the license.
+ *
+ * Description:
+ * Author:
+ * Version:v1.0
+ * Date:
+ * Modification:
+ *
+ */
+-->
+
+<config>
+
+  <hidden-api-whitelisted-app package="com.facebook.appmanager" />
+  <hidden-api-whitelisted-app package="com.facebook.system" />
+  <hidden-api-whitelisted-app package="com.facebook.services" />
+
+</config>

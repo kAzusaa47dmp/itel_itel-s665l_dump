@@ -1,0 +1,94 @@
+on post-fs-data
+    #SDD:Modify KBBGHLESGQ-122 by zhao.li for folder permission 20190823 start
+    mkdir /data/TNE 0777 root root
+    #SDD:Modify KBBGHLESGQ-122 by zhao.li for folder permission 20190823 end
+    mkdir /data/hprof 0777 system system
+    mkdir /tranfs/stuck_logo 0755 root root
+    #SDD:Modify KBBGHLESGQ-112 by lihua.sheng 20191011 start
+    mkdir /tranfs/SDD/ 0777 root root
+    mkdir /tranfs/SDD/ExceptionReport/ 0777 root root
+    #SDD:Modify KBBGHLESGQ-112 by lihua.sheng 20191011 end
+    copy /system/etc/TNE_TAG.txt /data/TNE/TNE_TAG.txt
+    chmod 0644 /data/TNE/TNE_TAG.txt
+    chmod 0666 /dev/tnek
+    write /data/TNE/hang_detect_trace 0
+    chmod 0664 /data/TNE/hang_detect_trace
+    write /data/TNE/config 0
+    chmod 0644 /data/TNE/config
+
+service tne /system/bin/tne
+    class core
+    user root
+    group root
+    disabled
+    writepid /dev/cpuset/system-background/tasks
+
+on property:ro.transsion.tne.support=true && property:sys.usb.mode=normal
+    start tne
+
+service tne_dumpstate /system/bin/tne_dumpstate 0xffff0000
+    disabled
+    oneshot
+    keycodes ${ro.tne.dump.keycodes:-none}
+    writepid /dev/cpuset/foreground/tasks
+
+on property:debug.tne.trace.reinitsize=*
+   write /sys/kernel/debug/tracing/buffer_size_kb ${debug.tne.trace.reinitsize}
+
+#SDD:added by xqzhan XLLLHLWS-6706 20200407 start
+on property:ro.transsion.tne.support=true && property:persist.sys.adb.support=1
+    write /sys/kernel/debug/tracing/tracing_on 1
+    #write /sys/kernel/debug/tracing/events/android_fs/enable 1
+    write /sys/kernel/debug/tracing/events/sched/sched_switch/enable 1
+    write /sys/kernel/debug/tracing/events/power/cpu_idle/enable 1
+    write /sys/kernel/debug/tracing/events/sched/sched_wakeup/enable 1
+    write /sys/kernel/debug/tracing/events/sched/sched_wakeup_new/enable 1
+    write /sys/kernel/debug/tracing/events/sched/sched_migrate_task/enable 1
+    #write /sys/kernel/debug/tracing/events/irq/irq_handler_entry/enable 1
+    #write /sys/kernel/debug/tracing/events/irq/irq_handler_exit/enable 1
+    #write /sys/kernel/debug/tracing/events/mtk_events/enable 1
+    #write /sys/kernel/debug/tracing/events/timer/timer_expire_entry/enable 1
+    #write /sys/kernel/debug/tracing/events/timer/hrtimer_expire_entry/enable 1
+    #write /sys/kernel/debug/tracing/events/timer/hrtimer_expire_exit/enable 1
+    #write /sys/kernel/debug/tracing/events/timer/hrtimer_init/enable 1
+    #write /sys/kernel/debug/tracing/events/timer/hrtimer_start/enable 1
+    write /sys/kernel/debug/tracing/events/power/cpu_frequency/enable 1
+    #write /sys/kernel/debug/tracing/events/power/cpu_frequency_limits/enable 1
+    #SDD:added by kai.yang2 ANDROIDRBE-357 20200908 start
+    write /sys/kernel/debug/tracing/buffer_size_kb 8192
+    write /sys/kernel/debug/tracing/events/sched/sched_blocked_reason/enable 1
+    write /sys/kernel/debug/tracing/events/sched/sched_cpu_hotplug/enable 1
+    write /sys/kernel/debug/tracing/events/sched/sched_pi_setprio/enable 1
+    #SDD:added by kai.yang2 ANDROIDRBE-357 20200908 end
+    mkdir /sys/kernel/debug/tracing/instances/perf
+    chmod 755 /sys/kernel/debug/tracing/instances/perf
+    write /sys/kernel/debug/tracing/instances/perf/options/print-parent 0
+    #write /sys/kernel/debug/tracing/instances/perf/options/print-tgid 0
+    write /sys/kernel/debug/tracing/instances/perf/options/irq-info 0
+    #mkdir /sys/kernel/debug/tracing/instances/power
+    #chmod 755 /sys/kernel/debug/tracing/instances/power
+    #write /sys/kernel/debug/tracing/instances/power/options/print-parent 0
+    #write /sys/kernel/debug/tracing/instances/power/options/print-tgid 0
+    #write /sys/kernel/debug/tracing/instances/power/options/irq-info 0
+    mkdir /sys/kernel/debug/tracing/instances/stab
+    chmod 755 /sys/kernel/debug/tracing/instances/stab
+    write /sys/kernel/debug/tracing/instances/stab/options/print-parent 0
+    write /sys/kernel/debug/tracing/instances/stab/options/print-tgid 0
+    write /sys/kernel/debug/tracing/instances/stab/options/irq-info 0
+    #mkdir /sys/kernel/debug/tracing/instances/cam
+    #chmod 755 /sys/kernel/debug/tracing/instances/cam
+    #write /sys/kernel/debug/tracing/instances/cam/options/print-parent 0
+    #write /sys/kernel/debug/tracing/instances/cam/options/print-tgid 0
+    #write /sys/kernel/debug/tracing/instances/cam/options/irq-info 0
+    #mkdir /sys/kernel/debug/tracing/instances/com
+    #chmod 755 /sys/kernel/debug/tracing/instances/com
+    #write /sys/kernel/debug/tracing/instances/com/options/print-parent 0
+    #write /sys/kernel/debug/tracing/instances/com/options/print-tgid 0
+    #write /sys/kernel/debug/tracing/instances/com/options/irq-info 0
+    mkdir /sys/kernel/tracing/instances/mmstat 711
+    write /sys/kernel/tracing/instances/mmstat/tracing_on 0
+    write /sys/kernel/tracing/instances/mmstat/buffer_size_kb 8
+    write /sys/kernel/tracing/instances/mmstat/events/mmstat/enable 1
+    write /sys/kernel/tracing/instances/mmstat/tracing_on 1
+    write /sys/kernel/debug/tracing/options/record-tgid 1
+#SDD:added by xqzhan XLLLHLWS-6706 20200407 end

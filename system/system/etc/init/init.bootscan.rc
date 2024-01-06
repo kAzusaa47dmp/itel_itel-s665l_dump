@@ -1,0 +1,7 @@
+on post-fs-data
+
+service bootscan /system/bin/bootscan
+    class core
+    user system
+    group system
+    oneshot

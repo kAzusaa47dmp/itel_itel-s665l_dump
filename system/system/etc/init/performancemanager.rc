@@ -1,0 +1,3 @@
+service performancemanager /system/bin/performancemanager
+    class core
+    group root readproc system

@@ -1,0 +1,5 @@
+on post-fs-data
+    #SPD: add LCQHLYYLR-3012 by bin.song 20200914 start
+    mkdir /data/performance 0771 system system encryption=None
+    mkdir /data/performance/user 0771 system system encryption=None
+    mkdir /data/performance/cloud 0771 system system encryption=None
