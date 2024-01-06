@@ -1,0 +1,30 @@
+service ylog /system_ext/bin/ylog
+    class main
+    user root
+    group system media_rw sdcard_rw everybody cache
+    disabled
+    writepid /dev/cpuset/system-background/tasks
+
+
+on post-fs-data
+    mkdir /cache/ylog 0777 system system
+    mkdir /data/ylog 0777 system system encryption=None
+    chmod 0555 /sys/fs/pstore/
+    chmod 0555 /sys/fs/pstore/console-ramoops-0
+    chmod 0555 /sys/fs/pstore/dmesg-ramoops-0
+    chmod 0555 /sys/fs/pstore/pmsg-ramoops-0
+    copy /sys/fs/pstore/console-ramoops-0 /data/ylog/lastkernel.log
+    chmod 666 /data/ylog/lastkernel.log
+    chown system system /data/ylog/lastkernel.log
+    start ylog
+
+on property:init.svc.logd=running
+    mkdir /cache/ylog 0777 system system
+    start ylog
+
+
+
+on early-init
+    mkdir /dev/socket/ylog 0755 system system
+
+

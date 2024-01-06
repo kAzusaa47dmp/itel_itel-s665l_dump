@@ -1,0 +1,144 @@
+<manifest version="4.0" type="device" target-level="6">
+    <hal format="hidl">
+        <name>android.hardware.audio</name>
+        <transport>hwbinder</transport>
+        <fqname>@7.0::IDevicesFactory/default</fqname>
+    </hal>
+    <hal format="hidl">
+        <name>android.hardware.audio.effect</name>
+        <transport>hwbinder</transport>
+        <fqname>@7.0::IEffectsFactory/default</fqname>
+    </hal>
+    <hal format="hidl">
+        <name>android.hardware.bluetooth</name>
+        <transport>hwbinder</transport>
+        <fqname>@1.1::IBluetoothHci/default</fqname>
+    </hal>
+    <hal format="hidl">
+        <name>android.hardware.bluetooth.audio</name>
+        <transport>hwbinder</transport>
+        <fqname>@2.1::IBluetoothAudioProvidersFactory/default</fqname>
+    </hal>
+    <hal format="hidl">
+        <name>android.hardware.boot</name>
+        <transport>hwbinder</transport>
+        <fqname>@1.2::IBootControl/default</fqname>
+    </hal>
+    <hal format="hidl">
+        <name>android.hardware.broadcastradio</name>
+        <transport>hwbinder</transport>
+        <fqname>@2.0::IBroadcastRadio/default</fqname>
+    </hal>
+    <hal format="hidl">
+        <name>android.hardware.camera.provider</name>
+        <transport>hwbinder</transport>
+        <fqname>@2.4::ICameraProvider/legacy/0</fqname>
+    </hal>
+    <hal format="hidl">
+        <name>android.hardware.gnss</name>
+        <transport>hwbinder</transport>
+        <fqname>@1.1::IGnss/default</fqname>
+    </hal>
+    <hal format="hidl">
+        <name>android.hardware.gnss</name>
+        <transport>hwbinder</transport>
+        <fqname>@2.1::IGnss/default</fqname>
+    </hal>
+    <hal format="hidl">
+        <name>android.hardware.graphics.allocator</name>
+        <transport>hwbinder</transport>
+        <fqname>@4.0::IAllocator/default</fqname>
+    </hal>
+    <hal format="hidl">
+        <name>android.hardware.graphics.composer</name>
+        <transport>hwbinder</transport>
+        <fqname>@2.1::IComposer/default</fqname>
+    </hal>
+    <hal format="hidl">
+        <name>android.hardware.graphics.mapper</name>
+        <transport arch="32+64">passthrough</transport>
+        <fqname>@4.0::IMapper/default</fqname>
+    </hal>
+    <hal format="hidl">
+        <name>android.hardware.media.omx</name>
+        <transport>hwbinder</transport>
+        <fqname>@1.0::IOmx/default</fqname>
+        <fqname>@1.0::IOmxStore/default</fqname>
+    </hal>
+    <hal format="hidl">
+        <name>android.hardware.renderscript</name>
+        <transport arch="32+64">passthrough</transport>
+        <fqname>@1.0::IDevice/default</fqname>
+    </hal>
+    <hal format="hidl">
+        <name>android.hardware.usb</name>
+        <transport>hwbinder</transport>
+        <fqname>@1.1::IUsb/default</fqname>
+    </hal>
+    <hal format="hidl">
+        <name>vendor.goodix.hardware.biometrics.fingerprint</name>
+        <transport>hwbinder</transport>
+        <fqname>@2.1::IGoodixFingerprintDaemon/default</fqname>
+    </hal>
+    <hal format="hidl">
+        <name>vendor.sprd.hardware.ai_engine</name>
+        <transport>hwbinder</transport>
+        <fqname>@1.0::IAIEngineControl/default</fqname>
+    </hal>
+    <hal format="hidl">
+        <name>vendor.sprd.hardware.algoservice</name>
+        <transport>hwbinder</transport>
+        <fqname>@1.0::IAlgoService/default</fqname>
+    </hal>
+    <hal format="hidl">
+        <name>vendor.sprd.hardware.aprd</name>
+        <transport>hwbinder</transport>
+        <fqname>@1.0::IAprdInfoSync/default</fqname>
+    </hal>
+    <hal format="hidl">
+        <name>vendor.sprd.hardware.connmgr</name>
+        <transport>hwbinder</transport>
+        <fqname>@1.0::IConnmgr/default</fqname>
+    </hal>
+    <hal format="hidl">
+        <name>vendor.sprd.hardware.cplog_svc</name>
+        <transport>hwbinder</transport>
+        <fqname>@1.0::ILogTransportInductor/default</fqname>
+        <fqname>@1.0::ISysLogControl/default</fqname>
+    </hal>
+    <hal format="hidl">
+        <name>vendor.sprd.hardware.enhance</name>
+        <transport>hwbinder</transport>
+        <fqname>@1.0::IEnhance/default</fqname>
+    </hal>
+    <hal format="hidl">
+        <name>vendor.sprd.hardware.log</name>
+        <transport>hwbinder</transport>
+        <fqname>@1.0::ILogControl/default</fqname>
+    </hal>
+    <hal format="hidl">
+        <name>vendor.sprd.hardware.network</name>
+        <transport>hwbinder</transport>
+        <fqname>@1.0::INetworkControl/default</fqname>
+    </hal>
+    <hal format="hidl">
+        <name>vendor.sprd.hardware.wcn</name>
+        <transport>hwbinder</transport>
+        <fqname>@1.0::IWcnVendorInterface/default</fqname>
+    </hal>
+    <hal format="hidl">
+        <name>vendor.transsion.hardware.camera.imgalgoservice</name>
+        <transport>hwbinder</transport>
+        <fqname>@1.0::IImgAlgoService/internal/0</fqname>
+    </hal>
+    <hal format="hidl">
+        <name>vendor.transsion.hardware.tranlog</name>
+        <transport>hwbinder</transport>
+        <fqname>@1.0::ITranLog/default</fqname>
+    </hal>
+    <hal format="hidl">
+        <name>vendor.transsion.hardware.tranlogconfig</name>
+        <transport>hwbinder</transport>
+        <fqname>@1.0::ITranLogConfig/default</fqname>
+    </hal>
+</manifest>

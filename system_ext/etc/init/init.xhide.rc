@@ -1,0 +1,3 @@
+on post-fs-data
+    mkdir /data/xos_secure 0711 system system
+

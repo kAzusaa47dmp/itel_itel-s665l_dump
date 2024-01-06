@@ -1,0 +1,12 @@
+#add by hukaixiang for OSWDLDEV-2982 20190129 begin
+on post-fs-data
+    mkdir /data/ot 0777 system system
+    setprop ro.os_system_track_dir "/data/ot/"
+# OS: add by hukaixiang for OSWDLDEV-2982 20190129 end
+
+#OS: add for tpms by yanfengbao 20201108 start
+    mkdir /data/appfly 0777 system system
+    write /data/appfly/pre_install.appsflyer 0
+    chmod 0666 /data/appfly/pre_install.appsflyer
+    setprop ro.appsflyer.preinstall.path "/data/appfly/pre_install.appsflyer"
+#OS: add for tpms by yanfengbao 20201108 end

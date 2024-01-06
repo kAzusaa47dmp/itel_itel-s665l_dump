@@ -1,0 +1,8 @@
+on property:ro.radio.noril=0 && property:ro.radio.dataonly=0
+    start srmi_proxyd
+
+service srmi_proxyd /system_ext/bin/srmi_proxyd /dev/spipe_lte15 /dev/spipe_lte15 0
+        class main
+        disabled
+        user root
+        group system

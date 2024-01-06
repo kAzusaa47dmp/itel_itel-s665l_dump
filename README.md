@@ -1,0 +1,14 @@
+# S665L-user 12 SP1A.210812.016 490 release-keys
+- manufacturer: itel
+- platform: ums9230
+- codename: itel-S665L
+- flavor: S665L-user
+- release: 12
+- id: SP1A.210812.016
+- incremental: GL-20231025V481
+- tags: release-keys
+- fingerprint: Itel/S665L-GL/itel-S665L:12/SP1A.210812.016/GL-20231025V481:user/release-keys
+- is_ab: true
+- brand: Itel
+- branch: S665L-user-12-SP1A.210812.016-490-release-keys
+- repo: itel_itel-s665l_dump

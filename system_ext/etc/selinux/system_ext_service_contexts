@@ -1,0 +1,181 @@
+#line 1 "device/sprd/mpool/sepolicy/system/private/service_contexts"
+# add for srmi
+srmi                                      u:object_r:srmi_service:s0
+#for led notification
+ledsrv                                    u:object_r:led_service:s0
+
+addon                                     u:object_r:addon_service:s0
+# add for power
+powerguru                                 u:object_r:powerguru_service:s0
+power_ex                                  u:object_r:power_ex_service:s0
+sprd_power                                u:object_r:power_ex_service:s0
+sunlight                                  u:object_r:power_ex_service:s0
+lld                                       u:object_r:power_ex_service:s0
+# add for ssense
+SceneRecognize                            u:object_r:ssense_service:s0
+sprdssense                                u:object_r:ssense_service:s0
+# add for performance
+
+performance_fw                            u:object_r:performance_fw_service:s0
+# add for ccsa
+security                                  u:object_r:security_service:s0
+connectionEx                              u:object_r:connectionEx_service:s0
+network_adapter                           u:object_r:networkadapter_service:s0
+# add for fm
+
+# add for tele
+iphonesubinfoEx                           u:object_r:radio_service:s0
+phone_ex                                  u:object_r:radio_service:s0
+ismsEx                                    u:object_r:radio_service:s0
+ims_ex                                    u:object_r:radio_service:s0
+ims_ut_ex                                 u:object_r:radio_service:s0
+ims_doze_manager                          u:object_r:radio_service:s0
+simphonebookEx                            u:object_r:radio_service:s0
+irit                                      u:object_r:radio_service:s0
+phone_dmyk                                u:object_r:radio_service:s0
+ions_ex                                   u:object_r:radio_service:s0
+# add for VoLTE video call
+#VideoCallEngineService                    u:object_r:vce_service:s0
+
+#fow unisocai
+unisocai                                  u:object_r:unisoc_ai_service:s0
+
+# add for audioserviceex
+audio_ex                                  u:object_r:audio_ex_service:s0
+
+## add for UnisocWifiService
+unisoc_wifi                               u:object_r:unisoc_wifi_service:s0
+#line 1 "device/sprd/mpool/module/aiengine/msoc/qogirl6/march/arm64/msepolicy/system/private/service_contexts"
+#for unisocaiengine
+unisocaiengine                            u:object_r:unisocaiengine_service:s0
+
+#line 1 "device/sprd/mpool/module/security/msepolicy/system/private/service_contexts"
+# add for ifaa
+ifaa                                      u:object_r:ifaa_service:s0
+#line 1 "device/sprd/mpool/module/media/msepolicy/system/private/service_contexts"
+fm                                        u:object_r:mediaserver_service:s0
+#line 1 "device/sprd/mpool/module/performance/msepolicy/system/private/service_contexts"
+performancemanager                        u:object_r:performancemanager_service:s0
+#line 1 "device/sprd/mpool/module/telephony/msepolicy/system/private/service_contexts"
+# Add UNISOC extended telephony services.
+uni_telephony                             u:object_r:radio_service:s0
+uni_phone                                 u:object_r:radio_service:s0
+uni_carrierconfig                         u:object_r:radio_service:s0
+uni_simphonebook                          u:object_r:radio_service:s0
+tele_test_service                         u:object_r:radio_service:s0
+isim_test_service                         u:object_r:radio_service:s0
+operator_name_test_service                u:object_r:radio_service:s0
+simrecords_test_service                   u:object_r:radio_service:s0
+subinfo_test_service                      u:object_r:radio_service:s0
+simfilecontent_test_service               u:object_r:radio_service:s0
+simfilelength_test_service                u:object_r:radio_service:s0
+simfilenotfound_test_service              u:object_r:radio_service:s0
+modemLog_test_service                     u:object_r:radio_service:s0
+ss_test_service                           u:object_r:radio_service:s0
+unidctracker_test_service                 u:object_r:radio_service:s0
+#line 1 "device/sprd/mpool/module/smartlink/msepolicy/system/private/service_contexts"
+#for linkturbonative
+linkturbonative                           u:object_r:linkturbonative_service:s0
+SmartlinkSdkService                       u:object_r:smartlink_service:s0
+#line 1 "device/sprd/mpool/module/cta/msepolicy/system/private/service_contexts"
+# add for CTA feature
+cta_permission                            u:object_r:cta_permission_service:s0
+#line 1 "device/sprd/mpool/module/silentreboot/msepolicy/system/private/service_contexts"
+unisoc_silent_reboot      u:object_r:unisoc_silent_reboot_service:s0
+#line 1 "vendor/transsion/partner/trancare/sepolicy/plat_private/service_contexts"
+tran_tranlog    u:object_r:tranlog_service:s0
+tranlog_sub     u:object_r:tranlogsub_service:s0
+#line 1 "vendor/transsion/partner/resmonitor/sepolicy/plat_private/service_contexts"
+tran_resmonitor     u:object_r:resmonitor_service:s0
+#line 1 "vendor/transsion/partner/uxdetector/sepolicy/plat_private/service_contexts"
+uxdetector       u:object_r:transsion_uxdetector_service:s0
+uxdetectorrest   u:object_r:transsion_uxdetectorrest_service:s0
+#line 1 "vendor/transsion/partner/tranaipowerlab/sepolicy/tranaipowerlab/plat_private/service_contexts"
+tran_aipl    u:object_r:tranaipl_service:s0
+#line 1 "vendor/transsion/partner/appmManager/sepolicy/plat_private/service_contexts"
+tran_appm    u:object_r:tran_appm_service:s0
+
+#line 1 "vendor/transsion/sepolicy/common/plat_private/service_contexts"
+#/*
+# * Copyright (c) 2016-2036  TRANSSION HOLDINGS
+# *
+# * PROPRIETARY RIGHTS of TRANSSION HOLDINGS are involved in the
+# * subject matter of this material.  All manufacturing, reproduction, use,
+# * and sales rights pertaining to this subject matter are governed by the
+# * license agreement.  The recipient of this software implicitly accepts
+# * the terms of the license.
+# *
+# * Description: For enjoyos Service
+# * Author:      IB-02264
+# * Version:     V1.0
+# * Date:        2016.11.08
+# * Modification:
+# *
+#*/
+
+enjoyos          u:object_r:enjoyos_system_service:s0
+
+smartController        u:object_r:smart_controller_service:s0
+
+smartItelScene         u:object_r:smart_itel_scene_service:s0
+
+smartItelRecognizeScene       u:object_r:smart_itel_recognize_scene_service:s0
+
+dataEngine       u:object_r:data_engine_service:s0
+
+storageDataEngine       u:object_r:storage_data_engine_service:s0
+
+performanceModule        u:object_r:performance_module_service:s0
+
+powerModule        u:object_r:power_module_service:s0
+
+linkturbo_app_service        u:object_r:linkturbo_app_service:s0
+
+# John IB-186401234
+gemini  u:object_r:gemini_service:s0
+
+##ITEL: [SYS][SR][BatteryConsume] by wuyue.lei begin
+BatteryConsumeService                u:object_r:BatteryConsume_service:s0
+##ITEL: [SYS][SR][BatteryConsume] by wuyue.lei end
+
+#add for NFC
+nfc.st_ext u:object_r:nfc_service:s0
+nfc_settings u:object_r:nfc_service:s0
+nfc.wallet u:object_r:nfc_service:s0
+
+#TDD:add communication baseline for CMSFTASK-147 by wenlinxiao 20210607 start
+tranphone                               u:object_r:tranphone_service:s0
+#TDD:add communication baseline for CMSFTASK-147 by wenlinxiao 20210607 end
+#line 1 "vendor/transsion/sepolicy/tranpowerhub/plat_private/service_contexts"
+tran_pwhub    u:object_r:tranpwhub_service:s0
+#line 1 "vendor/tran_os/product/sepolicy/sprd/plat_private/service_contexts"
+# Transsion Top Secret
+
+# OS: add by shihuan.xu for securitycom 20191113 start
+securitycom_access       u:object_r:securitycom_access_service:s0
+# OS: add by shihuan.xu for securitycom 20191113 end
+# OS: add by tong.mo for os_audio_change 20200727 start
+os_audio_change       u:object_r:os_audio_change_service:s0
+# OS: add by tong.mo for os_audio_change 20200727 end
+# OS: add for OSQIDEV-3369(kolun) by zijiang.wang 20200730 start
+kolun                u:object_r:kolun_service:s0
+# OS: add for OSQIDEV-3369(kolun) by zijiang.wang 20200730 end
+
+# OS: add for OSQWRDEV-3079(sandaccessor) by zijiang.wang 20200924 start
+sand_accessor       u:object_r:sand_accessor_service:s0
+# OS: add for OSQWRDEV-3079(sandaccessor) by zijiang.wang 20200924 end
+
+# OS: add by minjie.pan for os_app_ops 20210308 start
+os_app_ops       u:object_r:os_app_ops_service:s0
+# OS: add by minjie.pan for os_app_ops 20210308 end
+
+#  OS: add for game mode by zijiang.wang 20210318 start
+gamemode_helper     u:object_r:gamemode_helper_service:s0
+# OS: add for game mode by zijiang.wang 20210318 end
+
+# OS: add for network rule by zijiang.wang 20211020 start
+particular_feature   u:object_r:particular_feature_service:s0
+# OS: add for network rule by zijiang.wang 20211020 end
+
+oem_unlock_data  u:object_r:oem_unlock_data_service:s0
+

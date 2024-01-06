@@ -1,0 +1,27 @@
+#line 1 "device/sprd/mpool/sepolicy/system/private/property_contexts"
+# For CTA
+ro.cta.security.feature   u:object_r:system_prop:s0
+persist.sys.cta.security.log u:object_r:system_prop:s0
+
+#line 1 "device/sprd/mpool/module/storage/msepolicy/system/private/property_contexts"
+persist.storage         u:object_r:vold_prop:s0
+sys.internal.emulated   u:object_r:vold_prop:s0
+#line 1 "device/sprd/mpool/module/telephony/msepolicy/system/private/property_contexts"
+ro.telephony.se.enable      u:object_r:system_se_prop:s0
+#line 1 "device/sprd/mpool/module/silentreboot/msepolicy/system/private/property_contexts"
+#add for unisoc silent reboot
+persist.silent.reboot.enabled u:object_r:unisoc_silent_reboot_prop:s0
+persist.config.silent.reboot. u:object_r:unisoc_silent_reboot_prop:s0
+#line 1 "vendor/tran_os/product/sepolicy/sprd/plat_private/property_contexts"
+
+# Transsion Top Secret
+
+# OS: add by zhiwei.li for OSWDLDEV-1497 20181121 begin
+persist.vendor.sys.os.typeface.defaultfont.hash u:object_r:system_transsion_os_typeface_default_prop:s0
+# OS: add by zhiwei.li for OSWDLDEV-1497 20181121 end
+
+# OS: add for securitycom by yueshen.chen 20210720 start
+# OS: remove for securitycom by shihuan.xu 20210810 start
+#ro.vendor.tran.trans_pay_tee u:object_r:transsion_pay_tee_vendor_prop:s0
+# OS: remove for securitycom by shihuan.xu 20210810 end
+# OS: add for securitycom by yueshen.chen 20210720 end

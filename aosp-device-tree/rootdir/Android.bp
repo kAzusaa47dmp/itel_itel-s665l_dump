@@ -1,0 +1,380 @@
+//
+// Copyright (C) 2024 The LineageOS Project
+//
+// SPDX-License-Identifier: Apache-2.0
+//
+
+// Init scripts
+sh_binary {
+    name: "log_to_csv.sh",
+    src: "bin/log_to_csv.sh",
+    vendor: true,
+}
+
+sh_binary {
+    name: "loading.sh",
+    src: "bin/loading.sh",
+    vendor: true,
+}
+
+sh_binary {
+    name: "para.sh",
+    src: "bin/para.sh",
+    vendor: true,
+}
+
+sh_binary {
+    name: "total.sh",
+    src: "bin/total.sh",
+    vendor: true,
+}
+
+sh_binary {
+    name: "init.insmod.sh",
+    src: "bin/init.insmod.sh",
+    vendor: true,
+}
+
+// Init configuration files
+prebuilt_etc {
+    name: "init.KH6h.rc",
+    src: "etc/init.KH6h.rc",
+    sub_dir: "init/hw",
+    vendor: true,
+}
+
+prebuilt_etc {
+    name: "init.KH6h.usb.rc",
+    src: "etc/init.KH6h.usb.rc",
+    sub_dir: "init/hw",
+    vendor: true,
+}
+
+prebuilt_etc {
+    name: "init.KH7h.rc",
+    src: "etc/init.KH7h.rc",
+    sub_dir: "init/hw",
+    vendor: true,
+}
+
+prebuilt_etc {
+    name: "init.KH7h.usb.rc",
+    src: "etc/init.KH7h.usb.rc",
+    sub_dir: "init/hw",
+    vendor: true,
+}
+
+prebuilt_etc {
+    name: "init.KI5k.rc",
+    src: "etc/init.KI5k.rc",
+    sub_dir: "init/hw",
+    vendor: true,
+}
+
+prebuilt_etc {
+    name: "init.KI5k.usb.rc",
+    src: "etc/init.KI5k.usb.rc",
+    sub_dir: "init/hw",
+    vendor: true,
+}
+
+prebuilt_etc {
+    name: "init.KI5m.rc",
+    src: "etc/init.KI5m.rc",
+    sub_dir: "init/hw",
+    vendor: true,
+}
+
+prebuilt_etc {
+    name: "init.KI5m.usb.rc",
+    src: "etc/init.KI5m.usb.rc",
+    sub_dir: "init/hw",
+    vendor: true,
+}
+
+prebuilt_etc {
+    name: "init.S662L.rc",
+    src: "etc/init.S662L.rc",
+    sub_dir: "init/hw",
+    vendor: true,
+}
+
+prebuilt_etc {
+    name: "init.S662L.usb.rc",
+    src: "etc/init.S662L.usb.rc",
+    sub_dir: "init/hw",
+    vendor: true,
+}
+
+prebuilt_etc {
+    name: "init.S662LC.rc",
+    src: "etc/init.S662LC.rc",
+    sub_dir: "init/hw",
+    vendor: true,
+}
+
+prebuilt_etc {
+    name: "init.S662LC.usb.rc",
+    src: "etc/init.S662LC.usb.rc",
+    sub_dir: "init/hw",
+    vendor: true,
+}
+
+prebuilt_etc {
+    name: "init.S662LCN.rc",
+    src: "etc/init.S662LCN.rc",
+    sub_dir: "init/hw",
+    vendor: true,
+}
+
+prebuilt_etc {
+    name: "init.S662LCN.usb.rc",
+    src: "etc/init.S662LCN.usb.rc",
+    sub_dir: "init/hw",
+    vendor: true,
+}
+
+prebuilt_etc {
+    name: "init.S665L.rc",
+    src: "etc/init.S665L.rc",
+    sub_dir: "init/hw",
+    vendor: true,
+}
+
+prebuilt_etc {
+    name: "init.S665L.usb.rc",
+    src: "etc/init.S665L.usb.rc",
+    sub_dir: "init/hw",
+    vendor: true,
+}
+
+prebuilt_etc {
+    name: "init.S665LN.rc",
+    src: "etc/init.S665LN.rc",
+    sub_dir: "init/hw",
+    vendor: true,
+}
+
+prebuilt_etc {
+    name: "init.S665LN.usb.rc",
+    src: "etc/init.S665LN.usb.rc",
+    sub_dir: "init/hw",
+    vendor: true,
+}
+
+prebuilt_etc {
+    name: "init.X668.rc",
+    src: "etc/init.X668.rc",
+    sub_dir: "init/hw",
+    vendor: true,
+}
+
+prebuilt_etc {
+    name: "init.X668.usb.rc",
+    src: "etc/init.X668.usb.rc",
+    sub_dir: "init/hw",
+    vendor: true,
+}
+
+prebuilt_etc {
+    name: "init.X668B.rc",
+    src: "etc/init.X668B.rc",
+    sub_dir: "init/hw",
+    vendor: true,
+}
+
+prebuilt_etc {
+    name: "init.X668B.usb.rc",
+    src: "etc/init.X668B.usb.rc",
+    sub_dir: "init/hw",
+    vendor: true,
+}
+
+prebuilt_etc {
+    name: "init.X668C.rc",
+    src: "etc/init.X668C.rc",
+    sub_dir: "init/hw",
+    vendor: true,
+}
+
+prebuilt_etc {
+    name: "init.X668C.usb.rc",
+    src: "etc/init.X668C.usb.rc",
+    sub_dir: "init/hw",
+    vendor: true,
+}
+
+prebuilt_etc {
+    name: "init.X669.rc",
+    src: "etc/init.X669.rc",
+    sub_dir: "init/hw",
+    vendor: true,
+}
+
+prebuilt_etc {
+    name: "init.X669.usb.rc",
+    src: "etc/init.X669.usb.rc",
+    sub_dir: "init/hw",
+    vendor: true,
+}
+
+prebuilt_etc {
+    name: "init.X669D.rc",
+    src: "etc/init.X669D.rc",
+    sub_dir: "init/hw",
+    vendor: true,
+}
+
+prebuilt_etc {
+    name: "init.X669D.usb.rc",
+    src: "etc/init.X669D.usb.rc",
+    sub_dir: "init/hw",
+    vendor: true,
+}
+
+prebuilt_etc {
+    name: "init.X6817C.rc",
+    src: "etc/init.X6817C.rc",
+    sub_dir: "init/hw",
+    vendor: true,
+}
+
+prebuilt_etc {
+    name: "init.X6817C.usb.rc",
+    src: "etc/init.X6817C.usb.rc",
+    sub_dir: "init/hw",
+    vendor: true,
+}
+
+prebuilt_etc {
+    name: "init.X6823.rc",
+    src: "etc/init.X6823.rc",
+    sub_dir: "init/hw",
+    vendor: true,
+}
+
+prebuilt_etc {
+    name: "init.X6823.usb.rc",
+    src: "etc/init.X6823.usb.rc",
+    sub_dir: "init/hw",
+    vendor: true,
+}
+
+prebuilt_etc {
+    name: "init.cali.rc",
+    src: "etc/init.cali.rc",
+    sub_dir: "init/hw",
+    vendor: true,
+}
+
+prebuilt_etc {
+    name: "init.factorytest.rc",
+    src: "etc/init.factorytest.rc",
+    sub_dir: "init/hw",
+    vendor: true,
+}
+
+prebuilt_etc {
+    name: "init.ram.rc",
+    src: "etc/init.ram.rc",
+    sub_dir: "init/hw",
+    vendor: true,
+}
+
+prebuilt_etc {
+    name: "init.storage.rc",
+    src: "etc/init.storage.rc",
+    sub_dir: "init/hw",
+    vendor: true,
+}
+
+prebuilt_etc {
+    name: "init.ums9230_1h10.rc",
+    src: "etc/init.ums9230_1h10.rc",
+    sub_dir: "init/hw",
+    vendor: true,
+}
+
+prebuilt_etc {
+    name: "init.ums9230_1h10.usb.rc",
+    src: "etc/init.ums9230_1h10.usb.rc",
+    sub_dir: "init/hw",
+    vendor: true,
+}
+
+prebuilt_etc {
+    name: "init.ums9230_1h10_go.rc",
+    src: "etc/init.ums9230_1h10_go.rc",
+    sub_dir: "init/hw",
+    vendor: true,
+}
+
+prebuilt_etc {
+    name: "init.ums9230_1h10_go.usb.rc",
+    src: "etc/init.ums9230_1h10_go.usb.rc",
+    sub_dir: "init/hw",
+    vendor: true,
+}
+
+prebuilt_etc {
+    name: "init.ums9230_4h10.rc",
+    src: "etc/init.ums9230_4h10.rc",
+    sub_dir: "init/hw",
+    vendor: true,
+}
+
+prebuilt_etc {
+    name: "init.ums9230_4h10.usb.rc",
+    src: "etc/init.ums9230_4h10.usb.rc",
+    sub_dir: "init/hw",
+    vendor: true,
+}
+
+prebuilt_etc {
+    name: "init.ums9230_4h10_go.rc",
+    src: "etc/init.ums9230_4h10_go.rc",
+    sub_dir: "init/hw",
+    vendor: true,
+}
+
+prebuilt_etc {
+    name: "init.ums9230_4h10_go.usb.rc",
+    src: "etc/init.ums9230_4h10_go.usb.rc",
+    sub_dir: "init/hw",
+    vendor: true,
+}
+
+prebuilt_etc {
+    name: "init.ums9230_haps.rc",
+    src: "etc/init.ums9230_haps.rc",
+    sub_dir: "init/hw",
+    vendor: true,
+}
+
+prebuilt_etc {
+    name: "init.ums9230_haps.usb.rc",
+    src: "etc/init.ums9230_haps.usb.rc",
+    sub_dir: "init/hw",
+    vendor: true,
+}
+
+prebuilt_etc {
+    name: "init.ums9230_zebu.rc",
+    src: "etc/init.ums9230_zebu.rc",
+    sub_dir: "init/hw",
+    vendor: true,
+}
+
+prebuilt_etc {
+    name: "init.ums9230_zebu.usb.rc",
+    src: "etc/init.ums9230_zebu.usb.rc",
+    sub_dir: "init/hw",
+    vendor: true,
+}
+
+// fstab
+prebuilt_etc {
+    name: "fstab.KH6h",
+    src: "etc/fstab.KH6h",
+    vendor: true,
+}

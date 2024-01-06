@@ -1,0 +1,20 @@
+on post-fs-data
+    mkdir /data/sprdinfo 0771 system system
+    #chown system system /data/sprdinfo/apr.conf
+    #mkdir /data/apr 0777 system system
+    #chown system system /data/apr.conf
+
+on early-boot
+    service aprd /system_ext/bin/collect_apr
+    class main
+    user root
+    group system radio shell
+    disabled
+
+on property:persist.sys.apr.enabled=1
+    start aprd
+
+on property:persist.sys.apr.enabled=0
+    stop aprd
+	
+

@@ -1,0 +1,12 @@
+vendor_boot.img
+system/system/preloadapp/TikTok/TikTok.apk
+system/system/preloadapp/TikTokzhiliao/TikTokzhiliao.apk
+system/system/preloadapp/WPSOffice/WPSOffice.apk
+system_ext/app/AiGallery/AiGallery.apk
+system_ext/app/TranssionCamera/TranssionCamera.apk
+system_ext/priv-app/ItelSettings/ItelSettings.apk
+vendor/etc/license_debug.lic
+product/app/WebViewGoogle/WebViewGoogle.apk
+product/priv-app/GmsCore/GmsCore.apk
+product/priv-app/Messages/Messages.apk
+product/priv-app/Velvet/Velvet.apk

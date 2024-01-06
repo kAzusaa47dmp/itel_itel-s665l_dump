@@ -1,0 +1,55 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<permissions>
+    <customized-restricted-app config="ro.radio.noril"  value="1">
+        <path name="Dialer"/>
+        <path name="SprdDialer"/>
+        <path name="SprdDialerGo"/>
+        <path name="GoogleDialer"/>
+        <path name="GoogleDialerGo"/>
+        <path name="Stk"/>
+        <path name="UplmnSettings"/>
+        <path name="CallFireWall"/>
+        <path name="ModemNotifier"/>
+        <path name="CellBroadcastReceiver"/>
+        <path name="ims"/>
+        <path name="SprdVoWifiService"/>
+        <path name="SprdVoWifiConfiguration"/>
+        <path name="ImsCM"/>
+        <path name="radio_interactor_service"/>
+        <path name="VceDaemon"/>
+        <path name="EmergencyInfo"/>
+        <path name="Srmi"/>
+        <path name="AndroidAutoStub"/>
+        <path name="FrameworkResWifiOnlyOverlay.apk" type="1"/>
+    </customized-restricted-app>
+
+<!-- Feature & apk limited for dataonly. -->
+    <restricted-feature config="ro.radio.dataonly">
+        <feature name="android.hardware.telephony.ims" />
+        <feature name="android.hardware.telephony.ims.singlereg" />
+        <feature name="android.hardware.telephony.gsm" />
+        <feature name="android.hardware.telephony.cdma" />
+    </restricted-feature>
+
+    <customized-restricted-app config="ro.radio.dataonly"  value="1">
+        <path name="Dialer"/>
+        <path name="SprdDialer"/>
+        <path name="SprdDialerGo"/>
+        <path name="GoogleDialer"/>
+        <path name="GoogleDialerGo"/>
+        <path name="Stk"/>
+        <path name="UplmnSettings"/>
+        <path name="CallFireWall"/>
+        <path name="ModemNotifier"/>
+        <path name="CellBroadcastReceiver"/>
+        <path name="ims"/>
+        <path name="SprdVoWifiService"/>
+        <path name="SprdVoWifiConfiguration"/>
+        <path name="ImsCM"/>
+        <path name="radio_interactor_service"/>
+        <path name="VceDaemon"/>
+        <path name="Srmi"/>
+        <path name="FrameworkResDataOnlyOverlay.apk" type="1"/>
+    </customized-restricted-app>
+</permissions>
